@@ -2,12 +2,17 @@
 
 <html>
 	<head>
+	<style type="text/css">
+		html,body {
+			margin: 0;
+			padding: 0;
+		}
+	</style>
 		{{content_for_header}}
 	</head>
 	<body>
-	hello
-	{{section 'header'}}
-	{{content_for_layout}}
+		{% section 'header' %}
+		{{content_for_layout}}
 	</body>
 </html>
 
