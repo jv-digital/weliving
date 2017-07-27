@@ -2,17 +2,15 @@
 
 <html>
 	<head>
-	<style type="text/css">
-		html,body {
-			margin: 0;
-			padding: 0;
-		}
 	</style>
+		{{'header.css'|asset_url|stylesheet_tag}}
+		{{'footer.css'|asset_url|stylesheet_tag}}
 		{{content_for_header}}
 	</head>
 	<body>
 		{% section 'header' %}
 		{{content_for_layout}}
+		{% section 'footer'%}
 	</body>
 </html>
 
