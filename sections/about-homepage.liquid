@@ -1,0 +1,46 @@
+{% schema %}
+{
+	"name": "About",
+	"settings": [
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		},
+		{
+			"type": "text",
+			"id": "description",
+			"label": "Description"
+		},
+		{
+			"type": "image_picker",
+			"id": "image",
+			"label": "Image"
+		}
+	],
+	"presets": [
+		{
+			"name": "About",
+			"category": "Image",
+			"settings": {
+				"title": "Title",
+				"description": "Describe your company here."
+			}
+
+		}
+	]
+}
+{% endschema %}
+
+<div class="container">
+	<div class="about row">
+		<div class="description col-md-6 col-xs-12">
+			<p class="text col-xs-10">
+				<span class="title"><b>{{section.settings.title}}</b></span>
+				<span>{{section.settings.description}}</span>
+			</p>
+		</div>
+		<div class="about-image col-md-6 col-xs-12" style="background-image:url({{ section.settings.image | img_url: 'master'}})">
+		</div>
+	</div>
+</div>

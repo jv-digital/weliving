@@ -1,0 +1,99 @@
+
+<div id="carousel" class="carousel slide" data-ride="carousel" {% if section.settings.autoplay %}
+data-interval="{{section.settings.autoplay_speed}}" {% else %} data-interval="false" {% endif %}>
+
+  <!-- Indicators-->
+  <ol class="carousel-indicators">
+  	{% assign slide_counter = 0 %}
+  	{% for block in section.blocks %}
+  		{% if slide_counter == 0 %}
+    		<li data-target="#carousel" data-slide-to="{{slide_counter}}" class="active"></li>
+    		{% assign slide_counter = slide_counter | plus: 1 %}
+    	{% else %}
+    		<li data-target="#carousel" data-slide-to="{{slide_counter}}"></li>
+    		{% assign slide_counter = slide_counter | plus: 1 %}
+    	{% endif %}
+  	{% endfor %}
+  </ol>
+
+  <!-- Wrapper for slides-->
+  <div class="carousel-inner">
+  	{% assign block_counter = 0 %}
+  	{% for block in section.blocks %}
+  		{% if block_counter == 0 %}
+			<div class="item active" style="background-image:url({{ block.settings.image | img_url: 'master' }})"></div>
+    		{% assign block_counter = block_counter | plus: 1 %}
+    	{% else %}
+    		<div class="item" style="background-image:url({{ block.settings.image | img_url: 'master' }})"></div>
+    	{% endif %}
+    {% endfor %}
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#carousel" data-slide="prev">
+    <span class="left-arrow"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel" data-slide="next">
+    <span class="right-arrow"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="scroll-tab">
+	<p>scroll down</p>
+</div>
+
+{% schema %}
+  	{
+		"name": "Carousel",
+		"settings": [
+			{
+				"type": "checkbox",
+				"id": "autoplay",
+				"label": "Auto-rotate"
+			},
+			{
+				"type": "select",
+				"id": "autoplay_speed",
+				"label": "Slides change every",
+				"options": [
+					{"value":"5000","label":"5 seconds"},
+					{"value":"6000","label":"6 seconds"},
+					{"value":"7000","label":"7 seconds"},
+					{"value":"8000","label":"8 seconds"}
+				]
+			}
+		],
+		"blocks": [
+			{
+				"type": "image",
+				"name": "Slide",
+				"settings": [
+					{
+						"type":"image_picker",
+						"id": "image",
+						"label": "Image"
+					}
+				]
+			}
+		],
+		"presets": [
+		{
+			"name": "Carousel",
+			"category":"image",
+			"settings": {
+				"autoplay": true,
+				"autoplay_speed": "7000"
+			},
+		"blocks": [
+		{
+			"type":"image"
+		},
+		{
+			"type":"image"
+		}
+		]
+		}
+	]
+  }
+{% endschema %}

@@ -1,0 +1,64 @@
+{% schema %}
+{
+	"name": "Featured Blog Post",
+	"settings": [
+		{
+			"type": "text",
+			"id": "title",
+			"label": "heading"
+		},
+		{
+			"type": "blog",
+			"id": "blog",
+			"label": "Blog"
+		},
+		{
+			"type": "article",
+			"id":"article",
+			"label":"Article"
+		},
+		{
+			"type":"image_picker",
+			"id":"image",
+			"label":"Image"
+		}
+	],
+	"presets": [
+		{
+			"name": "Featured Blog Post",
+			"category":"Blog",
+			"settings": {
+					"title": "Blog"
+				}	
+		}
+	]
+}
+
+{% endschema %}
+
+
+<div class="container">
+	<div class="blog row">
+		<div class="mobile-title col-xs-12 hidden-md hidden-lg">
+				<p><b>{{section.settings.title}}</b></p>
+		</div>
+		<div class="blog-image vertical-align col-xs-12" style="background-image:url({{section.settings.image | img_url: 'master'}})">
+			<div class="desktop-title col-md-11 hidden-sm hidden-xs"> 
+				<p><b>{{section.settings.title}}</b></p>
+			</div>
+		</div>
+		<div class="article-background col-xs-12">
+			<div class="article-info col-xs-11">
+				{% assign article = articles[section.settings.article] %}
+				{% assign blog = blogs[section.settings.blog] %}
+				<p class="text">
+					<span class="article-date">{{article.published_at | date: "%m-%d-%y"}} |</span>
+					<span class="blog-title"> {{blog.title}} </span>
+					<span class="article-title">{{article.title}} </span>
+					<span class="article-excerpt"> {{article.excerpt}} </span>
+					<span class="link"><a href="{{article.url}}">read more</a></span>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

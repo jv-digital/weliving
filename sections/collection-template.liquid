@@ -1,0 +1,38 @@
+{% schema %}
+{
+	"name": "Collection list",
+	"settings": [
+		{
+			"type": "collection",
+			"id": "collection",
+			"label":"Choose your collection"
+		}
+	],
+	"presets": [
+		{
+			"name": "Collection list",
+			"category": "Collections",
+			"settings": 
+			{
+				"collection": "Products"
+			}
+		}
+	]
+}
+{% endschema %}
+
+<div class="container">
+	<div class="product row">
+		{% for product in collections[section.settings.collection].products %}
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<div class="product-image">
+					<img src="{{ product | img_url: 'master' }}">
+				</div>
+				<div class="product-text"> 
+					<span class="title">{{product.title}}</span>
+					<span class="price">${{product.price | remove_first: '00'}}</span>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>

@@ -1,0 +1,61 @@
+{% schema %}
+	{
+		"name": "Featured Collection 2",
+		"settings": [
+			{
+				"type": "image_picker",
+				"id": "image",
+				"label":"image"
+			},
+			{
+				"type": "text",
+				"id": "title",
+				"label":"Title"
+			},
+			{
+				"type": "text",
+				"id":"description",
+				"label":"Description"
+			},
+			{
+				"type": "text",
+				"id": "button_label",
+				"label":"Button Label"
+			}
+
+		],
+		"presets": [
+		{
+			"name": "Featured Collection 2",
+			"category": "image",
+			"settings": {
+				"title":"Collection Title",
+				"description":"Describe your product here.",
+				"button_label":"Take a closer look"
+			}
+		}
+	]
+}
+{% endschema %}
+
+
+<div class="container">
+	<div class="row">
+		<div class="img-wrapper-2 col-xs-12 col-md-8 col-md-push-4" style="background-image:url({{ section.settings.image | img_url: 'master' }})"></div>	
+		<div class="content-2 col-xs-12 col-md-4 col-md-pull-8">
+  				<div class="text-button-2 col-md-11">
+  					<p class="text-2">
+  						<span class="title-2"><b>{{section.settings.title}}</b></span>
+  						<span>{{ section.settings.description }}</span>
+  					</p>
+  					<div class="button-2">
+  						<button class="button-3">{{ section.settings.button_label }}</button>
+  					</div>
+  				</div>	
+           <div class="angle-2 hidden-xs hidden-sm"></div>
+    	</div>
+  			
+	</div>
+</div>
+
+

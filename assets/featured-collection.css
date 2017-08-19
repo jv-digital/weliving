@@ -1,0 +1,115 @@
+.vertical-align {
+  display:flex;
+  align-items:center;
+}
+.row {
+  margin-top:50px;
+  margin-left:5px;
+  margin-right:5px;
+}
+.col-centered {
+  float:none;
+  margin:0 auto;
+}
+.img-wrapper {
+  display:inline-block;
+  position:relative;
+  height:87vh;
+  z-index:-2;
+  background-size: cover;
+}
+
+.content {    
+    display:inline-block;
+    height:87vh;
+    background-image: linear-gradient(top, #f2f2f2, #f2f2f2 80%, white 80%);
+    background-image: -webkit-linear-gradient(top, #f2f2f2, #f2f2f2 80%, white 80%);  
+}
+.nopadding {
+  padding:0 !important;
+}
+
+.text-button {
+  margin-top:50px;
+  margin-left:30px;
+  z-index:0;
+  line-height:20px;
+}
+
+.content .text-button .text .title {
+  line-height:43px;
+  font-size:35px;
+  margin-bottom:40px;
+  text-transform: uppercase;
+}
+.content span {
+    display:block;
+    font-size:20px;
+    line-height:27px;
+}
+.button-1 {
+  margin-top:40px;
+  padding:7px 55px 7px 55px;
+  background: none;
+  outline: none;
+  border: 2px solid black
+
+}
+.angle {
+    margin-left:-80px;
+    display: inline-block; 
+    position: absolute;
+    z-index: -2;
+    width:50%;
+    height:87vh;
+    transform: skewX(-15deg);
+    background-image: linear-gradient(top, #f2f2f2, #f2f2f2 80%, white 80%);
+    background-image: -webkit-linear-gradient(top, #f2f2f2, #f2f2f2 80%, white 80%);   
+}
+@media screen and (max-width:969px) {
+  .content {
+    background-color:#f2f2f2;
+    background-image:none;
+  }
+}
+@media screen and (max-width:768px) {
+  .row {
+    margin-top:15px;
+    margin-right:-7px;
+    margin-left:-7px;
+  }
+  .img-wrapper {
+    width:100%;
+    height:45vh;
+  }
+  .content {
+    width:100%;
+    background-color:#f2f2f2;
+    background-image:none;
+    height:33vh;
+    margin-left:0;
+  }
+
+  .content .text-button {
+    margin-left:10px;
+    margin-top:0px;
+    line-height:20px;
+  }
+  .content .text-button .text .title {
+    line-height:30px;
+    font-size:24px;
+    margin-top:25px;
+    margin-bottom:7px;
+  }
+  .content .text-button .text span {
+    font-size:15px;
+    line-height:20px;
+  }
+  .button-1 {
+    margin-top:20px;
+    padding: 10px 85px 10px 85px;
+    font-size: 13px;
+    border:1px solid black;
+
+  }
+}

@@ -1,0 +1,46 @@
+{% schema %}
+{
+	"name":"Homepage Description",
+	"settings": [
+		{
+			"type": "image_picker",
+			"id":"image",
+			"label":"Image"
+		},
+		{
+			"type": "text",
+			"id":"header",
+			"label":"Heading"
+		},
+		{
+			"type": "text",
+			"id":"description",
+			"label":"Content"
+		}
+	],
+	"presets": [
+		{
+			"name": "Homepage Description",
+			"category": "Image",
+			"settings": {
+				"header":"Heading goes here.",
+				"description": "Content goes here."
+			}
+		}	
+	]
+}
+
+{% endschema %}
+
+<div class="container full-width">
+	<div class="homepage-description row">
+		<div class="description-image col-xs-12" style="background-image:url({{section.settings.image | img_url: 'master'}})">
+			<div class="description-content col-xs-10 col-md-5 col-md-offset-1">
+				<div class="wrapper">
+					<span class="header">{{section.settings.header}}</span>
+					<span class="text">{{section.settings.description}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

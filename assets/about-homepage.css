@@ -1,0 +1,41 @@
+.about .description .text {
+	margin-top:75px;
+	margin-left:25px;
+}
+.description .text .title {
+	font-size: 35px !important;
+	margin-bottom:40px;
+}
+.description .text span {
+	display: block;
+	font-size: 20px;
+	line-height:27px;
+}
+.about .about-image {
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position:center;
+	height:100vh;
+}
+@media screen and (max-width:991px) {
+	.about .about-image {
+		height:50vh;
+	}
+}
+@media screen and (max-width:767px) {
+	.about .description .text {
+		margin-top:7px;
+		margin-left:0px;
+		padding:0;
+	}
+	.description .text .title {
+		font-size:23px !important;
+		margin-bottom:7px;
+	}
+	.about .description .text span {	
+		font-size:15px;
+	}
+	.about .about-image {
+		height:25vh;
+	}
+}
