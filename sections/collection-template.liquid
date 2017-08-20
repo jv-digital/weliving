@@ -26,7 +26,7 @@
 		{% for product in collections[section.settings.collection].products %}
 			<div class="col-xs-12 col-sm-6 col-md-4">
 				<div class="product-image">
-					<img src="{{ product | img_url: 'master' }}">
+					<a href="/products/{{product.handle}}"> <img src="{{ product | img_url: 'master' }}"></a>
 				</div>
 				<div class="product-text"> 
 					<span class="title">{{product.title}}</span>
