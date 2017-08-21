@@ -19,11 +19,15 @@
 .product-text .title {
 	font-size: 18px;
 	font-weight:bold;
+	margin-right:70px;
+	display: inline-block;
 }
 .product-text .price {
 	font-size: 15px;
 }
-
+.variant-color {
+	display: inline-block;
+}
 @media screen and (max-width:768px) {
 	.product-image {
 		height:65vh;
