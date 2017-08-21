@@ -21,22 +21,40 @@
 }
 {% endschema %}
 
+{% include 'color-variables' %}
+
 <div class="container">
 	<div class="product row">
 		{% for product in collections[section.settings.collection].products %}
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<div class="product-image">
-					<a href="/products/{{product.handle}}"> <img src="{{ product | img_url: 'master' }}"></a>
-				</div>
-				<div class="product-text"> 
-					<span class="title">{{product.title}}</span>
-					{% if product.variants.size > 1 %}
+				<a class="product-link" href="/products/{{product.handle}}">
+					<div class="product-image">
+						 <img src="{{ product | img_url: 'master' }}">
+					</div>
+					<div class="product-text col-md-8"> 
+						<span class="title">{{product.title}}</span>
+						<span class="price">${{product.price | remove_first: '00'}}</span>
+					</div>
+				</a>
+				{% if product.variants.size > 1 %}
+					<div class="variant-color-wrap col-md-4">
 						{% for variant in product.variants %}
-							<div class="variant-color"><a href="{{variant.url}}"><img src="http://via.placeholder.com/20x20"></a></div>
+							<div class="variant-color">
+								<a href="{{variant.url}}">
+									{% if variant.option1 == 'Ash' %}
+										<svg height="24" width="24">
+  											<circle cx="12" cy="12" r="12" fill="{{ash}}" /> 
+										</svg> 
+									{% elsif variant.option1 == 'Walnut' %}
+										<svg height="24" width="24"> 
+											<circle cx="12" cy="12" r="12" fill="{{walnut}}" /> 
+										</svg> 
+									{% endif %}
+								</a>
+							</div>
 						{% endfor %}
-					{% endif %}
-					<span class="price">${{product.price | remove_first: '00'}}</span>
-				</div>
+					</div>
+				{% endif %}
 			</div>
 		{% endfor %}
 	</div>

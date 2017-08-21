@@ -1,3 +1,12 @@
+.product-link,
+.product-link:hover,
+.product-link:visited,
+.product-link:focus,
+.product-link:active {
+	color:black;
+	text-decoration: none;
+}
+
 .product-image {
 	height:70vh;
 	display:flex;
@@ -19,14 +28,18 @@
 .product-text .title {
 	font-size: 18px;
 	font-weight:bold;
-	margin-right:70px;
 	display: inline-block;
 }
 .product-text .price {
 	font-size: 15px;
 }
+.variant-color-wrap {
+	display: flex;
+	justify-content: space-around;
+	margin-top:15px;
+} 
 .variant-color {
-	display: inline-block;
+	
 }
 @media screen and (max-width:768px) {
 	.product-image {
