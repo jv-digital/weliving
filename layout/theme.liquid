@@ -13,8 +13,10 @@
 		{{'extra-description-homepage.css'|asset_url|stylesheet_tag}}
 		{{'collection-template.css' | asset_url |stylesheet_tag}}
 		{{'carousel.css'|asset_url|stylesheet_tag}}
+		{{'product-template.css' | asset_url | stylesheet_tag}}
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		{{'bootstrap.min.js'| asset_url | script_tag}}
+		{{'jquery.bcSwipe.min.js'|asset_url|script_tag}}
 		
 		{{content_for_header}}	
 	</head>
@@ -22,6 +24,9 @@
 		{% section 'header' %}
 		{{content_for_layout}}
 		{% section 'footer'%}
+		<script>
+			$('.carousel').bcSwipe({ threshold: 50 });
+		</script>
 	</body>
 </html>
 
