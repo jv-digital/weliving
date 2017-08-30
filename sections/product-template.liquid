@@ -90,7 +90,7 @@
 			</div>
 			<div class="addtocart-button-mobile nopadding col-xs-12">
 				<!-- cart button details go here -->
-				<form action="/cart/add" method="post">
+				<form id="AddToCartForm" action="/cart/add" method="post">
 					{% if product.has_only_default_variant %}
 						{% assign variant = product.variants.first %}
 						<input type="hidden" name="id" value="{{variant.id}}">
@@ -124,7 +124,7 @@
 				<span>{{product.description}}</span>
 			</div>
 			<div class="addtocart-button-desktop nopadding col-md-12">
-				<form action="/cart/add" method="post">
+				<form id="AddToCartForm" action="/cart/add" method="post">
 					{% if product.has_only_default_variant %}
 						{% assign variant = product.variants.first %}
 						<input type="hidden" name="id" value="{{variant.id}}">

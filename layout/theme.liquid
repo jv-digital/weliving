@@ -17,8 +17,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		{{'bootstrap.min.js'| asset_url | script_tag}}
 		{{'jquery.bcSwipe.min.js'|asset_url|script_tag}}
-		
-		{{content_for_header}}	
+		{{'blog-recent-and-categories-template.css' | asset_url | stylesheet_tag}}
+
+		{{content_for_header}}
 	</head>
 	<body>
 		{% section 'header' %}
@@ -27,6 +28,7 @@
 		<script>
 			$('.carousel').bcSwipe({ threshold: 50 });
 		</script>
+	
 	</body>
 </html>
 
