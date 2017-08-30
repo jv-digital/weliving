@@ -1,0 +1,162 @@
+{% schema %}
+	{
+		"name":"Blog Carousel",
+		"blocks": [
+			{
+				"type":"blog",
+				"name":"Blog Post",
+				"settings": [
+				
+					{
+						"type":"blog",
+						"id":"blog",
+						"label":"Pick a blog"
+					},
+					{
+						"type":"article",
+						"id":"article",
+						"label":"Pick an article"
+					}
+				]	
+			}
+		]
+	}
+{% endschema %}	
+
+<div class="container recent-posts">
+	<div class="mobile-posts-header col-xs-12">
+		<p> blog </p>
+	</div>
+	<div class="desktop-posts-header col-md-12">
+		<p> recent posts </p>
+	</div>
+	<div id="desktop-blog-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+		<ol class="carousel-indicators">
+			{% assign indicator_counter = section.blocks.size | modulo: 2%}
+			{% if indicator_counter > 0 %}
+				{% assign indicator_counter = section.blocks.size | divided_by: 2 | plus: 1 %}
+			{% else %}
+				{% assign indicator_counter = section.blocks.size | divided_by: 2 %}
+			{% endif %}
+			
+			{% assign indicator_number = 0 %}
+			{% for block in section.blocks %}
+				{% if forloop.first %}
+					<li class="active" data-target="#desktop-blog-carousel" data-slide-to="0"></li>
+					{% assign indicator_number = indicator_number | plus: 1 %}
+				{% else %}
+					<li data-target="#desktop-blog-carousel" data-slide-to="{{forloop.index | minus: 1}}"></li>
+					{% assign indicator_number = indicator_number | plus: 1 %}
+				{% endif %}
+				{% if forloop.index == indicator_counter %}
+					{% break %}
+				{% endif %}
+			{% endfor %}
+		</ol>
+		<div class="carousel-inner">
+			{% assign counter = 0 %}	
+			{% for block in section.blocks %}
+			{% if counter == section.blocks.size %}
+				{% break %}
+			{%endif%}
+			{% if forloop.first %}
+				<div class="item active">
+			{% else %}
+				<div class="item">
+			{%endif%}
+					{% for j in (0..1) %}
+						{% assign blog = blogs[section.blocks[counter].settings.blog] %}
+						{% assign article = articles[section.blocks[counter].settings.article] %}
+						{% assign counter = counter | plus:1 %}
+						<div class="item-image col-md-6">
+							<img src="http://via.placeholder.com/350x150">
+							<p class="item-text">
+								<span class="article-date">{{article.published_at | date: "%m-%d-%y"}} |</span>
+								<span class="blog-title"> {{blog.title}} </span>
+								<span class="article-title">{{article.title}} </span>
+								<span class="article-excerpt"> {{article.excerpt}} </span>
+								<span class="link"><a href="{{article.url}}">read more</a></span>
+							</p>
+						</div>
+						{% if counter == section.blocks.size %}
+							{% break %}
+						{%endif%}
+					{% endfor %}
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div id="mobile-blog-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+		<ol class="carousel-indicators">
+			{% for block in section.blocks %}
+				{% if forloop.first %}
+					<li data-target="#mobile-blog-carousel" data-slide-to="0" class="active"></li>
+				{% else %}
+					<li data-target="#mobile-blog-carousel" data-slide-to="{{forloop.index | minus: 1}}"></li>
+				{% endif %}
+			{% endfor %}
+		</ol>		
+		
+		<div class="carousel-inner">
+			{% for block in section.blocks %}
+				{% assign article = articles[block.settings.article] %}
+				{% assign blog = blogs[block.settings.blog] %}
+				{% if forloop.first == true %}
+					<div class="item active col-xs-12">
+						<div class="item-image col-xs-12">
+							<img src="https://via.placeholder.com/350x150">
+						</div>
+						<p class="item-text col-xs-12">
+							<span class="article-date">{{article.published_at | date: "%m-%d-%y"}} |</span>
+							<span class="blog-title"> {{blog.title}} </span>
+							<span class="article-title">{{article.title}} </span>
+							<span class="article-excerpt"> {{article.excerpt}} </span>
+							<span class="link"><a href="{{article.url}}">read more</a></span>
+						</p>
+					</div>
+				{% else %}
+					<div class="item col-xs-12">
+						<div class="item-image col-xs-12">
+							<img src="https://via.placeholder.com/350x150">
+						</div>
+						<p class="item-text col-xs-12">
+							<span class="article-date">{{article.published_at | date: "%m-%d-%y"}} |</span>
+							<span class="blog-title"> {{blog.title}} </span>
+							<span class="article-title">{{article.title}} </span>
+							<span class="article-excerpt"> {{article.excerpt}} </span>
+							<span class="link"><a href="{{article.url}}">read more</a></span>
+						</p>
+					</div>
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<div class="container categories full-width">
+	<div class="category row">
+		<div class="category-header col-xs-12">
+			<p> category </p>
+		</div>
+		<div class="category-image col-xs-12 col-md-6">
+			<img src="https://via.placeholder.com/350x150">
+			<p> east & west </p>
+		</div>
+		<div class="category-image col-xs-12 col-md-6">
+			<img src="https://via.placeholder.com/350x150">
+			<p> from tree to table </p>
+		</div>
+		<div class="category-image col-xs-12 col-md-6">
+			<img src="https://via.placeholder.com/350x150">
+			<p> events </p>
+		</div>
+		<div class="category-image col-xs-12 col-md-6">
+			<img src="https://via.placeholder.com/350x150">
+			<p> tips </p>
+		</div>
+	</div>
+</div>
+						
+
+				
+
+
