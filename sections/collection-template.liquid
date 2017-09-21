@@ -26,18 +26,18 @@
 <div class="container">
 	<div class="product row">
 		{% for product in collections[section.settings.collection].products %}
-			<div class="col-xs-12 col-sm-6 col-md-4">
+			<div class="product-wrapper col-xs-12 col-sm-6 col-md-4">
 				<a class="product-link" href="/products/{{product.handle}}">
 					<div class="product-image">
 						 <img src="{{ product | img_url: 'master' }}">
 					</div>
-					<div class="product-text nopadding col-md-8"> 
+					<div class="product-text nopadding col-xs-8 col-md-8"> 
 						<span class="title">{{product.title}}</span>
 						<span class="price">${{product.price | remove_first: '00'}}</span>
 					</div>
 				</a>
 				{% if product.variants.size > 1 %}
-					<div class="variant-color-wrap col-md-4">
+					<div class="variant-color-wrap col-xs-3 col-md-4">
 						{% for variant in product.variants %}
 							<div class="variant-color">
 								<a href="{{variant.url}}">

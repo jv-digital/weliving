@@ -1,0 +1,35 @@
+<div class="sign-in-page container">
+  <a href="/"><div class="close col-md-12">
+  </div></a>
+  <div class="sign-in-wrap">
+    {% form 'customer_login' %}
+      <div class="sign-in-header col-md-5">
+        <div class="sign-in-title"> 
+          <p>sign in</p>
+        </div>
+      {% if form.errors %}
+        <div class="sign-in-error"> 
+          <p>Password or account is not right, please try again</p>
+        </div>
+      {% endif %}
+      </div>
+      <div class="sign-in-email col-md-5">
+        <label for="email-sign-in">email*</label>
+        <input class="{% if form.errors %} error-input {% endif %}" type="email" id="email-sign-in" name="customer[email]" />
+      </div>
+      <div class="sign-in-password col-md-5">
+        <label for="password-sign-in">password*</label>
+        <input class="{% if form.errors %} error-input {% endif %}" type="password" name="customer[password]" id="password-sign-in" />
+      </div>
+      <div class="sign-in-button col-md-5">
+        <input type="submit" value="SIGN IN">
+      </div>
+    {% endform %}
+    <div class="forgot-password col-md-7">
+      <p> <a href="#recover"> Forgot your password? </a></p>
+    </div>
+    <div class="sign-up-link col-md-7">
+      <p>Don't have an account? <a href="register">Sign Up</a></p>
+    </div>
+  </div>
+</div>

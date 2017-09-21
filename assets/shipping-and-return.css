@@ -1,0 +1,42 @@
+.shipping-and-return-page .details {
+	float:none;
+	margin:0 auto;
+}
+.shipping-and-return-page .details .shipping-text {
+	margin-top:85px;
+	margin-bottom:30px;
+}
+.shipping-and-return-page .details .shipping-text .shipping-title,
+.shipping-and-return-page .details .return-text .return-title {
+	font-size:30px;
+	font-weight:bold;
+	margin-bottom:15px;
+}
+.shipping-and-return-page .details .shipping-text .shipping-details {
+	margin-bottom:15px;
+}
+.shipping-and-return-page .details .shipping-text .homegoods-title,
+.shipping-and-return-page .details .shipping-text .furniture-title {
+	font-size:16px;
+	font-weight:bold;
+}
+.shipping-and-return-page .details .return-text {
+	margin-bottom:35px;
+}
+@media screen and (max-width:992px) {
+	.shipping-and-return-page .details {
+		padding:0;
+	}
+	.shipping-and-return-page .details .shipping-text {
+		margin-top:30px;
+		margin-bottom:25px;
+	}
+	.shipping-and-return-page .details .shipping-text .shipping-title,
+	.shipping-and-return-page .details .return-text .return-title {
+		font-size:27px;
+		text-align:center;
+	}
+	.shipping-and-return-page .details .return-text {
+		margin-bottom:60px;
+	}
+}

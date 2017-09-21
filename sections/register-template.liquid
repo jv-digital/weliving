@@ -1,0 +1,40 @@
+<div class="register-page container">
+	<a href="https://weliving.myshopify.com"><div class="close col-md-12"></div></a>
+	<div class="register-wrap">
+		{% form 'create_customer' %}
+		<div class="register-header col-md-12">
+			<p>sign up</p>
+		</div>
+		<div class="email-register col-md-5">
+			<label for="email-register-input">email*</label>
+			<input {% if form.errors %} {% for field in form.errors %} {% if field == 'email' %} class="error-input" {% endif %} {% endfor %} {%endif%} type="email" id="email-register-input" name="customer[email]">
+		</div>
+		<div class="password-register col-md-5">
+			<label for="password-input-register">password*</label>
+			<input type="password" id="password-input-register" name="customer[password]">
+		</div>
+		<div class="password-confirm col-md-5">
+			<label for="password-confirm-input">confirm password*</label>
+			<input type="password" id="password-confirm-input" name="customer[password_confirmation]">
+		</div>
+		<div class="register-button col-md-12">
+			<input type="submit" value="SIGN IN">
+		</div>
+		{% endform %}
+		<div class="sign-in-link col-md-12">
+			<p>Already got an account? <a href="login"> Sign In</a></p>
+		</div>
+	</div>
+</div>
+
+<!-- <script>
+	$('form#create_customer').submit(function(e) { 
+
+	    if ( $('#password-input-register').val() === $('#password-confirm-input').val()) {
+	      //alert('Password Good!!');
+	    } else {
+	      $('.password-match').fadeIn("slow");
+	      e.preventDefault(); // stops our form from submitting
+	    }
+	});
+</script> -->

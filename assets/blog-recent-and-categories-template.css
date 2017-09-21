@@ -48,7 +48,7 @@
 	padding-top:30px;
 	padding-left:30px;
 	padding-bottom:30px;
-	background-color: #f2f2f2;
+	background-color: #F0F0F0;
 }
 #desktop-blog-carousel .carousel-inner .item .item-image .item-text .article-title {
 	font-size:23px;
@@ -80,7 +80,7 @@
 	margin-top:45px;
 }
 .categories .category {
-	background-color:#f2f2f2;
+	background-color:#F0F0F0;
 	padding-left:50px;
 	padding-right:50px;
 	margin-top:0;
@@ -135,9 +135,8 @@
 		display:initial;
 	}
 	.recent-posts #mobile-blog-carousel .carousel-indicators {
-		margin-bottom:0;
-		bottom:-25px;
-		position:absolute;
+		margin:0 auto;
+		position:initial;
 	}
 	.recent-posts #mobile-blog-carousel .carousel-inner .item {
 		padding:0;
@@ -153,7 +152,7 @@
 		height:auto;
 	}
 	.recent-posts #mobile-blog-carousel .carousel-inner .item .item-text {
-		background-color: #f2f2f2;
+		background-color: #F0F0F0;
 		padding:20px;
 	}
 	.recent-posts #mobile-blog-carousel .carousel-inner .item .item-text span {
@@ -178,6 +177,7 @@
 	}
 	.categories {
 		padding:0;
+		margin-top:35px;
 	}
 	.categories .category {
 		padding:0;

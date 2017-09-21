@@ -69,7 +69,7 @@
 						{% assign article = articles[section.blocks[counter].settings.article] %}
 						{% assign counter = counter | plus:1 %}
 						<div class="item-image col-md-6">
-							<img src="http://via.placeholder.com/350x150">
+							<img src="{{article.image | img_url:'master'}}">
 							<p class="item-text">
 								<span class="article-date">{{article.published_at | date: "%m-%d-%y"}} |</span>
 								<span class="blog-title"> {{blog.title}} </span>
@@ -87,16 +87,7 @@
 		</div>
 	</div>
 	<div id="mobile-blog-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
-		<ol class="carousel-indicators">
-			{% for block in section.blocks %}
-				{% if forloop.first %}
-					<li data-target="#mobile-blog-carousel" data-slide-to="0" class="active"></li>
-				{% else %}
-					<li data-target="#mobile-blog-carousel" data-slide-to="{{forloop.index | minus: 1}}"></li>
-				{% endif %}
-			{% endfor %}
-		</ol>		
-		
+				
 		<div class="carousel-inner">
 			{% for block in section.blocks %}
 				{% assign article = articles[block.settings.article] %}
@@ -130,6 +121,15 @@
 				{% endif %}
 			{% endfor %}
 		</div>
+		<ol class="carousel-indicators">
+			{% for block in section.blocks %}
+				{% if forloop.first %}
+					<li data-target="#mobile-blog-carousel" data-slide-to="0" class="active"></li>
+				{% else %}
+					<li data-target="#mobile-blog-carousel" data-slide-to="{{forloop.index | minus: 1}}"></li>
+				{% endif %}
+			{% endfor %}
+		</ol>
 	</div>
 </div>
 <div class="container categories full-width">
@@ -137,22 +137,22 @@
 		<div class="category-header col-xs-12">
 			<p> category </p>
 		</div>
-		<div class="category-image col-xs-12 col-md-6">
-			<img src="https://via.placeholder.com/350x150">
+		<a href="west-east"><div class="category-image col-xs-12 col-md-6">
+			<img src="https://cdn.shopify.com/s/files/1/2176/2625/files/west_n_east.jpg?15529995236274571147">
 			<p> east & west </p>
-		</div>
-		<div class="category-image col-xs-12 col-md-6">
-			<img src="https://via.placeholder.com/350x150">
+		</div></a>
+		<a href="from-tree-to-table"><div class="category-image col-xs-12 col-md-6">
+			<img src="https://cdn.shopify.com/s/files/1/2176/2625/files/FromTreetoTable.jpg?15529995236274571147">
 			<p> from tree to table </p>
-		</div>
-		<div class="category-image col-xs-12 col-md-6">
-			<img src="https://via.placeholder.com/350x150">
+		</div></a>
+		<a href="events"><div class="category-image col-xs-12 col-md-6">
+			<img src="https://cdn.shopify.com/s/files/1/2176/2625/files/Events.jpg?15529995236274571147">
 			<p> events </p>
-		</div>
-		<div class="category-image col-xs-12 col-md-6">
-			<img src="https://via.placeholder.com/350x150">
+		</div></a>
+		<a href="tips"><div class="category-image col-xs-12 col-md-6">
+			<img src="https://cdn.shopify.com/s/files/1/2176/2625/files/Tips.jpg?15529995236274571147">
 			<p> tips </p>
-		</div>
+		</div></a>
 	</div>
 </div>
 						

@@ -1,0 +1,46 @@
+#shopify-section-1505789937249 {
+	
+}
+.homepage-full-image .full-image-mobile {
+	display:none;
+}
+.homepage-full-image {
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+	z-index:-10;
+	top:0;
+}
+.homepage-full-image .full-image {
+	padding:0;
+	position:relative;
+}
+.homepage-full-image .full-image img {
+	width:100%;
+}
+.homepage-full-image .full-image .full-image-description {
+	left:0;
+	right:0;
+	margin:0 auto;
+	padding-left:40px;
+	padding-right:40px;
+	position:absolute;
+	text-align:center;
+	bottom:40%;
+	font-size:20px;
+	text-transform:uppercase;
+	color:white;
+}
+@media screen and (max-width:992px) {
+	.homepage-full-image .full-image {
+		display:none;
+	}
+	.homepage-full-image .full-image-mobile {
+		display:initial;
+		padding:0;
+	}
+	.homepage-full-image .full-image-mobile img {
+		width:100%;
+	}
+}

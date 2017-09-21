@@ -1,0 +1,19 @@
+.terms-conditions-page .terms-text {
+	float:none;
+	margin:0 auto;
+	margin-top:40px;
+}
+.terms-conditions-page .terms-text .page-title {
+	font-weight:bold;
+	font-size:25px;
+	text-transform:uppercase;
+}
+@media screen and (max-width:992px){
+	.terms-conditions-page .terms-text .page-title{
+		text-align:center;
+		margin-bottom:35px;
+	}	
+	.terms-conditions-page .terms-text {
+		margin-top:35px;
+	}
+}

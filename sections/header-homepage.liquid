@@ -1,0 +1,56 @@
+<div class="alt-header nopadding container">
+	<div class="alt-mobile-menu-wrapper col-xs-3">
+		<div class="alt-mobile-menu-dropdown" id="alt-menu-trigger">
+			<p>menu</p>
+		</div>
+	</div>
+	<div class="dropdown-links" id="dropdown">
+		<img class="dropdown-image" src="https://cdn.shopify.com/s/files/1/2176/2625/files/weliving_logo.png?11859824361046747801">
+		<ul class="submenu">
+			<li><a href="#">shop</a></li>
+			<li><a href="#">about</a></li>
+			<li><a href="#">blog</a></li>
+			<li><a href="#">lookbook</a></li>
+			<li><a href="#">need help</a></li>
+			<li><a href="#">sign in</a></li>
+		</ul>
+	</div>
+	<div class="alt-home-icon-wrapper col-xs-6 col-md-2">
+		<div class="alt-home-icon">
+			<img src="https://cdn.shopify.com/s/files/1/2176/2625/files/weliving_logo.png?11859824361046747801">
+		</div>
+	</div>
+	<div class="alt-navigation-links-wrapper col-md-8">
+		<ul class="alt-navigation">
+			<li class="shop-link"><a href="/collections/products">shop</a></li>
+			<li class="about-link"><a href="/pages/about?view=about">about</a></li>
+			<li class="blog-link"><a href="/blogs/posts?view=recent-and-categories">blog</a></li>
+			<li class="lookbook-link"><a href="#">lookbook</a></li>
+			<li class="alt-help-dropdown">
+		        <div class="alt-dropdown-link">
+		          <p class="alt-dropdown-text">need help</p>
+		        </div>
+		        <div class="alt-dropdown-content">
+		          <a href="#">shipping & return</a>
+		          <a href="#">faq</a>
+		          <a href="#">contact</a>
+		        </div>
+		    </li>
+		</ul>
+	</div>
+	<div class="alt-sign-in-checkout-wrapper col-xs-3 col-md-2">
+		<div class="alt-sign-in">
+			<p><a href="/account/login">sign in</a></p>
+		</div>
+		<div class="alt-checkout-img">
+			<img src="https://via.placeholder.com/30x30">
+		</div>
+	</div>
+</div>
+<script>
+	$(document).ready(function() {
+		$(".alt-mobile-menu-dropdown").click(function() {
+			$(".dropdown-links").slideDown(500);
+		});
+	});
+</script>

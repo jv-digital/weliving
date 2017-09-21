@@ -1,0 +1,74 @@
+{% schema %}
+	{
+		"name": "Shipping and Return Page",
+		"settings": [
+			{
+				"type":"text",
+				"id": "shipping_title",
+				"label":"Shipping Title",
+				"default":"SHIPPING"
+			},
+			{
+				"type":"text",
+				"id":"shipping_details",
+				"label":"Shipping Details"
+			},
+			{
+				"type":"text",
+				"id":"shipping_section_home_goods",
+				"label":"Home Goods Title",
+				"default":"HOME GOODS"
+			},
+			{
+				"type":"text",
+				"id":"home_goods_details",
+				"label":"Shipping Details for Home Goods",
+				"default":"Freeshipping"
+			},
+			{
+				"type":"text",
+				"id":"shipping_section_furniture",
+				"label":"Furniture Title",
+				"default":"FURNITURE"
+			},
+			{
+				"type":"text",
+				"id":"furniture_details",
+				"label":"Shipping Details for Furniture",
+				"default":"10% of order value"
+			},
+			{
+				"type":"text",
+				"id":"return_title",
+				"label":"Return Title",
+				"default":"RETURN"
+			},
+			{
+				"type":"text",
+				"id":"return_details",
+				"label": "Return Details"
+			}
+		]
+
+	}
+{% endschema %}
+
+<div class="shipping-and-return-page container">
+	<div class="details col-md-7">
+		<div class="shipping-text col-md-12">
+			<p class="shipping-title"> {{section.settings.shipping_title}}</p>
+			<p class="shipping-details"> {{section.settings.shipping_details}}</p>
+			<p class="homegoods-title">{{section.settings.shipping_section_home_goods}}</p>
+			<p class="homegoods-details">{{section.settings.home_goods_details}}</p>
+			<p class="furniture-title">{{section.settings.shipping_section_furniture}}</p>
+			<p class"furniture-details">{{section.settings.furniture_details}}</p>
+		</div>
+		<div class="return-text col-md-12">
+			<p class="return-title"> {{section.settings.return_title}}</p>
+			<p class="return-details">{{section.settings.return_details}}</p>
+		</div>
+	</div>
+</div>
+
+
+

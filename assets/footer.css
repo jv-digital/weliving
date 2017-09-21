@@ -3,7 +3,7 @@
    margin:0;
    padding:0;
 }
-@media screen and (min-width:601px) {
+@media screen and (min-width:993px) {
   .footer {
     margin-top:10px;
     margin-bottom:15px;
@@ -47,7 +47,7 @@
   .angled-border::after {
     float: right;
     content: '';
-    border-top: 50px solid white;
+    border-top: 50px solid #E4E0DD;
     border-left: 27px solid transparent;
     margin-top: -1px;
     margin-right: -27.5px;
@@ -89,7 +89,7 @@
     right:0px;
     float: right;
     content: '';
-    border-top: 7px solid white;
+    border-top: 7px solid #E4E0DD;
     border-left: 3px solid transparent;
   }
   .footer-links ul li:nth-child(2) {
@@ -110,7 +110,7 @@
     right:0px;
     float: right;
     content: '';
-    border-top: 7px solid white;
+    border-top: 7px solid #E4E0DD;
     border-left: 3px solid transparent;
   }
   .footer-links ul li:nth-child(3) {
@@ -131,7 +131,7 @@
     right:0px;
     float: right;
     content: '';
-    border-top: 7px solid white;
+    border-top: 7px solid #E4E0DD;
     border-left: 3px solid transparent;
   }
   .footer-links ul li:nth-child(4) {
@@ -152,7 +152,7 @@
     right:0px;
     float: right;
     content: '';
-    border-top: 7px solid white;
+    border-top: 7px solid #E4E0DD;
     border-left: 3px solid transparent;
   }
   .footer-links ul li a {
@@ -184,7 +184,7 @@
  
 }
   
-@media screen and (max-width:600px) {
+@media screen and (max-width:992px) {
   .angled-border::before {
     float: right;
     content:'';
@@ -194,7 +194,7 @@
   .angled-border::after {
     float: right;
     content: '';
-    border-top: 35px solid white;
+    border-top: 35px solid #E4E0DD;
     border-left: 35px solid transparent;
     margin-top: -1px;
     margin-right: -36px;
@@ -223,6 +223,7 @@
     border-color:black;
     padding-bottom:4px;
     width: 90%;
+    background-color:transparent;
   }
   .email-input img {
     position: relative;

@@ -8,7 +8,6 @@
 }
 
 .product-image {
-	height:70vh;
 	display:flex;
 	align-items:center;
 	justify-content:center;
@@ -42,8 +41,11 @@
 	
 }
 @media screen and (max-width:768px) {
+	.product-wrapper {
+		padding-left:5px;
+		padding-right:5px;
+	}
 	.product-image {
-		height:65vh;
 	}	
 	.product-text {
 		margin-top:8px;
@@ -57,6 +59,9 @@
 	}
 	.product-text .price {
 		font-size:16px;
-
+	}
+	.variant-color-wrap {
+		padding:0;
+		margin-left:15px;
 	}
 }

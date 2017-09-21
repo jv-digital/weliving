@@ -1,0 +1,131 @@
+.about-page {
+	margin:0;
+	padding:0;
+	width:100%;
+}
+
+.about-page .first-hero {
+	position:relative;
+	margin-bottom:110px;
+}
+.about-page .about-header {
+	text-align:center;
+	margin-top:70px;
+}
+.about-page .about-header p {
+	font-size:40px;
+	font-weight:bold;
+	margin:0;
+	text-transform:uppercase;
+}
+.about-page .first-hero .first-hero-text-wrapper {
+	background-color:#f2f2f2;
+	position:absolute;
+	right:120px;
+	top:360px;
+	z-index:1;
+	padding:50px
+}
+.about-page .first-hero .first-hero-content-wrapper .first-hero-text-wrapper .text {
+	font-size:16px;
+}
+.about-page .first-hero .first-hero-text-wrapper .title {
+	font-size:30px;
+	font-weight:bold;
+	text-transform:uppercase;
+	margin-bottom:20px;
+}
+.about-page .first-hero .first-hero-content-wrapper img {
+	width:100%;
+}
+.about-page .second-hero {
+	position:relative;
+	margin-bottom:320px;
+}
+.about-page .second-hero .second-hero-content-wrapper img {
+	width:100%;
+}
+.about-page .second-hero .second-hero-content-wrapper .second-hero-text-wrapper {
+	background-color:#f2f2f2;
+	position:absolute;
+	z-index:1;
+	padding:50px;
+	left:90px;
+	top:340px;
+}
+.about-page .second-hero .second-hero-content-wrapper .second-hero-text-wrapper .title {
+	font-size:30px;
+	font-weight:bold;
+	text-transform:uppercase;
+	margin-bottom:20px;
+}
+.about-page .second-hero .second-hero-content-wrapper .second-hero-text-wrapper .text {
+	font-size:16px;
+}
+.about-page .third-hero {
+	position:relative;
+	margin-bottom:650px;
+}
+.about-page .third-hero .third-hero-content-wrapper img {
+	width:100%;
+}
+.about-page .third-hero .third-hero-text-wrapper {
+	background-color:#f2f2f2;
+	padding:50px;
+	position:absolute;
+	right:125px;
+	top:340px;
+}
+.about-page .third-hero .third-hero-text-wrapper .title {
+	font-size:30px;
+	font-weight:bold;
+	text-transform:uppercase;
+	margin-bottom:20px;
+}
+.about-page .third-hero .third-hero-content-wrapper .third-hero-text-wrapper .text {
+	font-size:16px;
+}
+.about-page .third-hero .third-hero-text-wrapper p {
+
+}
+@media screen and (max-width:992px) {
+	.about-page .about-header {
+		margin-top:35px;
+		font-size:35px;
+	}
+	.about-page .first-hero {
+		margin-bottom:280px;
+	}
+	.about-page .first-hero .first-hero-content-wrapper .first-hero-text-wrapper {
+		position:absolute;
+		right:0;
+		left:0;
+		bottom:auto;
+		top:50%;
+		float:none;
+		margin:0 auto;
+		padding:35px 25px 25px 35px;
+	}
+	.about-page .second-hero .second-hero-content-wrapper .second-hero-text-wrapper{
+		top:50%;
+		right:0;
+		left:0;
+		bottom:auto;
+		margin:0 auto;
+		padding:35px 25px 25px 35px;
+	}
+	.about-page .second-hero {
+		margin-bottom:220px;
+	}
+	.about-page .third-hero {
+		margin-bottom:490px;
+	}
+	.about-page .third-hero .third-hero-content-wrapper .third-hero-text-wrapper{
+		top:50%;
+		right:0;
+		left:0;
+		bottom:auto;
+		margin:0 auto;
+		padding:35px 25px 25px 35px;
+	}
+}
