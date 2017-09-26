@@ -15,7 +15,12 @@
 		{
 			"type": "image_picker",
 			"id": "image",
-			"label": "Image"
+			"label": "Image for desktop"
+		},
+		{
+			"type":"image_picker",
+			"id":"image_mobile",
+			"label":"Image for mobile"
 		}
 	],
 	"presets": [
@@ -40,7 +45,9 @@
 				<span>{{section.settings.description}}</span>
 			</p>
 		</div>
-		<div class="about-image col-md-6 col-xs-12" style="background-image:url({{ section.settings.image | img_url: 'master'}})">
+		<div class="about-image col-md-6 col-xs-12">
+			<img class="desktop-image" src="{{section.settings.image | img_url:'master'}}">
+			<img class="mobile-image" src="{{section.settings.image_mobile | img_url:'master'}}">
 		</div>
 	</div>
 </div>

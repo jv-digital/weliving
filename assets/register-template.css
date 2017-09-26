@@ -69,6 +69,7 @@
 	border-right:0;
 	border-bottom:1px solid black;
 	padding-top:10px;
+	background-color:transparent;
 }
 .register-page .register-wrap .sign-in-link {
 	text-align:center;

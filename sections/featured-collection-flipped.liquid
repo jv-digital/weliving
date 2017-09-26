@@ -5,7 +5,12 @@
 			{
 				"type": "image_picker",
 				"id": "image",
-				"label":"image"
+				"label":"Image for desktop"
+			},
+			{
+				"type":"image_picker",
+				"id":"image_mobile",
+				"label":"Image for mobile"
 			},
 			{
 				"type": "text",
@@ -40,21 +45,23 @@
 
 
 <div class="featured-collection-2 container">
-	<div class="row">
-		<div class="img-wrapper-2 col-xs-12 col-md-8 col-md-push-4" style="background-image:url({{ section.settings.image | img_url: 'master' }})"></div>	
-		<div class="content-2 col-xs-12 col-md-4 col-md-pull-8">
-  				<div class="text-button-2 col-md-11">
-  					<p class="text-2">
-  						<span class="title-2"><b>{{section.settings.title}}</b></span>
-  						<span>{{ section.settings.description }}</span>
-  					</p>
-  					<div class="button-2">
-  						<button class="button-3">{{ section.settings.button_label }}</button>
-  					</div>
-  				</div>	
-           <div class="angle-2 hidden-xs hidden-sm"></div>
+	<div class="featured-content row">
+		<div class="img-wrapper-2 col-xs-12 col-md-7 col-md-push-5">
+			<img class="desktop-image" src="{{section.settings.image | img_url:'master'}}">
+			<img class="mobile-image" src="{{section.settings.image_mobile |img_url:'master'}}">
+		</div>	
+		<div class="content-2 col-xs-12 col-md-5 col-md-pull-7">
+			<div class="text-button-2 col-md-11">
+				<p class="text-2">
+					<span class="title-2"><b>{{section.settings.title}}</b></span>
+					<span>{{ section.settings.description }}</span>
+				</p>
+				<div class="button-2">
+					<button class="button-3">{{ section.settings.button_label }}</button>
+				</div>
+			</div>	
+   			<div class="angle-2 hidden-xs hidden-sm"></div>
     	</div>
-  			
 	</div>
 </div>
 

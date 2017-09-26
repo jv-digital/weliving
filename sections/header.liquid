@@ -14,7 +14,7 @@
       <li class="shop-link"><a href="/collections/products">shop</a>{% if template == 'collection' or template =='product' %}<div class="selected-shop"></div>{% endif %}</li>
       <li class="about-link"><a href="/pages/about?view=about">about</a>{% if template == 'page.about' %}<div class="selected-about"></div>{%endif%}</li>
       <li class="blog-link"><a href="/blogs/posts?view=recent-and-categories">blog</a>{% if template == 'blog.recent-and-categories' or template == 'blog' or template =='article'%} <div class="selected-blog"></div>{% endif %}</li>
-      <li class="lookbook-link"><a class="realign" href="#">lookbook</a></li>
+      <li class="lookbook-link"><a href="/pages/lookbook?view=lookbook">lookbook</a>{% if template == 'page.lookbook' %} <div class="selected-lookbook"></div> {% endif %}</li>
       <li class="help-dropdown">
         <div class="dropdown-link">
           <p class="dropdown-text">need help</p>

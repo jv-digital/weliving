@@ -11,8 +11,15 @@
 			<li><a href="#">about</a></li>
 			<li><a href="#">blog</a></li>
 			<li><a href="#">lookbook</a></li>
-			<li><a href="#">need help</a></li>
-			<li><a href="#">sign in</a></li>
+			<li class="sub-dropdown">
+				<a href="#">need help</a>
+				<ul class="sub-menu">
+					<li><a href="#">shipping & return</a><li>
+					<li><a href="#">faq</a></li>
+					<li><a href="#">contact</a></li>
+				</ul>
+			</li>
+			<li class="sub-menu"><a href="#">sign in</a></li>
 		</ul>
 	</div>
 	<div class="alt-home-icon-wrapper col-xs-6 col-md-2">
@@ -25,7 +32,7 @@
 			<li class="shop-link"><a href="/collections/products">shop</a></li>
 			<li class="about-link"><a href="/pages/about?view=about">about</a></li>
 			<li class="blog-link"><a href="/blogs/posts?view=recent-and-categories">blog</a></li>
-			<li class="lookbook-link"><a href="#">lookbook</a></li>
+			<li class="lookbook-link"><a href="/pages/lookbook?view=lookbook">lookbook</a></li>
 			<li class="alt-help-dropdown">
 		        <div class="alt-dropdown-link">
 		          <p class="alt-dropdown-text">need help</p>
@@ -52,5 +59,8 @@
 		$(".alt-mobile-menu-dropdown").click(function() {
 			$(".dropdown-links").slideDown(500);
 		});
+		$(".sub-menu").click(function() {
+			$(".")
+		})
 	});
 </script>

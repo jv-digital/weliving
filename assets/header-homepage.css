@@ -5,6 +5,7 @@
 	left:0;
 	right:0;
 }
+
 .alt-header .alt-mobile-menu-wrapper {
 	display:none;
 }
@@ -113,6 +114,7 @@
 	.alt-header .alt-mobile-menu-wrapper {
 		display:initial;
 		padding-left:20px;
+		cursor:pointer;
 	}
 	.alt-mobile-menu-wrapper .alt-mobile-menu-dropdown p {
 		color:white;
@@ -122,6 +124,7 @@
 	.alt-header .dropdown-links {
 		position:absolute;
 		width:100%;
+		left:0;
 		top:0;
 		background-color:#E4E0DD;
 		z-index:10;
@@ -149,6 +152,9 @@
 		text-transform:uppercase;
 		color:black;
 		font-size:15px;
+	}
+	.alt-header .dropdown-links .submenu .sub-dropdown .sub-menu {
+		display:none;
 	}
 	.alt-header .alt-home-icon-wrapper {
 		text-align:center;

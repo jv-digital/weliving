@@ -29,7 +29,8 @@ body {
   left:-14px;
 }
 .selected-lookbook {
-
+  width:90px;
+  left:-5px;
 }
 .selected-help {
   bottom:-1px;
