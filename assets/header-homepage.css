@@ -44,6 +44,7 @@
 .alt-header .alt-navigation-links-wrapper .alt-navigation li a {
 	text-transform:uppercase;
 	color:white;
+	font-family:apercubold;
 }
 .alt-header .alt-sign-in-checkout-wrapper {
 	vertical-align:bottom;
