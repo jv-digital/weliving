@@ -42,7 +42,8 @@
 		<div class="mobile-title col-xs-12 hidden-md hidden-lg">
 				<p><b>{{section.settings.title}}</b></p>
 		</div>
-		<div class="blog-image vertical-align col-xs-12" style="background-image:url({{section.settings.image | img_url: 'master'}})">
+		<div class="blog-image vertical-align col-xs-12">
+			<img src="{{section.settings.image | img_url:'master'}}">
 			<div class="desktop-title col-md-11 hidden-sm hidden-xs"> 
 				<p><b>{{section.settings.title}}</b></p>
 			</div>

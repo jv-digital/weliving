@@ -6,7 +6,16 @@
 	color:black;
 	text-decoration: none;
 }
-
+.product {
+	margin:0;
+	padding-left:15px;
+	padding-right:15px;
+}
+.collection-page {
+	padding-left:0;
+	padding-right:0;
+	margin-top:50px;
+}
 .product-image {
 	display:flex;
 	align-items:center;
@@ -26,11 +35,15 @@
 }
 .product-text .title {
 	font-size: 18px;
-	font-weight:bold;
+	font-family:oswaldmedium;
+	text-transform:uppercase;
+	letter-spacing:1px;
 	display: inline-block;
 }
 .product-text .price {
-	font-size: 15px;
+	font-size: 14px;
+	font-family:apercubold;
+	letter-spacing:1px;
 }
 .variant-color-wrap {
 	display: flex;
@@ -40,10 +53,21 @@
 .variant-color {
 	
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:992px) {
+	.collection-page {
+		margin-top:0px;
+	}
+	.collection-page .product {
+		margin-top:10px;
+		margin-left:0px;
+		margin-right:0px;
+		padding-left:0;
+		padding-right:0;
+	}
+
 	.product-wrapper {
-		padding-left:5px;
-		padding-right:5px;
+		padding-left:10px;
+		padding-right:11px;
 	}
 	.product-image {
 	}	

@@ -38,8 +38,10 @@ body {
   width:90px;
   left:-5px;
 }
-.header {
-  margin-top:15px;
+#shopify-section-header .header {
+  padding-left:0;
+  padding-right:0;
+  padding-top:15px;
   display:flex;
   align-items:flex-end;
 }
@@ -75,6 +77,8 @@ body {
 .header .navigation-links-wrapper .navigation li a {
   text-transform:uppercase;
   color:black;
+  font-family:apercumedium;
+  letter-spacing:1px;
 }
 
 .header .sign-in-checkout-wrapper {
@@ -94,6 +98,12 @@ body {
   margin-bottom:0;
   text-transform:uppercase;
 }
+.header .sign-in-checkout-wrapper .sign-in p  a{
+  font-family:apercumedium;
+  letter-spacing:1px;
+  text-decoration:none;
+  color:black;
+}
 .header .sign-in-checkout-wrapper .checkout-img {
   display:inline-block;
   padding-left:40px;
@@ -108,6 +118,8 @@ body {
 .help-dropdown .dropdown-link .dropdown-text {
   margin-bottom:0;
   text-transform:uppercase;
+  font-family:apercumedium;
+  letter-spacing:1px;
 }
 .help-dropdown .dropdown-content {
   position:absolute;
@@ -151,9 +163,7 @@ body {
   .header .home-icon-wrapper {
     text-align:center;
   }
-  .header .sign-in-checkout-wrapper {
 
-  }
   .header .sign-in-checkout-wrapper .checkout-img {
     margin-bottom:0;
     padding-left:0;

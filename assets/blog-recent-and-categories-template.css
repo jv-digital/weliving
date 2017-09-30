@@ -52,19 +52,21 @@
 	padding-bottom:20px;
 	margin-bottom:0;
 	background-color: #F0F0F0;
+	height:230px;
+	text-overflow: ellipsis;
 }
 #desktop-blog-carousel .carousel-inner .item .item-image .item-text .article-title {
-	font-size:23px;
-	font-weight:bold;
+	font-size:25px;
 	margin-bottom:18px;
 	text-transform:uppercase;
 	font-family:oswaldmedium;
 	letter-spacing:1px;
 }
 #desktop-blog-carousel .carousel-inner .item .item-image .item-text .article-excerpt {
-	font-size:15px;
+	font-size:18px;
 	margin-bottom:0px;
-	font-family:apercubold;
+	font-family:apercumedium;
+	letter-spacing:1px;
 }
 #desktop-blog-carousel .carousel-inner .item .item-image .article-link a {
 	text-transform: uppercase;
@@ -94,7 +96,7 @@
 	padding-left:50px;
 	padding-right:50px;
 	margin-top:0;
-	padding-bottom:40px;
+	padding-bottom:20px;
 }
 .categories .category .category-header {
 	text-align:center;
@@ -103,16 +105,21 @@
 
 .categories .category .category-header p {
 	margin-top:40px;
-	font-size:35px;
+	font-size:45px;
 	text-transform:uppercase;
-	font-weight:bold;
+	font-family:oswaldmedium;
+	letter-spacing:3px;
+}
+.categories .category a {
+	color:black;
 }
 .categories .category .category-image {
-	margin-bottom:20px;
+	margin-bottom:40px;
 }
 .categories .category .category-image p {
-	font-size:21px;
-	font-weight: bold;
+	font-size:27px;
+	font-family:oswaldmedium;
+	letter-spacing:3px;
 	text-transform: uppercase;
 	padding-top:10px;
 }
@@ -192,12 +199,22 @@
 	.categories .category {
 		padding:0;
 		margin-bottom:40px;
+		margin-left:0;
+		margin-right:0;
 	}
 	.categories .category .category-header p {
 		font-size:28px;
 	}
+	.categories .category .category-image {
+		padding-left:10px;
+		padding-right:10px;
+		margin-bottom:20px;
+	}
 	.categories .category .category-image p {
-		font-size:18px;
+		font-size:20px;
 		padding-left:25px;
+		margin-bottom:0px;
+		padding-top:20px;
+		letter-spacing:1px;
 	}
 }

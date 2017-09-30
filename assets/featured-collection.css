@@ -6,7 +6,7 @@
   display:flex;
   align-items:center;
 }
-.row {
+.featured-collection-1-row {
   margin-top:50px;
   margin-left:5px;
   margin-right:5px;
@@ -34,6 +34,7 @@
 }
 
 .text-button {
+  padding-top:45px;
   margin-top:50px;
   margin-left:30px;
   z-index:0;
@@ -42,22 +43,26 @@
 
 .content .text-button .text .title {
   line-height:43px;
-  font-size:35px;
+  font-size:40px;
   margin-bottom:40px;
+  font-family:oswaldregular;
+  letter-spacing:2px;
   text-transform: uppercase;
 }
 .content span {
     display:block;
-    font-size:20px;
-    line-height:27px;
+    font-size:25px;
+    font-family:apercumedium;
+    line-height:30px;
+    letter-spacing:2px;
 }
 .button-1 {
   margin-top:40px;
   padding:7px 55px 7px 55px;
   background: none;
   outline: none;
-  border: 2px solid black
-
+  border: 2px solid black;
+  font-family: apercumedium;
 }
 .angle {
     margin-left:-80px;
@@ -81,7 +86,7 @@
     padding-left:20px;
     padding-right:20px;
   }
-  .row {
+  .featured-collection-1-row {
     margin-top:15px;
     margin-right:-7px;
     margin-left:-7px;

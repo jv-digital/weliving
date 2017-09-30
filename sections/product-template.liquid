@@ -124,7 +124,7 @@
 				<span>{{product.description}}</span>
 			</div>
 			<div class="addtocart-button-desktop nopadding col-md-12">
-				<form id="AddToCartForm" action="/cart/add" method="post">
+				<form id="AddToCartForm" action="/cart/add" method="post" data-cart-submit>
 					{% if product.has_only_default_variant %}
 						{% assign variant = product.variants.first %}
 						<input type="hidden" name="id" value="{{variant.id}}">
@@ -197,3 +197,14 @@
 		</div>
 	</div>
 </div>
+<script>
+	$(document).on('cart.requestComplete', function(event, cart) {
+		$('.cart-drawer').animate({width:'toggle'},200);
+	});
+	$(document).ready(function() {
+		$('.close').click(function() { 
+			$('.cart-drawer').animate({width:'toggle'},100);
+		});
+	});
+</script>
+

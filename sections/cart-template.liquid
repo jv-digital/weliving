@@ -1,11 +1,20 @@
 <div class="cart-page container">
+	<div class="cart-header col-md-10">
+		<h1>shopping cart</h1>
+	</div>
+	<div class="cart-labels col-md-10">
+		<p class="item-name col-md-5">item</p>
+		<p class="item-qty col-md-2">qty</p>
+		<p class="item-price col-md-4">price</p>
+		<p class="item-remove col-md-1">edit</p>
+	</div>
 	<form action="/cart" method="post">
 		{% for line in cart.items %}
-			<div class="line-item-wrapper">
-				<div class="line-item-image col-xs-4 col-md-2">
+			<div class="line-item-wrapper col-md-10">
+				<div class="line-item-image col-xs-4 col-md-1">
 					<img src="{{line.image| img_url:'master'}}">
 				</div>
-				<div class="line-item-info col-xs-8 col-md-10">
+				<div class="line-item-info col-xs-8 col-md-11">
 					<div class="line-item-name col-xs-12 col-md-3">
 						<p>{{line.title}}</p>
 					</div>
@@ -23,8 +32,23 @@
 				</div>
 			</div>
 		{% endfor %}
-		<div class="checkout-button">
-			<input type="submit" name="checkout" value="check out">
+		<div class="checkout-info col-md-10">
+			<div class="checkout-prices col-md-12">
+				<p class="block">
+					<span>subtotal</span>
+					<span>tax</span>
+					<span class="grand-total">grand total</span>
+				</p>
+				<p class="block">
+					<span class="subtotal">{{cart.total_price | money}}</span>
+					<span class="tax">???</span>
+					<span class="grand-total">???</span>
+				</p>
+			</div>
+			<div class="checkout-buttons">
+				<input type="submit" id="add-to-cart" value="add to cart">
+				<input type="submit" id="checkout" name="checkout" value="check out">
+			</div>
 		</div>
 	</form>
 </div>

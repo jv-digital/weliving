@@ -1,23 +1,31 @@
 .blog-homepage {
 	padding-left:70px;
 	padding-right:70px;
+	margin-top:70px;
+	margin-bottom:90px;
 }
 .row .blog-image {
-	background-size: cover;
-	background-repeat:no-repeat;
-	background-position: center;
-	height:40vh;
+	padding:0;
+}
+.row .blog-image img {
+		width:100%;
 }
 .row .blog-image .desktop-title p {
 	margin-bottom:0px;
+	color:white;
+	text-transform:uppercase;
 }
 .row .blog-image .desktop-title {
-	font-size:35px;
+	font-size:40px;
+	font-family:oswaldregular;
+	letter-spacing:2px;
 	margin-left:25px;
 	margin-bottom:0px;
+	position:absolute;
+	padding-left:25px;
 }
 .row .article-background {
-	height:40vh;
+
 	background-color: #F0F0F0;
 }
 .row .article-background .article-info {
@@ -28,20 +36,29 @@
 	display: inline-block !important;
 	margin-top:27px;
 	font-size:14px;
+	font-family:oswaldmedium;
 }
 .row .article-background .article-info .text .article-title {
 	margin-top:8px;
-	font-size:22px;
-	font-weight: 500;
+	font-size:25px;
+	font-family:oswaldmedium;
+	letter-spacing:1px;
+
 }
 .row .article-background .article-info .text .article-excerpt {
-	margin-top:25px;-
+	margin-top:25px;
 	font-size:16px;
+	font-family:apercumedium;
+	letter-spacing:1px;
 }
 .row .article-background .article-info .text .link {
 	margin-top:35px;
-	font-weight: 600;
 	text-transform: uppercase;
+	font-family:apercumedium;
+	letter-spacing:1px;
+}
+.row .article-background .article-info .text {
+	margin-bottom:20px;
 }
 .row .article-background .article-info .text a {
 	text-decoration: none;
@@ -51,12 +68,24 @@
 	display: block;
 }
 @media screen and (max-width:992px) {
+
 	.blog-homepage {
-		padding-left: 20px;
-		padding-right:20px;
+		padding-left: 15px;
+		padding-right:15px;
+		margin-top:15px;
+		margin-bottom:50px;
+	}
+	.blog-homepage .blog {
+		margin-left:0;
+		margin-right:0;
+	}
+	.blog-homepage .blog .mobile-title p {
+		font-family:oswaldregular;
+		letter-spacing:1px;
+		font-size:20px;
+		text-transform:uppercase;
 	}
 	.row .blog-image  {
-		height:42vh;
 	}
 	.row .mobile-title {
 		font-size:23px;
@@ -65,7 +94,6 @@
 		margin-bottom:19px;
 	}
 	.row .article-background {
-		height: 42vh;
 	}
 	.row .article-background .article-info {
 		margin-left:0;

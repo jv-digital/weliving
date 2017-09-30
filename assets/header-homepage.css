@@ -44,7 +44,8 @@
 .alt-header .alt-navigation-links-wrapper .alt-navigation li a {
 	text-transform:uppercase;
 	color:white;
-	font-family:apercubold;
+	font-family:apercumedium;
+	letter-spacing:1px;
 }
 .alt-header .alt-sign-in-checkout-wrapper {
 	vertical-align:bottom;
@@ -65,6 +66,9 @@
 }
 .alt-header .alt-sign-in-checkout-wrapper .alt-sign-in p a {
 	color:white;
+	text-decoration: none;
+	font-family:apercumedium;
+	letter-spacing:1px;
 }
 .alt-header .alt-sign-in-checkout-wrapper .alt-checkout-img {
 	display:inline-block;
@@ -79,6 +83,8 @@
   margin-bottom:0;
   text-transform:uppercase;
   color:white;
+  font-family:apercumedium;
+  letter-spacing:1px;
 }
 .alt-help-dropdown .alt-dropdown-content {
   position:absolute;
@@ -86,13 +92,14 @@
   z-index:1;
   background-color:#f2f2f2;
   text-align:left;
-
 }
+
 .alt-header .alt-navigation-links-wrapper .alt-navigation .alt-help-dropdown .alt-dropdown-content a {
   display:block;
   padding:0px;
   white-space:nowrap;
   color:black;
+  padding-bottom:15px;
 }
 .alt-help-dropdown:hover .alt-selected-help {
   display:initial;
@@ -100,7 +107,7 @@
 .alt-help-dropdown:hover .alt-dropdown-content {
   display:block;
   margin-top:5px;
-  padding:20px 15px 20px 15px;
+  padding:20px 15px 5px 15px;
   border-left:.75px solid black;
   border-right:.75px solid black;
   border-bottom:.75px solid black;
