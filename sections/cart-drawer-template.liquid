@@ -1,28 +1,27 @@
-<div data-cart-view="data-cart-view" class="cart-drawer">
+<div data-cart-view="data-cart-view" class="cart-drawer" v-bind:class="{ 'cart-open': cartOpen }">
 	<div class="close"></div>
 	<form action="/cart" method="post">
-		{% for line in cart.items %}
-			<div class="line-item-wrapper">
-				<div class="line-item-image col-xs-4">
-					<img src="{{line.image| img_url:'master'}}">
+		<p v-if="cart.items.length == 0" class="cart-empty-text">Your cart is empty, but it doesn't have to be!</p>
+		<div class="line-item-wrapper" v-for="item in cart.items">
+			<div class="line-item-image col-xs-4">
+				<img v-bind:src="item.image">
+			</div>
+			<div class="line-item-info col-xs-8">
+				<div class="line-item-name col-xs-12">
+					<p>${item.title}</p>
 				</div>
-				<div class="line-item-info col-xs-8">
-					<div class="line-item-name col-xs-12">
-						<p>{{line.title}}</p>
+				<div class="line-item-data col-xs-12">
+					<div class="wrapper col-xs-1">
+						<div v-bind:data-cart-add="item.variant_id" class="add-arrow"></div>
+						<input class="line-quantity" type="number" min="1" size="2" name="updates[]" id="updates_{{ line.id }}" v-bind:value="item.quantity">
+						<div v-bind:data-cart-update-id="item.variant_id" v-bind:data-cart-quantity="item.quantity - 1" class="subtract-arrow"></div>
 					</div>
-					<div class="line-item-data col-xs-12">
-						<div class="wrapper col-xs-1">
-							<div onclick="add(this.id)" id="add-arrow-{{forloop.index0}}" class="add-arrow"></div>
-							<input class="line-quantity" type="number" min="1" size="2" name="updates[]" id="updates_{{ line.id }}" value="{{line.quantity}}">
-							<div onclick="subtract(this.id)" id="subtract-arrow-{{forloop.index0}}" class="subtract-arrow"></div>
-						</div>
-						<div class="line-item-price col-xs-6">
-							<p>{{line.price | money}}</p>
-						</div>
-						<button data-cart-remove-id="{{line.variant_id}}">Delete</button>
+					<div class="line-item-price col-xs-6">
+						<p>$${item.price * item.quantity / 100}</p>
 					</div>
+					<button v-bind:data-cart-remove-id="item.variant_id">Delete</button>
 				</div>
 			</div>
-		{% endfor %}
+		</div>
 	</endform>
 </div>

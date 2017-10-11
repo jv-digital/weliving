@@ -1,12 +1,11 @@
 .cart-drawer {
-	margin-top:83px;
-	width:30%;
+	width:450px;
+	right:-450px;
 	background-color:#F4F4F4;
-	position:absolute;
-	right:0;
+	position:fixed;
 	z-index:1000;
-	display:none;
 	height:110vh;
+	transition: right 0.2s linear;
 }
 .cart-drawer .close {
   position: absolute;
@@ -137,4 +136,13 @@
 	text-decoration: underline;
 	font-family:apercumedium;
 	letter-spacing:1px;
+}
+
+.cart-drawer.cart-open {
+	right: 0;
+}
+
+.cart-empty-text {
+	text-align: center;
+	line-height: 64px;
 }
