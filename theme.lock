@@ -70,9 +70,9 @@ assets/gift-card.js:
 assets/gift-card.scss.liquid:
   development: 2017-10-10T23:49:45-04:00   988e9d38ea6182645170090e4e3c55e6
 assets/header-homepage.css:
-  development: 2017-10-11T02:07:18-04:00   36de0fee8c4e9d2581557966d3f2fa8a
+  development: 2017-10-11T02:36:23-04:00   1bf982b206e1387250ae8c7c56813ca7
 assets/header.css:
-  development: 2017-10-11T02:07:19-04:00   e3d24abec52eebb25f5c79f4559b698f
+  development: 2017-10-11T02:36:22-04:00   2f562d98e483810ea667af61a2fe3036
 assets/ico-select.svg.liquid:
   development: 2017-10-10T23:49:46-04:00   fb3d8f5b83dfa47b06b28064fbbfc380
 assets/jquery.bcSwipe.min.js:
@@ -214,7 +214,7 @@ sections/full-image-homepage.liquid:
 sections/header-dev.liquid:
   development: 2017-10-10T23:49:38-04:00   14c563dc712a5b8daac443d59a9eb954
 sections/header-homepage.liquid:
-  development: 2017-10-11T02:07:21-04:00   6c3e73214286c8ce43388ea511ee8f75
+  development: 2017-10-11T02:36:22-04:00   04e2718e40e4903b097a8e619cbb7752
 sections/header.liquid:
   development: 2017-10-11T02:07:21-04:00   d6df18836a184f19f9c3bc01d5b63b63
 sections/hero.liquid:
