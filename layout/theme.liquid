@@ -20,7 +20,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		{{'bootstrap.min.js'| asset_url | script_tag}}
 		{{'jquery.bcSwipe.min.js'|asset_url|script_tag}}
-		{{ 'cart.min.js' | asset_url | script_tag }}
 		<script src="https://unpkg.com/vue"></script>
 		{{'blog-recent-and-categories-template.css' | asset_url | stylesheet_tag}}
 		{{'blog-template.css' | asset_url| stylesheet_tag}}
@@ -56,41 +55,8 @@
 		{% endif %}
 		<script>
 			$('.carousel').bcSwipe({ threshold: 50 });
-
-			jQuery(function() {
-                CartJS.init({{ cart | json }});
-
-				// Setting a global variable that contains the cart state.
-				// Typically, avoid polluting global namespace, but in this scenario there is not much state involved to track.
-				window.cartVue = {
-					cartOpen: false,
-					cart: {{ cart | json }}
-				};
-
-				let cartDrawer = new Vue({
-					delimiters: ['${', '}'], // Because shopify already uses double curly brackets.
-					el: '.cart-drawer',
-					data: window.cartVue
-				});
-
-				$('.close').click(function() { 
-					window.cartVue.cartOpen = false;
-				});
-				$('#add-to-cart-product').click(function() {
-					window.cartVue.cartOpen = true;
-				});
-
-				$(document).on('cart.ready', function(event, cartData) {
-					window.cartVue.cart = cartData;
-				});
-
-				$(document).on('cart.requestComplete', function(event, cartData) {
-					window.cartVue.cart = cartData;
-				});
-            });
-
-
 		</script>
+		{% section 'cartjs-scripts' %}
 	</body>
 </html>
 
