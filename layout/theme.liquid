@@ -21,8 +21,7 @@
 		{{'bootstrap.min.js'| asset_url | script_tag}}
 		{{'jquery.bcSwipe.min.js'|asset_url|script_tag}}
 		{{ 'cart.min.js' | asset_url | script_tag }}
-		<script type="text/javascript"
-     	 src="http://cdn.rawgit.com/mikeric/rivets/master/dist/rivets.min.js"></script>
+		<script src="https://unpkg.com/vue"></script>
 		{{'blog-recent-and-categories-template.css' | asset_url | stylesheet_tag}}
 		{{'blog-template.css' | asset_url| stylesheet_tag}}
 		{{'about-page-template.css' | asset_url | stylesheet_tag}} 
@@ -76,15 +75,40 @@
 			}
 			jQuery(function() {
                 CartJS.init({{ cart | json }});
-            });
-			$(document).ready(function() {
+
+				let vueData = {
+					cartOpen: false,
+					cart: {{ cart | json }}
+				};
+
+				let cartView = new Vue({
+					delimiters: ['${', '}'], // Because shopify already uses double curly brackets.
+					el: '.cart-drawer',
+					data: vueData
+				});
+				console.log('initial cart', vueData, cartView);
+
 				$('.close').click(function() { 
-					$('.cart-drawer').animate({width:'toggle'},100);
+					//$('.cart-drawer').animate({width:'toggle'},100);
+					vueData.cartOpen = false;
 				});
 				$('#add-to-cart-product').click(function() {
-					$('.cart-drawer').animate({width:'toggle'},200);
+					//$('.cart-drawer').slide({width:'toggle'},200);
+					vueData.cartOpen = true;
 				});
-			});
+
+				$(document).on('cart.ready', function(event, cartData) {
+					vueData.cart = cartData;
+					console.log('cart ready', event, cartData, vueData, cartView);
+				});
+
+				$(document).on('cart.requestComplete', function(event, cartData) {
+					vueData.cart = cartData;
+					console.log('cart request', event, cartData, vueData, cartView);
+				});
+            });
+
+
 		</script>
 	</body>
 </html>
