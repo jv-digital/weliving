@@ -17,6 +17,10 @@
 .homepage-description .description-image .description-content .wrapper span {
 	display: block;
 }
+.homepage-description .description-image .description-content .wrapper .header {
+	white-space: nowrap;
+}
+
 
 @media screen and (min-width:993px) {
 	.homepage-description .description-image .description-content .wrapper {

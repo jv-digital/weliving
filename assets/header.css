@@ -72,13 +72,13 @@ body {
 .header .navigation-links-wrapper .navigation li a:hover,
 .header .navigation-links-wrapper .navigation li a:focus {
   text-decoration:none;
-  color:black;
+  color:#4D4D4A;
 }
 .header .navigation-links-wrapper .navigation li a {
   text-transform:uppercase;
-  color:black;
   font-family:apercumedium;
   letter-spacing:1px;
+  color:#4D4D4A;
 }
 
 .header .sign-in-checkout-wrapper {
@@ -87,7 +87,6 @@ body {
   display:flex;
   justify-content: flex-end;
   align-items:flex-end;
-  margin-bottom:5px;
 
 }
 .header .sign-in-checkout-wrapper .sign-in {
@@ -102,7 +101,7 @@ body {
   font-family:apercumedium;
   letter-spacing:1px;
   text-decoration:none;
-  color:black;
+  color:#4D4D4A;
 }
 .header .sign-in-checkout-wrapper .checkout-img {
   display:inline-block;
@@ -120,12 +119,13 @@ body {
   text-transform:uppercase;
   font-family:apercumedium;
   letter-spacing:1px;
+  color:#4D4D4A;
 }
 .help-dropdown .dropdown-content {
   position:absolute;
   display:none;
   z-index:1;
-  background-color:#E4E0DD;;
+  background-color:#E4E0DD;
   text-align:left;
 }
 .help-dropdown .dropdown-content a {
@@ -146,11 +146,49 @@ body {
   border-right:.75px solid black;
   border-bottom:.75px solid black;
 }
+.header .sign-in-checkout-wrapper .account-dropdown {
+  padding-bottom:5px;
+}
+.header .sign-in-checkout-wrapper .account-dropdown .account-links {
+  display:none;
+  position:absolute;
+  background-color:#E4E0DD;
+}
+.header .sign-in-checkout-wrapper .account-dropdown .account-links a {
+  display:block;
+  white-space:nowrap;
+  color:#4D4D4A;
+  font-family:apercumedium;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom:10px;
+}
+.header .sign-in-checkout-wrapper .account-dropdown .account-hover p {
+  margin-bottom:0;
+  text-transform: uppercase;
+  font-family:apercumedium;
+  color:#4D4D4A;
+  letter-spacing:1px;
+  white-space: nowrap;
+}
+
+.header .sign-in-checkout-wrapper .account-dropdown:hover .account-links {
+  display:block;
+  margin-top:6px;
+  padding:20px 15px 5px 15px;
+  border-left:.75px solid black;
+  border-right:.75px solid black;
+  border-bottom:.75px solid black;
+}
+
 @media screen and (max-width:992px) {
   .header .navigation-links-wrapper {
     display:none;
   }
   .header .sign-in-checkout-wrapper .sign-in {
+    display:none;
+  }
+  .header .sign-in-checkout-wrapper .account-dropdown {
     display:none;
   }
   .header .mobile-menu-wrapper {

@@ -10,7 +10,7 @@
 					{% assign indicator_counter = 0 %}
 					{% for image in product.images %}
 						{% if indicator_counter == 0 %}
-							<li data-target="#product-page-mobile-carousel" data-slide-to={{indicator_counter}}" class="active"></li>
+							<li data-target="#product-page-mobile-carousel" data-slide-to="{{indicator_counter}}" class="active"></li>
 							{% assign indicator_counter = indicator_counter | plus: 1 %}
 						{% else %}
 							<li data-target="#product-page-mobile-carousel" data-slide-to="{{indicator_counter}}"></li>
@@ -51,6 +51,9 @@
 				<ol class="carousel-indicators">
 				{% assign indicator_counter = 0 %}
 				{% for image in product.images %}
+					{% if forloop.last %}
+						{% break %}
+					{% endif %}
 					{% if indicator_counter == 0 %}
 						<li data-target="#product-page-desktop-carousel" data-slide-to="{{indicator_counter}}" class="active">
 							<img src="{{ image | img_url: 'small'}}">
@@ -68,6 +71,9 @@
 					<div class="carousel-inner">
 						{%assign slide_counter = 0%}
 						{%for image in product.images%}
+							{% if forloop.last %}
+								{% break %}
+							{% endif %}
 							{% if slide_counter == 0 %}
 								<div class="item active">
 									<img src="{{image | img_url: 'master'}}">
@@ -89,7 +95,7 @@
 				<span class="price">$ {{product.price | remove_first:'00'}}</span>
 			</div>
 			<div class="addtocart-button-mobile nopadding col-xs-12">
-				<!-- cart button details go here -->
+				<form></form>
 				<form id="AddToCartForm" action="/cart/add" method="post">
 					{% if product.has_only_default_variant %}
 						{% assign variant = product.variants.first %}
@@ -149,23 +155,23 @@
 					  		{%endif%}
 					  	{% endfor %}
 					{% endif %}
-					<input type="submit" value="ADD TO CART">
+					<input id="add-to-cart-product" type="submit" value="ADD TO CART">
 				</form>
+			</div>
+			<div class="social-media col-md-12">
+				<div class="product-media-links col-xs-12">
+					<a href="#"><img src="http://via.placeholder.com/35x35"></a>
+					<a href="#"><img src="http://via.placeholder.com/35x35"></a>
+					<a href="#"><img src="http://via.placeholder.com/35x35"></a>
+					<a href="#"><img src="http://via.placeholder.com/35x35"></a>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="social-media row">
-		<div class="product-media-links col-xs-12 col-md-5 col-md-push-7">
-			<a href="#"><img src="http://via.placeholder.com/35x35"></a>
-			<a href="#"><img src="http://via.placeholder.com/35x35"></a>
-			<a href="#"><img src="http://via.placeholder.com/35x35"></a>
-			<a href="#"><img src="http://via.placeholder.com/35x35"></a>
-		</div>
-	</div>
 	<div class="product-showcase row">
-		<div class="showcase-image col-xs-12 col-md-11 col-md-push-1">
+		<div class="showcase-image col-xs-12 col-md-10 col-md-push-1">
 			<div class="image-wrapper">
-				<img src="{{product.images.first | img_url: 'master'}}">
+				<img src="{{product.images.last | img_url: 'master'}}">
 			</div>
 		</div>
 	</div>
@@ -197,14 +203,4 @@
 		</div>
 	</div>
 </div>
-<script>
-	$(document).on('cart.requestComplete', function(event, cart) {
-		$('.cart-drawer').animate({width:'toggle'},200);
-	});
-	$(document).ready(function() {
-		$('.close').click(function() { 
-			$('.cart-drawer').animate({width:'toggle'},100);
-		});
-	});
-</script>
 

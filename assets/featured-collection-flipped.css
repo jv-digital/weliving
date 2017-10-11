@@ -43,6 +43,7 @@
   text-transform: uppercase;
   font-family:oswaldregular;
   letter-spacing:2px;
+  color:#466171;
 }
 
 .content-2 span {
@@ -53,6 +54,7 @@
     position: relative;
     z-index: 0;
     letter-spacing:2px;
+    color:#4D4D4A;
 }
 .button-2 {
   position: relative;
@@ -167,11 +169,13 @@
     margin-bottom:10px;
   }
   .content-2 .text-button-2 .text-2 .title-2 b {
-    font-size:18px;
+    font-size:20px;
+
   }
   .content-2 .text-button-2 .text-2 span {
     font-size:15px;
-    line-height:20px;
+    line-height:17px;
+    letter-spacing: 1px;
   }
   .button-3 {
     width:80%;

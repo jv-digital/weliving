@@ -21,6 +21,8 @@
 		{{'bootstrap.min.js'| asset_url | script_tag}}
 		{{'jquery.bcSwipe.min.js'|asset_url|script_tag}}
 		{{ 'cart.min.js' | asset_url | script_tag }}
+		<script type="text/javascript"
+     	 src="http://cdn.rawgit.com/mikeric/rivets/master/dist/rivets.min.js"></script>
 		{{'blog-recent-and-categories-template.css' | asset_url | stylesheet_tag}}
 		{{'blog-template.css' | asset_url| stylesheet_tag}}
 		{{'about-page-template.css' | asset_url | stylesheet_tag}} 
@@ -32,6 +34,8 @@
 		{{'fonts.css'|asset_url|stylesheet_tag}}
 		{{'lookbook-template.css'|asset_url|stylesheet_tag}}
 		{{'cart-drawer-template.css'|asset_url|stylesheet_tag}}
+		{{'account-template.css'|asset_url|stylesheet_tag}}
+		{{'register-template.css' | asset_url | stylesheet_tag}}
 		{{content_for_header}}
 		<style>
 				body {
@@ -40,9 +44,7 @@
 		</style>
 	</head>
 	<body>
-		{% if template == 'customers/login' %}
-			{{content_for_layout}}
-		{% elsif template =='index' %}
+		{% if template =='index' %}
 			{% section 'cart-drawer-template' %}
 			{% section 'header-homepage' %}
 			{{content_for_layout}}
@@ -61,16 +63,28 @@
 				var line_quantity_list = document.getElementsByClassName("line-quantity");
 				var line_quantity = line_quantity_list[item_number];
 				line_quantity.stepDown(1);
+				var line_quantity_value = line_quantity_list[item_number].value;
+				CartJS.updateItem(item_number + 1, line_quantity_value);
 			}
 			function add(clicked_id) {
 				var item_number = parseInt(clicked_id.substr(clicked_id.length - 1));
 				var line_quantity_list = document.getElementsByClassName("line-quantity");
 				var line_quantity = line_quantity_list[item_number];
 				line_quantity.stepUp(1);
+				var line_quantity_value = line_quantity_list[item_number].value;
+				CartJS.updateItem(item_number + 1, line_quantity_value);
 			}
 			jQuery(function() {
                 CartJS.init({{ cart | json }});
             });
+			$(document).ready(function() {
+				$('.close').click(function() { 
+					$('.cart-drawer').animate({width:'toggle'},100);
+				});
+				$('#add-to-cart-product').click(function() {
+					$('.cart-drawer').animate({width:'toggle'},200);
+				});
+			});
 		</script>
 	</body>
 </html>

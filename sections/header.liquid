@@ -29,9 +29,22 @@
     </ul>
   </div>
   <div class="sign-in-checkout-wrapper col-xs-3 col-md-2">
-    <div class="sign-in">
-      <p><a href="/account/login">sign in</a></p>
-    </div>
+    {% if customer %}
+      <div class="account-dropdown">
+        <div class="account-hover">
+          <p>my account</p>
+        </div>
+        <div class="account-links">
+          <a href="#">manage address</a>
+          <a href="#">order history</a>
+          {{ 'Log out' | customer_logout_link }}
+        </div>
+      </div>
+    {% else %}
+      <div class="sign-in">
+        <p><a href="/account/login">sign in</a></p>
+      </div>
+    {% endif %}
     <div class="checkout-img">
       <img src="https://via.placeholder.com/30x30">
     </div>

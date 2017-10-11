@@ -31,6 +31,12 @@
 .about .about-image .mobile-image {
 	display:none;
 }
+@media screen and (max-width:1200px) {
+	.about-homepage {
+		padding-left:0px;
+		padding-right:0px;
+	}
+}
 
 @media screen and (max-width:992px) {
 	.about-homepage .about {

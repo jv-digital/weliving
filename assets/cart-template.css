@@ -182,6 +182,9 @@ body {
 	.header .mobile-menu-wrapper {
 		visibility:hidden;
 	}
+	.header .sign-in-checkout-wrapper {
+		display:initial;
+	}
 	#shopify-section-cart-template {
 		border-top:.75px solid black;
 	}	

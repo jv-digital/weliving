@@ -1,4 +1,4 @@
-<div class="cart-drawer">
+<div data-cart-view="data-cart-view" class="cart-drawer">
 	<div class="close"></div>
 	<form action="/cart" method="post">
 		{% for line in cart.items %}
@@ -19,9 +19,7 @@
 						<div class="line-item-price col-xs-6">
 							<p>{{line.price | money}}</p>
 						</div>
-						<div class="line-item-remove col-xs-4">
-							<a href="/cart/change?line={{ forloop.index }}&quantity=0">Delete</a>
-						</div>
+						<button data-cart-remove-id="{{line.variant_id}}">Delete</button>
 					</div>
 				</div>
 			</div>
