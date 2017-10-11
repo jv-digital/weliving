@@ -24,7 +24,7 @@
 	</div>
 	<div class="alt-home-icon-wrapper col-xs-6 col-md-2">
 		<div class="alt-home-icon">
-			<img src="https://cdn.shopify.com/s/files/1/2176/2625/files/weliving_logo.png?11859824361046747801">
+			<img src="https://cdn.shopify.com/s/files/1/2176/2625/files/Logo_White.png?1967539470793251460">
 		</div>
 	</div>
 	<div class="alt-navigation-links-wrapper col-md-8">
@@ -46,11 +46,24 @@
 		</ul>
 	</div>
 	<div class="alt-sign-in-checkout-wrapper col-xs-3 col-md-2">
-		<div class="alt-sign-in">
-			<p><a href="/account/login">sign in</a></p>
-		</div>
+		{% if customer %}
+			<div class="alt-account-dropdown">
+				<div class="alt-account-hover">
+					<p>my account</p>
+				</div>
+				<div class="alt-account-links">
+					<a href="/account/addresses">manage address</a>
+	         		<a href="/account">order history</a>
+	          		{{ 'Log out' | customer_logout_link }}
+	        	</div>
+	        </div>
+        {% else %}
+			<div class="alt-sign-in">
+				<p><a href="/account/login">sign in</a></p>
+			</div>
+		{%endif%}
 		<div class="alt-checkout-img">
-			<img src="https://via.placeholder.com/30x30">
+			<a href="/cart"><img src="{{'cart.svg'|asset_url}}"></a>
 		</div>
 	</div>
 </div>

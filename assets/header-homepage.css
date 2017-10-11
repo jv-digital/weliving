@@ -53,12 +53,12 @@
 	display:flex;
 	justify-content: flex-end;
 	align-items:flex-end;
-	margin-bottom:5px;
+	margin-bottom:0px;
 
 }
 .alt-header .alt-sign-in-checkout-wrapper .alt-sign-in {
 	display:inline-block;
-	
+	margin-bottom:5px;
 }
 .alt-header .alt-sign-in-checkout-wrapper .alt-sign-in p {
 	margin-bottom:0;
@@ -73,7 +73,7 @@
 .alt-header .alt-sign-in-checkout-wrapper .alt-checkout-img {
 	display:inline-block;
 	padding-left:40px;
-	margin-bottom:5px;
+	margin-bottom:8px;
 }
 .alt-help-dropdown {
   cursor:pointer;
@@ -98,7 +98,7 @@
   display:block;
   padding:0px;
   white-space:nowrap;
-  color:black;
+  color:#4D4D4A;
   padding-bottom:15px;
 }
 .alt-help-dropdown:hover .alt-selected-help {
@@ -112,8 +112,46 @@
   border-right:.75px solid black;
   border-bottom:.75px solid black;
 }
+.alt-header .alt-sign-in-checkout-wrapper .alt-account-dropdown {
+  padding-bottom:5px;
+}
+.alt-header .alt-sign-in-checkout-wrapper .alt-account-dropdown .alt-account-links {
+  display:none;
+  position:absolute;
+  background-color:#E4E0DD;
+}
+.alt-header .alt-sign-in-checkout-wrapper .alt-account-dropdown .alt-account-links a {
+  display:block;
+  white-space:nowrap;
+  color:#4D4D4A;
+  font-family:apercumedium;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom:10px;
+}
+.alt-header .alt-sign-in-checkout-wrapper .alt-account-dropdown .alt-account-hover p {
+  margin-bottom:0;
+  text-transform: uppercase;
+  font-family:apercumedium;
+  color:white;
+  letter-spacing:1px;
+  white-space: nowrap;
+}
+
+.alt-header .alt-sign-in-checkout-wrapper .alt-account-dropdown:hover .alt-account-links {
+  display:block;
+  margin-top:6px;
+  z-index:10;
+  padding:20px 15px 5px 15px;
+  border-left:.75px solid black;
+  border-right:.75px solid black;
+  border-bottom:.75px solid black;
+}
 @media screen and (max-width:992px) {
 	.alt-navigation-links-wrapper {
+		display:none;
+	}
+	.alt-header .alt-sign-in-checkout-wrapper .alt-account-dropdown {
 		display:none;
 	}
 	.alt-header {
