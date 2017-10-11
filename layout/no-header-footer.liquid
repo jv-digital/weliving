@@ -12,6 +12,7 @@
 			{{'cart-template.css' |asset_url|stylesheet_tag}}
 		{% endif %}
 		{{'fonts.css'|asset_url|stylesheet_tag}}
+		<script src="https://unpkg.com/vue"></script>
 		{{content_for_header}}
 		<style>
 			body {
@@ -25,7 +26,8 @@
 		</style>
 	</head>
 	<body>
-		{{content_for_layout}}	
+		{{content_for_layout}}
+		{% section 'cartjs-scripts' %}
 	</body>
 </html>
 

@@ -1,0 +1,44 @@
+{{ 'cart.min.js' | asset_url | script_tag }}
+<script>
+	CartJS.init({{ cart | json }});
+	jQuery(function() {
+		// Setting a global variable that contains the cart state.
+		// Typically, avoid polluting global namespace, but in this scenario there is not much state involved to track.
+		window.cartVue = {
+			cartOpen: false,
+			cart: {{ cart | json }}
+		};
+		console.log(cartVue);
+
+		if ($('.cart-drawer').length > 0) {
+			let cartDrawer = new Vue({
+				delimiters: ['${', '}'], // Because shopify already uses double curly brackets.
+				el: '.cart-drawer',
+				data: window.cartVue
+			});
+		}
+
+		if ($('.cart-page').length > 0) {
+			let cartPage = new Vue({
+				delimiters: ['${', '}'], // Because shopify already uses double curly brackets.
+				el: '.cart-page',
+				data: window.cartVue
+			});
+		}
+
+		$('.close').click(function() { 
+			window.cartVue.cartOpen = false;
+		});
+		$('#add-to-cart-product').click(function() {
+			window.cartVue.cartOpen = true;
+		});
+
+		$(document).on('cart.ready', function(event, cartData) {
+			window.cartVue.cart = cartData;
+		});
+
+		$(document).on('cart.requestComplete', function(event, cartData) {
+			window.cartVue.cart = cartData;
+		});
+	});
+</script>
