@@ -1,0 +1,67 @@
+{% schema %}
+	{
+		"name": "Featured Collection",
+		"settings": [
+			{
+				"type": "image_picker",
+				"id": "image",
+				"label":"Image for desktop"
+			},
+			{
+				"type":"image_picker",
+				"id":"image_mobile",
+				"label":"Image for mobile"
+			},	
+			{
+				"type": "text",
+				"id": "title",
+				"label":"Title"
+			},
+			{
+				"type": "text",
+				"id":"description",
+				"label":"Description"
+			},
+			{
+				"type": "text",
+				"id": "button_label",
+				"label":"Button Label"
+			}
+
+		],
+		"presets": [
+		{
+			"name": "Featured Collection",
+			"category": "image",
+			"settings": {
+				"title":"Collection Title",
+				"description":"Describe your product here.",
+				"button_label":"shop now"
+			}
+		}
+	]
+}
+{% endschema %}
+
+
+<div class="featured-collection-1 container">
+	<div class="featured-collection-1-row row">
+  			<div class="img-wrapper col-xs-12 col-md-6">
+  				<img class="desktop-image" src={{section.settings.image | img_url:'master'}}>
+  				<img class="mobile-image" src={{section.settings.image_mobile | img_url:'master'}}>
+  			</div>
+  			<div class="content col-xs-12 col-md-6 nopadding">
+  				<div class="angle hidden-xs hidden-sm"></div>
+  				<div class="text-button col-md-11">
+  					<p class="text">
+  						<span class="title"><b>{{ section.settings.title }}</b></span>
+  						<span class="description">{{ section.settings.description }}</span>
+  					</p>
+  					<form></form>
+  					<form class="button" action="/collections/products">
+  						<button class="button-1">{{ section.settings.button_label }}</button>
+  					</form>
+  				</div>	
+   			</div>
+	</div>
+</div>

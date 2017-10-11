@@ -1,0 +1,78 @@
+.carousel-indicators {
+	bottom:10px;
+}
+.carousel-indicators li {
+	width:7px;
+	height:7px;
+	border:.7px solid black;
+	border-radius:0px;
+	transform:rotate(45deg);
+	margin:3%;
+	margin-bottom:1px;
+}
+.carousel-indicators .active {
+	width:6px;
+	height:6px;
+	margin:3%;
+	margin-bottom:1px;
+	outline:0.8px solid black;
+	outline-offset:.8px;
+	transform:rotate(45deg);
+	background-color: transparent;
+}
+#carousel .carousel-control {
+	background: none !important; 
+	filter: none !important; progid:none !important;
+	width:25px;
+	height:25px;
+	transform:rotate(45deg);
+	border:1px solid black;
+	top:50%;
+	opacity:1;
+}
+#carousel .carousel-control.left {
+	left:25px;
+	border-right:transparent;
+	border-top:transparent;
+}
+#carousel .carousel-control.right {
+	right:24px;
+	border-bottom:transparent;
+	border-left:transparent;
+}
+#carousel .carousel-inner .item {
+	width:100%;
+	height:83vh;
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position: center;
+}
+.scroll-tab {
+	display:none;
+}
+
+@media screen and (max-width:768px) {
+	#carousel .carousel-control {
+		width:15px;
+		height:15px;
+	}
+	#carousel .carousel-control.left {
+		left:20px;
+	}
+	#carousel .carousel-control.right {
+		right:19px;
+		left:auto;
+	}
+	#carousel .carousel-inner .item img {
+		height:82vh;
+	}
+	.scroll-tab {
+		text-align:center;
+		background-color:#f2f2f2;
+	}
+	.scroll-tab p {
+		line-height:30px;
+		font-size:13px;
+		text-transform: uppercase;
+	}
+}

@@ -1,0 +1,29 @@
+.widen {
+  margin-right:10px;
+  margin-left:6px;
+}
+.centered {
+  float:none;
+  margin:0 auto;
+}
+.divider::before {
+  float: right;
+  content:'';
+  border-top: 11px solid black;
+  border-left: 7px solid transparent;
+  margin-right:-6px;
+}
+.divider::after {
+  float: right;
+  content: '';
+  border-top: 11px solid #E4E0DD;
+  border-left: 7px solid transparent;
+  margin-top: -0.5px;
+  margin-right: -8px;
+}
+.divider {
+  padding:0;
+  margin-top:20px;
+  height:1px;
+  background-color: black;
+}

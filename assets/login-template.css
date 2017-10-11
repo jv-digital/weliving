@@ -1,0 +1,176 @@
+html, body {
+  height:100%;
+}
+body {
+  display:flex;
+  align-items:center;
+}
+.error-input {
+	background:#F3C1C2;
+	border:0.7px solid red !important;
+}
+#shopify-section-header {
+	display:none;
+}
+#shopify-section-login-template {
+	margin:0 auto;
+}
+.sign-in-page {
+	padding-left:0;
+}
+.sign-in-page .sign-in-header,
+.sign-in-page .sign-in-error,
+.sign-in-page .sign-in-email,
+.sign-in-page .sign-in-password,
+.sign-in-page .sign-in-button,
+.sign-in-page .forgot-password,
+.sign-in-page .sign-up-link {
+	float:none;
+	margin:0 auto;
+}
+.sign-in-page .close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.sign-in-page .close:hover {
+  opacity: 1;
+}
+.sign-in-page .close:before, 
+.sign-in-page .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.sign-in-page .close:before {
+  transform: rotate(45deg);
+}
+.sign-in-page .close:after {
+  transform: rotate(-45deg);
+}
+
+.sign-in-page .sign-in-header {
+	text-align:center;
+	margin-bottom:40px;
+}
+.sign-in-page .sign-in-header .sign-in-title p {
+	font-size:25px;
+	text-transform:uppercase;
+}
+.sign-in-page .sign-in-error {
+	text-align:center;
+	color:#F3C1C2;
+}
+.sign-in-page .sign-in-error p {
+	margin-bottom:0;
+}
+.sign-in-page .sign-in-email label {
+	text-transform: uppercase;
+}
+.sign-in-page .sign-in-email input {
+	width:100%;
+	border-top:0;
+	border-left:0;
+	border-right:0;
+	border-bottom:1px solid black;
+	padding-top:15px;
+	background-color:transparent;
+}
+.sign-in-page .sign-in-password label {
+	text-transform:uppercase;
+	margin-top:30px;
+}
+.sign-in-page .sign-in-password input {
+	width:100%;
+	border-top:0;
+	border-right:0;
+	border-left:0;
+	border-bottom:1px solid black;
+	padding-top:15px;
+	background-color:transparent;
+}
+.sign-in-page .sign-in-button {
+	margin-top: 50px;
+}
+.sign-in-page .sign-in-button input {
+	display:block;
+	margin:0 auto;
+	background: none;
+	border: 2px solid black;
+	padding: 10px 80px  10px 80px;
+}
+.sign-in-page .forgot-password {
+	text-align:center;
+	margin-top:30px;
+}
+.sign-in-page .forgot-password p {
+	margin-bottom:0;
+}
+.sign-in-page .forgot-password a {
+	color: black;
+	text-decoration:underline;
+}
+.sign-in-page .sign-up-link {
+	text-align:center;
+}
+.sign-in-page .sign-in-wrap .sign-up-link a{
+	color: black;
+	text-decoration:underline;
+}
+
+@media screen and (max-width: 992px) {
+	html,
+	body {
+		height:initial;
+	}
+	body {
+		display:initial;
+		align-items:initial;
+	}
+	#shopify-section-header {
+		display:initial;
+	}
+	.sign-in-page {
+		padding-right:0;
+	}
+	.sign-in-page .close {
+		display:none;
+	}
+	.sign-in-page .sign-in-header {
+		margin-bottom:60px;
+		margin-top:30px;
+	}
+	.sign-in-page .sign-in-header .sign-in-title p {
+		font-weight: bold;
+	}
+	.sign-in-page .sign-in-header .sign-in-error p 
+	.sign-in-page .sign-in-wrap {
+		padding-left:5px;
+		padding-right:5px;
+	}
+	.sign-in-page .sign-in-email label {
+		margin-bottom:7px;
+	}
+	.sign-in-page .sign-in-email input {
+	}
+	.sign-in-page .sign-in-password label {
+		margin-bottom:7px;
+	}
+	.sign-in-page .sign-in-button input {
+		border: 1px solid black;
+		width:100%;
+	}
+	.sign-in-page .forgot-password a {
+		text-decoration: none;
+	}
+	.sign-in-page .sign-in-wrap .sign-up-link a {
+		text-decoration: none;
+	}
+}
+

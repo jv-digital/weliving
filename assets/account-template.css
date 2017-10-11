@@ -1,0 +1,37 @@
+.account-order-page .account-header {
+	text-align:center;
+	margin-top:85px;
+	margin-bottom:40px;
+}
+.account-order-page .account-header p {
+	font-size:35px;
+	letter-spacing:3px;
+	font-family:oswaldmedium;
+	color:#4D4D4A;
+	text-transform:uppercase;
+}
+.account-order-page .order-labels,
+.account-order-page .order-wrapper {
+	float:none;
+	margin:0 auto;
+}
+.account-order-page .order-labels {
+	overflow:auto;
+	border-bottom:1px solid #4D4D4A;
+	margin-bottom:30px;
+}
+.account-order-page .order-labels p {
+	font-family:apercumedium;
+	letter-spacing:1px;
+	text-transform: uppercase;
+	color:#4D4D4A;
+	white-space: nowrap;
+}
+.account-order-page .order-labels .order-number-label,
+.account-order-page .order-labels .date-label {
+	padding-left:0;
+}
+.account-order-page .order-labels .price-label {
+	text-align:center;
+}
+

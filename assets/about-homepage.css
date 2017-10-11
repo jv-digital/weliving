@@ -1,0 +1,80 @@
+.about-homepage {
+	padding-left:70px;
+	padding-right:70px;
+	margin-top:60px;
+	margin-bottom:40px;
+}
+.about .description .text {
+	margin-top:75px;
+	margin-left:25px;
+}
+.description .text .title {
+	font-size: 40px !important;
+	margin-bottom:40px;
+	font-family:oswaldregular;
+	letter-spacing:2px;
+	text-transform:uppercase;
+}
+.description .text span {
+	display: block;
+	font-size: 25px;
+	line-height:30px;
+	letter-spacing:2px;
+	font-family:apercumedium;
+}
+.about .about-image {
+	padding:0;
+}
+.about .about-image .desktop-image {
+	width:100%;
+}
+.about .about-image .mobile-image {
+	display:none;
+}
+@media screen and (max-width:1200px) {
+	.about-homepage {
+		padding-left:0px;
+		padding-right:0px;
+	}
+}
+
+@media screen and (max-width:992px) {
+	.about-homepage .about {
+		margin-left:0px;
+		margin-right:0px;
+	}
+	.about-homepage .about .description {
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+	.about .about-image .desktop-image {
+		display:none;
+	}
+	.about .about-image .mobile-image {
+		display:initial;
+		width:100%;
+	}
+	.about-homepage {
+		padding-left:15px;
+		padding-right:15px;
+		margin-bottom:15px;
+		margin-top:0px;
+	}
+	.about .description .text {
+		margin-top:7px;
+		margin-left:0px;
+		padding:0;
+	}
+	.description .text .title {
+		font-size:20px !important;
+		margin-bottom:7px;
+	}
+	.about .description .text span {	
+		font-size:15px;
+		letter-spacing:1px;
+		line-height:18px;
+	}
+	.about .about-image {
+		
+	}
+}

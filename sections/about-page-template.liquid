@@ -1,0 +1,103 @@
+{% schema %}
+	{
+		"name": "About Page",
+		"settings": [
+			{
+				"type":"image_picker",
+				"id":"first_hero_image",
+				"label":"First Image"
+			},
+			{
+				"type":"image_picker",
+				"id":"first_hero_mobile_image",
+				"label":"First Image for mobile"
+			},
+			{
+				"type":"text",
+				"id": "first_hero_title",
+				"label":"Title"
+			},
+			{
+				"type": "textarea",
+				"id":"first_hero_text",
+				"label": "First Description"
+			},
+			{
+				"type":"image_picker",
+				"id":"second_hero_image",
+				"label":"Second Image"
+			},
+			{
+				"type":"image_picker",
+				"id":"second_hero_mobile_image",
+				"label":"Second Image for mobile"
+			},
+			{
+				"type":"text",
+				"id":"second_hero_title",
+				"label":"Title"
+			},
+			{
+				"type":"textarea",
+				"id": "second_hero_text",
+				"label":"Second Description"
+			},
+			{
+				"type":"image_picker",
+				"id":"third_hero_image",
+				"label":"Third Image"
+			},
+			{
+				"type":"image_picker",
+				"id":"third_hero_mobile_image",
+				"label":"Third Image for mobile"
+			},
+			{
+				"type":"text",
+				"id":"third_hero_title",
+				"label":"Title"
+			},
+			{
+				"type":"textarea",
+				"id":"third_hero_text",
+				"label":"Third Description"
+			}
+		]
+	}
+{% endschema %}
+
+<div class="container about-page">
+	<div class="about-header col-xs-12">
+		<p> {{page.title}} </p>
+	</div>
+	<div class="first-hero col-xs-12 full-width">
+		<div class="first-hero-content-wrapper">
+			<img class="desktop-image" src="{{section.settings.first_hero_image | img_url:'master'}}">
+			<img class="mobile-image" src="{{section.settings.first_hero_mobile_image | img_url:'master'}}">
+			<div class="first-hero-text-wrapper col-xs-10 col-md-5">
+				<p class="title">{{section.settings.first_hero_title}}</p>
+				<p class="text"> {{section.settings.first_hero_text}} </p>
+			</div>
+		</div>
+	</div>
+	<div class="second-hero col-xs-12 full-width">
+		<div class="second-hero-content-wrapper">
+			<img class="desktop-image" src="{{section.settings.second_hero_image | img_url:'master'}}">
+			<img class="mobile-image" src="{{section.settings.second_hero_mobile_image | img_url:'master'}}">	
+			<div class="second-hero-text-wrapper col-xs-10 col-md-5">
+				<p class="title">{{section.settings.second_hero_title}}</p>
+				<p class="text"> {{section.settings.second_hero_text}} </p>
+			</div>
+		</div>
+	</div>
+	<div class="third-hero col-xs-12 full-width">
+		<div class="third-hero-content-wrapper">
+			<img class="desktop-image" src="{{section.settings.third_hero_image| img_url:'master'}}">
+			<img class="mobile-image" src="{{section.settings.third_hero_mobile_image | img_url:'master'}}">
+			<div class="third-hero-text-wrapper  col-xs-10 col-md-5">
+				<p class="title">{{section.settings.third_hero_title}}</p>
+				<p class="text"> {{section.settings.third_hero_text}} </p>
+			</div>
+		</div>
+	</div>
+</div>

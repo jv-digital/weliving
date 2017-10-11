@@ -1,0 +1,54 @@
+.lookbook-page .lookbook-image-wrapper .lookbook-image-mobile {
+	display:none;
+}
+.lookbook-page .lookbook-header {
+	text-align:center;
+	font-family:oswaldmedium;
+	margin-top:75px;
+}
+.lookbook-page .lookbook-header p {
+	font-size:45px;
+	text-transform:uppercase;
+	letter-spacing: 3px;
+	margin-bottom:30px;
+}
+.lookbook-page .lookbook-image-wrapper {
+	display:flex;
+	flex-wrap:wrap;
+	align-items:flex-end;
+}
+.lookbook-page .lookbook-image-wrapper .lookbook-image img {
+	width:100%;
+	padding-bottom:20px;
+}
+@media screen and (max-width:992px) {
+	.lookbook-page {
+		padding:0;
+	}
+	.lookbook-page .lookbook-header p {
+		font-size:30px;
+	}
+	.lookbook-page .lookbook-image-wrapper {
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.lookbook-page .lookbook-image-wrapper .lookbook-image-mobile {
+		display:initial;
+		padding-bottom:20px;
+		padding-left:5px;
+		padding-right:5px;
+	}
+	.lookbook-page .lookbook-image-wrapper .lookbook-image-mobile img {
+		width:100%;
+	}
+
+	.lookbook-page .lookbook-image-wrapper .lookbook-image {
+		display:none;
+	}	
+	.lookbook-page .lookbook-header {
+		margin-top:50px;
+	}
+	.lookbook-page .lookbook-header p {
+		margin-bottom:40px;
+	}
+}

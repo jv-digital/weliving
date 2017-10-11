@@ -1,0 +1,206 @@
+ html,
+ body {
+   margin:0;
+   padding:0;
+}
+#shopify-section-footer .footer-page {
+  width:100%;
+  padding:0;
+  background-color:#F0F0F0;
+  padding-bottom:25px;
+}
+.footer-page .angled-border::before {
+  position:absolute;
+  right:0;
+  content:'';
+  border-top: 49px solid #4D4D4A;
+  border-left: 31px solid transparent;
+}
+.footer-page .angled-border {
+  height:1.2px;
+  background:#4D4D4A;
+}
+.footer-page .angled-border::after {
+  position:absolute;
+  content: '';
+  right:-1.1px;
+  border-top: 49px solid #E4E0DD;
+  border-left: 31px solid transparent;
+  margin-top: -0.8px;
+}
+.footer-page .footer-links {
+  padding-top:50px;
+  padding-left:100px;
+  margin-bottom:55px;
+}
+.footer-page .footer-links ul {
+  list-style:none;
+  padding:0;
+}
+.footer-page .footer-links ul li::before {
+  content:'';
+  position:absolute;
+  border-top:8px solid #4D4D4A;
+  border-left:4px solid transparent;
+  right:37px;
+  top:-6.5px;
+}
+.footer-page .footer-links ul li {
+  display:inline-block;
+  padding-right:40px;
+  position:relative;
+}
+.footer-page .footer-links ul li::after {
+  content:'';
+  position:absolute;
+  border-top:8px solid #F0F0F0;
+  border-left:4px solid transparent;
+  right:36.2px;
+  top:-6.6px;
+}
+
+.footer-page .footer-links ul li a {
+  color:#4D4D4A;
+  text-transform:uppercase;
+  font-family:apercumedium;
+  font-size:14px;
+  letter-spacing:1px;
+  border-top:1px solid #4D4D4A;
+  padding-top:7px;
+}
+
+.footer-page .email-input {
+  padding-top:50px;
+  padding-left:60px;
+}
+.footer-page .email-input p {
+  font-family:apercumedium;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  font-size:14px;
+  color:#4D4D4A;
+}
+.footer-page .email-input input[type=text] {
+  background:none;
+  border:none;
+  border-bottom:1px solid #4D4D4A;
+  font-family:apercumedium;
+  font-size:13px;
+  padding-bottom:5px;
+  width:275px;
+}
+.footer-page .email-input a {
+  position:absolute;
+  right:86px;
+  bottom:5px;
+}
+.footer-page .social-media-space {
+  padding-top:10px;
+}
+.footer-page .social-media-space .social-media-links {
+  padding-left:20px;
+}
+.footer-page .social-media-space .social-media-links a img {
+  padding-right:20px;
+}
+.footer-page .phone-number {
+  padding-left:100px;
+}
+.footer-page .phone-number p {
+  margin-bottom:0px;
+  font-family:apercumedium;
+  color:#4D4D4A;
+}
+@media screen and (max-width:992px) {
+
+  .footer-page .angled-border::before {
+    border-top: 35px solid #4D4D4A;
+    border-left: 35px solid transparent;
+  }
+  .footer-page .angled-border {
+    height:.8px;
+    background:#4D4D4A;
+  }
+  .footer-page .angled-border::after {
+    right:-0.7px;
+    border-top: 35px solid #E4E0DD;
+    border-left: 35px solid transparent;
+  }
+  .footer-page .email-input {
+    padding-left:30px;
+    padding-right:30px;
+    margin-top:20px;
+    margin-bottom:35px;
+    padding-top:0;
+  }
+  .footer-page .email-input p {
+    letter-spacing:1px;
+    font-size:12px;
+  }
+  .footer-page .email-input input[type=text] {
+    font-size:11px;
+    width:100%;
+  }
+  .footer-page .email-input a {
+    right:30px;
+  }
+  .footer-page .footer-links {
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:0;
+    margin-bottom:0;
+  }
+  .footer-page .footer-links ul li::before {
+    display:none;
+  }
+  .footer-page .footer-links ul li {
+    padding-bottom:12px;
+    display:block;
+  }
+  .footer-page .footer-links ul li::after {
+    display:none;
+  }
+  .footer-page .footer-links ul li a::before {
+    content:'';
+    position:absolute;
+    border-top:5px solid #4D4D4A;
+    border-left:2.5px solid transparent;
+    right:-1px;
+    top:-1px;
+  }
+  .footer-page .footer-links ul li a {
+    position:relative;
+    font-size:12px;
+    padding-top:3px;
+  }
+  .footer-page .footer-links ul li a::after {
+    content:'';
+    position:absolute;
+    border-top:5px solid #F0F0F0;
+    border-left:2px solid transparent;
+    right:-2.1px;
+    top:-1px;
+  }
+  .footer-page .social-media-space {
+    padding-left:30px;
+    padding-right:30px;
+    text-align:center;
+    margin-top:10px;
+    padding-top:0;
+  }
+  .footer-page .social-media-space .social-media-links a img {
+    padding-right:20px;
+  }
+  .footer-page .phone-number {
+    text-align:center;
+    margin-top:25px;
+    margin-bottom:20px;
+    padding-left:0;
+  }
+  .footer-page .phone-number p {
+    margin-bottom:0;
+    font-family:apercumedium;
+    font-size:12px;
+    color:#4D4D4A;
+  }
+}

@@ -1,0 +1,43 @@
+{% schema %}
+{
+	"name":"Full Screen Image",
+	"settings": 
+		[
+			{
+				"type":"image_picker",
+				"id":"image",
+				"label":"Choose an image for desktop"
+			},
+			{
+				"type":"image_picker",
+				"id":"image_mobile",
+				"label":"Choose and image for mobile"
+			},
+			{
+				"type":"text",
+				"id":"picture_label",
+				"label":"Description"
+			}
+	],
+	"presets": [
+	 {
+	 	"name":"Full Screen Image",
+	 	"category":"Image",
+	 	"settings": 
+	 		{
+	 			"picture_label":"honoring woodworking traditions with one of a kind pieces"
+	 		}
+	 	}
+	]
+
+}
+{% endschema %}
+<div class="homepage-full-image container">
+	<div class="full-image col-md-12">
+		<img src="{{section.settings.image|img_url:'master'}}">
+		<p class="full-image-description col-md-5">{{section.settings.picture_label}}</p>
+	</div>	
+	<div class="full-image-mobile col-xs-12">
+		<img src="{{section.settings.image_mobile | img_url:'master'}}">
+	</div>
+</div>

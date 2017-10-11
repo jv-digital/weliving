@@ -1,36 +1,54 @@
-<div class="header">
-  <div class="menu-mobile-option">
-    <p>Menu</p>
+<div class="header container">
+  <div class="mobile-menu-wrapper col-xs-3">
+    <div class="mobile-menu">
+      <p>menu</p>
+    </div>
   </div>
-  <div class="home-icon"><a href="#"><img src="http://via.placeholder.com/60x60"></a></div>
-  <nav class="header-tab-space">
-    <ul>
-      <li>
-        <a href="#"> Shop </a>
-      </li>
-      <li>
-        <a href="#"> About </a>
-      </li>
-      <li>
-        <a href="#"> Blog </a>
-      </li>
-      <li>
-        <a href="#"> 
-        Lookbook</a>
-      </li>
-      <li>
-        <a href="#">Need Help</a>
-      </li>
-      <li class="last-child-nav">
-        <a href="#"> Sign In </a>
+  <div class="home-icon-wrapper col-xs-6 col-md-2">
+    <div class="home-icon">
+      <a href="/"><img src="https://cdn.shopify.com/s/files/1/2176/2625/files/Logo_Blue.png?1967539470793251460"></a>
+    </div>
+  </div>
+  <div class="navigation-links-wrapper col-md-8">
+    <ul class="navigation">
+      <li class="shop-link"><a href="/collections/products">shop</a>{% if template == 'collection' or template =='product' %}<div class="selected-shop"></div>{% endif %}</li>
+      <li class="about-link"><a href="/pages/about?view=about">about</a>{% if template == 'page.about' %}<div class="selected-about"></div>{%endif%}</li>
+      <li class="blog-link"><a href="/blogs/posts?view=recent-and-categories">blog</a>{% if template == 'blog.recent-and-categories' or template == 'blog' or template =='article'%} <div class="selected-blog"></div>{% endif %}</li>
+      <li class="lookbook-link"><a href="/pages/lookbook?view=lookbook">lookbook</a>{% if template == 'page.lookbook' %} <div class="selected-lookbook"></div> {% endif %}</li>
+      <li class="help-dropdown">
+        <div class="dropdown-link">
+          <p class="dropdown-text">need help</p>
+        </div>
+        <div class="selected-help"></div>
+        <div class="dropdown-content">
+          <a href="/pages/shipping-and-return?view=shipping-and-return">shipping & return</a>
+          <a href="/pages/faq?view=faq">faq</a>
+          <a href="/pages/contact?view=contact">contact</a>
+        </div>
       </li>
     </ul>
-  </nav>
-  <div class="checkout-image">
-    <a href="#"><img src="http://via.placeholder.com/30x30"></a>
   </div>
-  <div class="header-seperation"></div>
+  <div class="sign-in-checkout-wrapper col-xs-3 col-md-2">
+    {% if customer %}
+      <div class="account-dropdown">
+        <div class="account-hover">
+          <p>my account</p>
+        </div>
+        <div class="account-links">
+          <a href="#">manage address</a>
+          <a href="#">order history</a>
+          {{ 'Log out' | customer_logout_link }}
+        </div>
+      </div>
+    {% else %}
+      <div class="sign-in">
+        <p><a href="/account/login">sign in</a></p>
+      </div>
+    {% endif %}
+    <div class="checkout-img">
+      <a href="/cart"><img src="{{'cart.svg'|asset_url}}"></a>
+    </div>
+  </div>
 </div>
-
 
 

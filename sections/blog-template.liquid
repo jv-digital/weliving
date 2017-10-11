@@ -1,0 +1,20 @@
+<div class="container blog-page">
+	<div class="blog-header col-xs-12">
+		<p> {{blog.title}}</p>
+	</div>
+	{% for article in blog.articles %}
+	<div class="blog-posts col-xs-12 col-md-6">
+		<div class="blog-post-image col-xs-12 col-md-12">
+			<img src="{{article.image | img_url: 'master'}}">
+		</div>
+		<div class="blog-post-description col-xs-12">
+			<span class="article-date">{{article.published_at | date: "%m-%d-%y"}} |</span>
+			<span class="blog-title"> {{blog.title}} </span>
+			<span class="article-title">{{article.title}} </span>
+			<span class="article-excerpt"> {{article.excerpt}} </span>
+			<span class="link"><a href="{{article.url}}">read more</a></span>
+		</div>
+	</div>
+	{%endfor%}
+</div>
+
