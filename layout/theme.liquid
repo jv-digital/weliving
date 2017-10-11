@@ -57,54 +57,35 @@
 		<script>
 			$('.carousel').bcSwipe({ threshold: 50 });
 
-			function subtract(clicked_id) {
-				var item_number = parseInt(clicked_id.substr(clicked_id.length - 1));
-				var line_quantity_list = document.getElementsByClassName("line-quantity");
-				var line_quantity = line_quantity_list[item_number];
-				line_quantity.stepDown(1);
-				var line_quantity_value = line_quantity_list[item_number].value;
-				CartJS.updateItem(item_number + 1, line_quantity_value);
-			}
-			function add(clicked_id) {
-				var item_number = parseInt(clicked_id.substr(clicked_id.length - 1));
-				var line_quantity_list = document.getElementsByClassName("line-quantity");
-				var line_quantity = line_quantity_list[item_number];
-				line_quantity.stepUp(1);
-				var line_quantity_value = line_quantity_list[item_number].value;
-				CartJS.updateItem(item_number + 1, line_quantity_value);
-			}
 			jQuery(function() {
                 CartJS.init({{ cart | json }});
 
-				let vueData = {
+				// Setting a global variable that contains the cart state.
+				// Typically, avoid polluting global namespace, but in this scenario there is not much state involved to track.
+				window.cartVue = {
 					cartOpen: false,
 					cart: {{ cart | json }}
 				};
 
-				let cartView = new Vue({
+				let cartDrawer = new Vue({
 					delimiters: ['${', '}'], // Because shopify already uses double curly brackets.
 					el: '.cart-drawer',
-					data: vueData
+					data: window.cartVue
 				});
-				console.log('initial cart', vueData, cartView);
 
 				$('.close').click(function() { 
-					//$('.cart-drawer').animate({width:'toggle'},100);
-					vueData.cartOpen = false;
+					window.cartVue.cartOpen = false;
 				});
 				$('#add-to-cart-product').click(function() {
-					//$('.cart-drawer').slide({width:'toggle'},200);
-					vueData.cartOpen = true;
+					window.cartVue.cartOpen = true;
 				});
 
 				$(document).on('cart.ready', function(event, cartData) {
-					vueData.cart = cartData;
-					console.log('cart ready', event, cartData, vueData, cartView);
+					window.cartVue.cart = cartData;
 				});
 
 				$(document).on('cart.requestComplete', function(event, cartData) {
-					vueData.cart = cartData;
-					console.log('cart request', event, cartData, vueData, cartView);
+					window.cartVue.cart = cartData;
 				});
             });
 
