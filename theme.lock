@@ -424,7 +424,7 @@ templates/page.contact.liquid:
 templates/page.faq.liquid:
   development: 2017-10-10T23:49:54-04:00   c0b761d4410614b15e8ba0ee04518c73
 templates/page.liquid:
-  development: 2017-10-10T23:49:54-04:00   e1c06d85ae7b8b032bef47e42e4c08f9
+  development: 2017-10-11T01:20:51-04:00
 templates/page.lookbook.liquid:
   development: 2017-10-10T23:49:54-04:00   94ba737095c37818fd41f6636123eba5
 templates/page.shipping-and-return.liquid:
