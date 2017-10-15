@@ -17,6 +17,8 @@ assets/apercu-medium-webfont.ttf:
   development: 2017-10-10T23:49:42-04:00   abe6b1637ecade3ab68ef12160cff908
 assets/apercu-mediumitalic-webfont.ttf:
   development: 2017-10-10T23:49:42-04:00   15d8e1b32e9a90006469e520efc82547
+assets/arrow.svg:
+  development: 2017-10-13T14:18:00-04:00   dd61b16a3bf42ba603189e943829557a
 assets/article-template.css:
   development: 2017-10-10T23:49:42-04:00   2232f10cb57553554613075654ab24e8
 assets/ash-circle-selected.svg:
@@ -62,7 +64,7 @@ assets/featured-collection.css:
 assets/fonts.css.liquid:
   development: 2017-10-10T23:49:44-04:00   1c531b469876b661e2994640aaa1915c
 assets/footer.css:
-  development: 2017-10-11T02:07:17-04:00   5c6e9ae4f0127c65c48bc8ffc2e7e7f4
+  development: 2017-10-13T19:00:40-04:00   c895b02425c3bbc00900b776ff449b38
 assets/full-image-homepage.css:
   development: 2017-10-10T23:49:45-04:00   e7f845519868710df51a36d7a35ed9f9
 assets/gift-card.js:
@@ -146,7 +148,7 @@ config/settings_schema.json:
 layout/no-header-footer.liquid:
   development: 2017-10-11T02:22:23-04:00   7b9d1dc6df9b1a62c05abdf6f8d3f344
 layout/theme.liquid:
-  development: 2017-10-11T02:22:14-04:00   a652f091d06555d9d4bed3f79373c09f
+  development: 2017-10-13T18:57:17-04:00   8d9546750b9d88b9ab577d22f9812297
 locales/de.json:
   development: 2017-10-10T23:49:50-04:00   2c6d11f22c36699a3e2790b06421f09c
 locales/en.default.json:
@@ -208,7 +210,7 @@ sections/featured-collection.liquid:
 sections/featured-product.liquid:
   development: 2017-10-10T23:49:38-04:00   26d27b4c962c805fddea8f8247c754c3
 sections/footer.liquid:
-  development: 2017-10-11T02:07:20-04:00   babcf9fd670707ec2efc3eb73f209399
+  development: 2017-10-13T18:58:32-04:00   bfbf9f2caf23588f9e8e8501b3413ebf
 sections/full-image-homepage.liquid:
   development: 2017-10-10T23:49:38-04:00   21376b46cf78d9a851df2825b4e037f5
 sections/header-dev.liquid:
