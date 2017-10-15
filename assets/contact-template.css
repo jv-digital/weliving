@@ -1,6 +1,15 @@
 label {
 	display:block;
 }
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.contact-page form {
+	margin-bottom:150px;
+}
 .contact-page .contact-text .contact-header-mobile {
 	display:none;
 }
@@ -18,6 +27,7 @@ label {
 	margin-bottom:30px;
 	font-family:oswaldregular;
 	letter-spacing:3px;
+	color:#4D4D4A;
 }
 .contact-page .contact-input {
 	margin-top:15px;
@@ -35,8 +45,9 @@ label {
 	border-right:0;
 	border-left:0;
 	border-top:0;
-	border-bottom:1px solid black;
+	border-bottom:1px solid #4D4D4A;
 	background-color:transparent;
+	padding:0;
 }
 .contact-page .contact-input .contact-input-wrapper .email-input-wrapper {
 	padding-right:0px;
@@ -47,8 +58,9 @@ label {
 	border-right:0;
 	border-left:0;
 	border-top:0;
-	border-bottom:1px solid black;
+	border-bottom:1px solid #4D4D4A;
 	background-color:transparent;
+	padding:0;
 }
 label[for="subject-input"] {
 	padding-top:;
@@ -62,7 +74,7 @@ label[for="subject-input"] {
 	border-right:0;
 	border-left:0;
 	border-top:0;
-	border-bottom:1px solid black;
+	border-bottom:1px solid #4D4D4A;
 	width:100%;
 	background-color:transparent;
 }
@@ -70,7 +82,7 @@ label[for="subject-input"] {
 	display:block;
 	margin:0 auto;
 	background:none;
-	border: 2px solid black;
+	border: 2px solid #4D4D4A;
 	padding:10px 100px 10px 100px;
 }
 .contact-page .contact-input .message-input-wrapper {
@@ -83,18 +95,24 @@ label[for="subject-input"] {
 }
 .contact-page .contact-input .message-input-wrapper textarea {
 	width:100%;
-	border:1px solid black;
+	border:1px solid #4D4D4A;
 	background-color:transparent;
 }
 .contact-page .contact-input .submit-button {
 	margin-top:50px;
+}
+.contact-page .contact-input .submit-button input {
+	font-family:apercumedium;
+	color:#4D4D4A;
+	border-color:#4D4D4A;
 }
 label[for="name-input"],
 label[for="email-input"],
 label[for="message-input"],
 label[for="subject-input"] {
 	text-transform: uppercase;
-	font-weight:normal;
+	font-family:apercumedium;
+	color:#4D4D4A;
 }
 @media screen and (max-width:992px) {
 	.contact-page .contact-input {

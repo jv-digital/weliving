@@ -99,7 +99,8 @@
 	border-left:1px solid #4D4D4A;
 	display:inline-block;
 	transform:rotate(-45deg);
-	margin-left:10px;
+	margin-left:8px;
+	padding:6px;
 
 }
 .cart-drawer .line-item-info .line-item-data .wrapper .add-arrow {
@@ -110,7 +111,8 @@
 	border-right:1px solid #4D4D4A;
 	display:inline-block;
 	transform:rotate(-45deg);
-	margin-left:10px;
+	margin-left:8px;
+	padding:6px;
 }
 .cart-drawer .line-item-info .line-item-data .wrapper input[type=number] {
 	display:block;
@@ -135,6 +137,14 @@
 	color:#4D4D4A;
 	text-decoration: underline;
 	font-family:apercumedium;
+	letter-spacing:1px;
+}
+.cart-drawer .line-item-info .line-item-data button {
+	background:none;
+	border:none;
+	font-family:apercumedium;
+	color:#4D4D4A;
+	text-decoration:underline;
 	letter-spacing:1px;
 }
 

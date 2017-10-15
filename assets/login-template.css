@@ -5,6 +5,12 @@ body {
   display:flex;
   align-items:center;
 }
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+   outline: none;
+}
 .error-input {
 	background:#F3C1C2;
 	border:0.7px solid red !important;
@@ -60,8 +66,12 @@ body {
 	margin-bottom:40px;
 }
 .sign-in-page .sign-in-header .sign-in-title p {
-	font-size:25px;
+	font-size:35px;
 	text-transform:uppercase;
+	font-family:oswaldmedium;
+	letter-spacing:3px;
+	color:#4D4D4A;
+
 }
 .sign-in-page .sign-in-error {
 	text-align:center;
@@ -72,26 +82,32 @@ body {
 }
 .sign-in-page .sign-in-email label {
 	text-transform: uppercase;
+	font-family:apercumedium;
+	letter-spacing:1px;
+	color:#4D4D4A;
 }
 .sign-in-page .sign-in-email input {
 	width:100%;
 	border-top:0;
 	border-left:0;
 	border-right:0;
-	border-bottom:1px solid black;
+	border-bottom:1px solid #4D4D4A;
 	padding-top:15px;
 	background-color:transparent;
 }
 .sign-in-page .sign-in-password label {
 	text-transform:uppercase;
 	margin-top:30px;
+	font-family:apercumedium;
+	letter-spacing:1px;
+	color:#4D4D4A;
 }
 .sign-in-page .sign-in-password input {
 	width:100%;
 	border-top:0;
 	border-right:0;
 	border-left:0;
-	border-bottom:1px solid black;
+	border-bottom:1px solid #4D4D4A;
 	padding-top:15px;
 	background-color:transparent;
 }
@@ -102,8 +118,11 @@ body {
 	display:block;
 	margin:0 auto;
 	background: none;
-	border: 2px solid black;
+	border: 2px solid #4D4D4A;
 	padding: 10px 80px  10px 80px;
+	font-family:apercumedium;
+	letter-spacing:1px;
+	color:#4D4D4A;
 }
 .sign-in-page .forgot-password {
 	text-align:center;
@@ -111,17 +130,26 @@ body {
 }
 .sign-in-page .forgot-password p {
 	margin-bottom:0;
+	font-family:apercumedium;
+	color:#4D4D4A;
 }
 .sign-in-page .forgot-password a {
-	color: black;
+	color: #4D4D4A;
+	letter-spacing:1px;
 	text-decoration:underline;
 }
 .sign-in-page .sign-up-link {
 	text-align:center;
+	font-family:apercumedium;
+}
+.sign-in-page .sign-in-wrap .sign-up-link p {
+	color:#4D4D4A;
+	letter-spacing:1px;
 }
 .sign-in-page .sign-in-wrap .sign-up-link a{
-	color: black;
+	color: #4D4D4A;
 	text-decoration:underline;
+	font-family:apercumedium;
 }
 
 @media screen and (max-width: 992px) {

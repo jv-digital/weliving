@@ -69,7 +69,9 @@
 						{% assign article = articles[section.blocks[counter].settings.article] %}
 						{% assign counter = counter | plus:1 %}
 						<div class="item-image col-md-6">
-							<img src="{{article.image | img_url:'master'}}">
+							<a href="{{article.url}}">
+								<img src="{{article.image | img_url:'master'}}">
+							</a>
 							<p class="item-text">
 								<span class="article-date">{{article.published_at | date: "%m-%d-%y"}} |</span>
 								<span class="blog-title"> {{blog.title}} </span>
