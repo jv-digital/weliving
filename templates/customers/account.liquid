@@ -12,11 +12,11 @@
   {% for order in customer.orders %}
     <div class="order-wrapper col-md-8">
       <p class="order-number col-md-2">{{order.order_number}}</p>
-      <p class="date col-md-2">{{order.created_at}}</p>
-      <p class="price col-md-2">{{order.total_price}}</p>
+      <p class="date col-md-2">{{order.created_at | date:'%m/%d/%Y'}}</p>
+      <p class="price col-md-2">{{order.total_price | money}}</p>
       <p class="customer col-md-2">{{order.customer.first_name}}</p>
       <p class="status col-md-2">{{order.fulfillment_status}}</p>
-      <a href="{{order.customer_url}}" class="col-md-2">view order</a>
+      <a href="{{order.customer_url}}" class="order-url col-md-2">view order</a>
     </div>
   {% endfor %}
 </div>

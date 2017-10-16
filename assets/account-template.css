@@ -1,3 +1,6 @@
+.account-order-page {
+	margin-bottom:200px;
+}
 .account-order-page .account-header {
 	text-align:center;
 	margin-top:85px;
@@ -34,4 +37,28 @@
 .account-order-page .order-labels .price-label {
 	text-align:center;
 }
+.account-order-page .order-wrapper {
+	padding-left:0px;
+	overflow:auto;
+}
+.account-order-page .order-wrapper p {
+	font-family:aperculight;
+	color:#4D4D4A;
+}
+.account-order-page .order-wrapper .date {
+	padding-left:0;
+}
+.account-order-page .order-wrapper .customer {
+	padding-left:30px;
+}
+.account-order-page .order-wrapper .status {
+	padding-left:35px;
+}
+.account-order-page .order-wrapper .order-url {
+	text-align:center;
+	color:#4D4D4A;
+	font-family:aperculight;
+	text-decoration:underline;
+	text-transform:uppercase;
 
+}
