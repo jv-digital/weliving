@@ -212,13 +212,13 @@ sections/featured-collection.liquid:
 sections/featured-product.liquid:
   development: 2017-10-10T23:49:38-04:00   26d27b4c962c805fddea8f8247c754c3
 sections/footer.liquid:
-  development: 2017-10-13T18:58:32-04:00   bfbf9f2caf23588f9e8e8501b3413ebf
+  development: 2017-10-16T21:24:13-04:00   444a218bcd1c701605d951e41b16f713
 sections/full-image-homepage.liquid:
   development: 2017-10-10T23:49:38-04:00   21376b46cf78d9a851df2825b4e037f5
 sections/header-dev.liquid:
   development: 2017-10-10T23:49:38-04:00   14c563dc712a5b8daac443d59a9eb954
 sections/header-homepage.liquid:
-  development: 2017-10-16T20:16:04-04:00   6f49f31aeea9d27718be497e27e86813
+  development: 2017-10-16T21:24:48-04:00   f5e7df32622dba1f27bbf4f7c9788756
 sections/header.liquid:
   development: 2017-10-16T19:33:00-04:00   3f0c3df90af4e1339cc3f9981ad77ed5
 sections/hero.liquid:
