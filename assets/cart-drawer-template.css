@@ -156,3 +156,28 @@
 	text-align: center;
 	line-height: 64px;
 }
+
+.subtotal {
+	padding: 0 24px;
+	font-size: 16px;
+	font-family: oswaldmedium;
+	text-transform: uppercase;
+	color: #4D4D4A;
+}
+
+.subtotal span:nth-child(2) {
+	float: right;
+}
+
+#checkout {
+	border: none;
+	color: #4D4D4A;
+	background: none;
+	font-family: oswaldmedium;
+	text-transform: uppercase;
+	font-size: 24px;
+	float: right;
+	padding: 0;
+	margin: 0;
+	margin-top: 24px;
+}

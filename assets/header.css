@@ -108,6 +108,15 @@ body {
   padding-left:40px;
   margin-bottom:9px;
 }
+
+.header .sign-in-checkout-wrapper .checkout-img .cart-count {
+  position: absolute;
+  transform: translateX(-24px) translateY(6px);
+  color: #4D4D4A;
+  font-size: 12px;
+  font-family:apercumedium;
+}
+
 #shopify-section-header {
   border-bottom:.75px solid black;
 }

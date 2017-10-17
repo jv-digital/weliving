@@ -26,6 +26,14 @@
 			});
 		}
 
+		if ($('.cart-count').length > 0) {
+			let cartCount = new Vue({
+				delimiters: ['${', '}'], // Because shopify already uses double curly brackets.
+				el: '.cart-count',
+				data: window.cartVue
+			});
+		}
+
 		$('.close').click(function() { 
 			window.cartVue.cartOpen = false;
 		});

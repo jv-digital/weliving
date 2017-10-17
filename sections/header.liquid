@@ -46,7 +46,7 @@
       </div>
     {% endif %}
     <div class="checkout-img">
-      <a href="/cart"><img src="{{'cart.svg'|asset_url}}"></a>
+      <a href="/cart"><img src="{{'cart.svg'|asset_url}}"><span class="cart-count" v-cloak>${cart.item_count}</span></a>
     </div>
   </div>
 </div>

@@ -74,6 +74,15 @@
 	padding-left:40px;
 	margin-bottom:8px;
 }
+
+.alt-header .alt-sign-in-checkout-wrapper .alt-checkout-img .cart-count {
+    position: absolute;
+    transform: translateX(-24px) translateY(6px);
+    color: white;
+	font-size: 12px;
+	font-family:apercumedium;
+}
+
 .alt-help-dropdown {
   cursor:pointer;
   padding-bottom:5px;
