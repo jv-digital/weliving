@@ -218,7 +218,7 @@ sections/full-image-homepage.liquid:
 sections/header-dev.liquid:
   development: 2017-10-10T23:49:38-04:00   14c563dc712a5b8daac443d59a9eb954
 sections/header-homepage.liquid:
-  development: 2017-10-16T21:24:48-04:00   f5e7df32622dba1f27bbf4f7c9788756
+  development: 2017-10-16T21:30:30-04:00   0201ea215ebb5feb94965ae2a8562dec
 sections/header.liquid:
   development: 2017-10-16T19:33:00-04:00   3f0c3df90af4e1339cc3f9981ad77ed5
 sections/hero.liquid:
