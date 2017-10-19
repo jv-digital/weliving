@@ -21,6 +21,16 @@
 			"type":"image_picker",
 			"id":"image_mobile",
 			"label":"Image for mobile"
+		},
+		{
+			"type": "text",
+			"id": "button_label",
+			"label":"Button Label"
+		},
+		{
+			"type": "text",
+			"id": "button_link",
+			"label":"Button Link"
 		}
 	],
 	"presets": [
@@ -29,7 +39,9 @@
 			"category": "Image",
 			"settings": {
 				"title": "Title",
-				"description": "Describe your company here."
+				"description": "Describe your company here.",
+				"button_label":"about us",
+				"button_link":"/pages/about-us"
 			}
 
 		}
@@ -43,6 +55,7 @@
 			<p class="text col-xs-12 col-md-10">
 				<span class="title"><b>{{section.settings.title}}</b></span>
 				<span>{{section.settings.description}}</span>
+				<a href="{{section.settings.button_link}}" class="feature-collection-button">{{ section.settings.button_label }}</a>
 			</p>
 		</div>
 		<div class="about-image col-md-6 col-xs-12">

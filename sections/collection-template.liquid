@@ -1,31 +1,7 @@
-{% schema %}
-{
-	"name": "Collection list",
-	"settings": [
-		{
-			"type": "collection",
-			"id": "collection",
-			"label":"Choose your collection"
-		}
-	],
-	"presets": [
-		{
-			"name": "Collection list",
-			"category": "Collections",
-			"settings": 
-			{
-				"collection": "Products"
-			}
-		}
-	]
-}
-{% endschema %}
-
 {% include 'color-variables' %}
-
 <div class="collection-page container">
 	<div class="product row">
-		{% for product in collections[section.settings.collection].products %}
+		{% for product in collection.products %}
 			<div class="product-wrapper col-xs-12 col-sm-6 col-md-4">
 				<a class="product-link" href="/products/{{product.handle}}">
 					<div class="product-image">

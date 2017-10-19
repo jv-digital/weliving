@@ -1,0 +1,10 @@
+.template-page {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-family: apercumedium;
+	color: #4D4D4A;
+}
+
+.template-page .page-content {
+	padding: 0px 24px;
+}
