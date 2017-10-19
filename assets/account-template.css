@@ -62,3 +62,33 @@
 	text-transform:uppercase;
 
 }
+
+@media screen and (max-width:992px) {
+	.account-order-page .account-header {
+		margin-top:40px;
+		margin-bottom:40px;
+	}
+	.account-order-page .account-header p {
+		font-size:25px;
+	}
+	.account-order-page .order-labels .price-label,
+	.account-order-page .order-labels .customer-label,
+	.account-order-page .order-labels .status-label {
+			display:none;
+
+	}
+	.account-order-page .order-wrapper {
+		padding:0;
+	}
+	.account-order-page .order-wrapper .price,
+	.account-order-page .order-wrapper .customer,
+	.account-order-page .order-wrapper .status {
+		display:none;
+	}
+	.account-order-page .order-wrapper .order-url {
+			font-size:13px;
+			font-family:apercubold;
+			white-space: nowrap;
+			padding:0;
+	}
+}

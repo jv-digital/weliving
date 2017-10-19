@@ -23,8 +23,8 @@
       {% if customer %}
         <li id="sub-menu"><a href="#">my account</a>
           <ul class="account-options">
-            <li><a href="#">manage address</a></li>
-            <li><a href="#">order history</a></li>
+            <li><a href="/account/addresses">manage address</a></li>
+            <li><a href="/account">order history</a></li>
             <li class="log-out">{{ 'Log out' | customer_logout_link }}</li>
           </ul>
         </li>
@@ -64,8 +64,8 @@
           <p>my account</p>
         </div>
         <div class="account-links">
-          <a href="#">manage address</a>
-          <a href="#">order history</a>
+          <a href="account/addresses">manage address</a>
+          <a href="/account">order history</a>
           {{ 'Log out' | customer_logout_link }}
         </div>
       </div>

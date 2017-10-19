@@ -1,6 +1,7 @@
 .article-page {
 	width:100%;
 	padding:0;
+	margin-bottom:150px;
 }
 .article-page .article-featured-image {
 	padding:0;
@@ -30,13 +31,18 @@
 
 }
 .article-page .article-featured-image .article-details-wrap .date-blog {
-	font-size:18px;
+	font-size:20px;
+	font-family:oswaldmedium;
+	color:#4D4D4A;
+	letter-spacing:1px;
 }
 .article-page .article-featured-image .article-details-wrap .title {
-	font-size:25px;
+	font-size:30px;
 	margin-bottom:50px;
 	text-transform:uppercase;
-	font-weight:bold;
+	font-family:oswaldmedium;
+	color:#4D4D4A;
+	letter-spacing:1px;
 }
 .article-page .article-featured-image .article-details-wrap .article-social-media-link img {
 	padding-right:40px;
@@ -49,6 +55,8 @@
 .article-page .article-content p {
 	font-size:16px;
 	line-height:28px;
+	font-family:aperculight;
+	color:#4D4D4A;
 }
 .featured-articles-wrap {
 	padding:0;
@@ -62,6 +70,53 @@
 }
 .featured-articles-wrap .featured-article-1 .featured-image-1 img{
 	width:100%;
+}
+.featured-articles-wrap .featured-article-1 .featured-description-1,
+.featured-articles-wrap .featured-article-2 .featured-description-2 {
+	background-color: #F0F0F0;
+	padding:30px;
+	padding-bottom:20px;
+	height:230px;
+}
+.featured-articles-wrap .featured-article-1 .featured-description-1 .article-title,
+.featured-articles-wrap .featured-article-2 .featured-description-2 .article-title {
+	display:block;
+	font-size:25px;
+	margin-bottom:18px;
+	text-transform:uppercase;
+	font-family:oswaldmedium;
+	letter-spacing:1px;
+	color:#4D4D4A;
+}
+.featured-articles-wrap .featured-article-1 .featured-description-1 .article-date,
+.featured-articles-wrap .featured-article-2 .featured-description-2 .article-date,
+.featured-articles-wrap .featured-article-1 .featured-description-1 .blog-title,
+.featured-articles-wrap .featured-article-2 .featured-description-2 .blog-title {
+	margin-bottom:5px;
+	display:inline-block;
+	text-transform: uppercase;
+	font-family:oswaldmedium;
+	color:#4D4D4A;
+}
+.featured-articles-wrap .featured-article-1 .featured-description-1 .article-excerpt,
+.featured-articles-wrap .featured-article-2 .featured-description-2 .article-excerpt {
+	font-size:18px;
+	margin-bottom:0;
+	font-family:apercumedium;
+	letter-spacing:1px;
+	color:#4D4D4A;
+}
+.featured-articles-wrap .featured-article-1 .link,
+.featured-articles-wrap .featured-article-2 .link {
+	padding:30px;
+	background-color: #F0F0F0;
+}
+.featured-articles-wrap .featured-article-1 .link a,
+.featured-articles-wrap .featured-article-2 .link a {
+	font-family:apercubold;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color:#4D4D4A;
 }
 .featured-articles-wrap .featured-article-2 {
 	padding-right:75px;

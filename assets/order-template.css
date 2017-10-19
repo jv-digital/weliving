@@ -1,0 +1,23 @@
+.text-align-right {
+	text-align:right;
+}
+.order-page .order-header {
+	text-align:center;
+}
+.order-page .table-wrapper {
+	float:none;
+	margin:0 auto;
+}
+.order-page .table-wrapper table {
+	width:100%;
+}
+.order-page .table-wrapper table .labels {
+	border-bottom:1px solid #4D4D4A;
+}
+.order-page .table-wrapper table .order {
+	border-bottom:1px solid #4D4D4A;
+}
+.order-page .table-wrapper .totals {
+	overflow:auto;
+	border-bottom:1px solid #4D4D4A;
+}
