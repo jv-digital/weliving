@@ -31,6 +31,19 @@
 .about .about-image .mobile-image {
 	display:none;
 }
+
+.feature-collection-button {
+	display: inline-block;
+	margin-top:40px;
+	padding:7px 55px 7px 55px;
+	background: none;
+	outline: none;
+	border: 2px solid black;
+	font-family: apercumedium;
+	text-decoration: none;
+	color: #4D4D4A;
+}
+
 @media screen and (max-width:1200px) {
 	.about-homepage {
 		padding-left:0px;

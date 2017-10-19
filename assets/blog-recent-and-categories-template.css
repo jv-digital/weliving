@@ -42,6 +42,13 @@
 	display:block;
 	color:#4D4D4A;
 }
+.item-text a {
+	text-decoration: none;
+	color: #4D4D4A !important;
+}
+.item-text a:hover {
+	text-decoration: none;
+}
 #desktop-blog-carousel .carousel-inner .item .item-image .item-text .article-date,
 #desktop-blog-carousel .carousel-inner .item .item-image .item-text .blog-title {
 	display:inline-block;
