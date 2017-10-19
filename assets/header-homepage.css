@@ -199,16 +199,47 @@
 		margin:0 auto;
 		padding-bottom:25px;
 	}
+	.alt-header .dropdown-links .close-button {
+		position:absolute;
+		top:15px;
+		left:30px;
+		font-family:times;
+		transform:rotate(45deg);
+	}
+	.alt-header .dropdown-links .close-button p {
+		font-size:45px;
+		color:#4D4D4A;
+	}
 	.alt-header .dropdown-links .submenu li {
 		padding-bottom:20px;
 	}
 	.alt-header .dropdown-links .submenu li a {
 		text-transform:uppercase;
-		color:black;
+		color:#4D4D4A;
 		font-size:15px;
+		font-family:apercumedium;
 	}
 	.alt-header .dropdown-links .submenu .sub-dropdown .sub-menu {
 		display:none;
+	}
+	.alt-header .dropdown-links .submenu #sub-menu {
+		padding-bottom:20px;
+
+	}
+	.alt-header .dropdown-links .submenu #sub-menu .account-options {
+		list-style: none;
+		padding-top:15px;
+		padding-left:0px;
+		display:none;
+	}
+	.alt-header .dropdown-links .submenu #sub-menu .account-options li {
+		padding-bottom:20px;
+	}
+	.alt-header .dropdown-links .submenu #sub-menu .account-options li a {
+		font-family:aperculight;
+	}
+	.alt-header .dropdown-links .submenu #sub-menu .account-options .log-out {
+		padding-bottom:5px;
 	}
 	.alt-header .alt-home-icon-wrapper {
 		text-align:center;

@@ -97,7 +97,7 @@
 				{% if forloop.first == true %}
 					<div class="item active col-xs-12">
 						<div class="item-image col-xs-12">
-							<img src="https://via.placeholder.com/350x150">
+							<img src="{{article.image|img_url:'master'}}">
 						</div>
 						<p class="item-text col-xs-12">
 							<span class="article-date">{{article.published_at | date: "%m-%d-%y"}} |</span>
@@ -110,7 +110,7 @@
 				{% else %}
 					<div class="item col-xs-12">
 						<div class="item-image col-xs-12">
-							<img src="https://via.placeholder.com/350x150">
+							<img src="{{article.image|img_url:'master'}}">
 						</div>
 						<p class="item-text col-xs-12">
 							<span class="article-date">{{article.published_at | date: "%m-%d-%y"}} |</span>
