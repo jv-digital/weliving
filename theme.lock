@@ -2,7 +2,7 @@
 assets/about-homepage.css:
   development: 2017-10-10T23:49:41-04:00   428f532d82227ef9c7e1c3805567d80c
 assets/about-page-template.css:
-  development: 2017-10-10T23:49:41-04:00   923b6798f60935cb502b45b4732aeb71
+  development: 2017-10-18T22:55:31-04:00   d3af4ce891905fcea38023de2adc003f
 assets/account-template.css:
   development: 2017-10-16T19:12:51-04:00   208c3a2efd3daf4fac9a2f8ca4219add
 assets/ajax-loader.gif:
@@ -68,15 +68,17 @@ assets/fonts.css.liquid:
 assets/footer.css:
   development: 2017-10-13T19:00:40-04:00   c895b02425c3bbc00900b776ff449b38
 assets/full-image-homepage.css:
-  development: 2017-10-10T23:49:45-04:00   e7f845519868710df51a36d7a35ed9f9
+  development: 2017-10-18T22:55:32-04:00   06032c1f30bd7c00f5f827b343a49bfb
 assets/gift-card.js:
   development: 2017-10-10T23:49:45-04:00   a1d43f6622fa48a0222c69f8760b4aeb
 assets/gift-card.scss.liquid:
   development: 2017-10-10T23:49:45-04:00   988e9d38ea6182645170090e4e3c55e6
 assets/header-homepage.css:
-  development: 2017-10-16T19:51:52-04:00   f780a37942b12559de0e2e013f1b7215
+  development: 2017-10-18T22:55:31-04:00   32bd80bd270f282b346b38d0eaa98478
+assets/header-script.js:
+  development: 2017-10-18T22:55:32-04:00   6945e3dda4c7fab87c3c22436276e678
 assets/header.css:
-  development: 2017-10-16T19:51:48-04:00   87609c5141a3f57d6fe21a526f35342d
+  development: 2017-10-18T22:55:33-04:00   65c6940fd7c3e66448c82ad38d390744
 assets/ico-select.svg.liquid:
   development: 2017-10-10T23:49:46-04:00   fb3d8f5b83dfa47b06b28064fbbfc380
 assets/jquery.bcSwipe.min.js:
@@ -150,7 +152,7 @@ config/settings_schema.json:
 layout/no-header-footer.liquid:
   development: 2017-10-11T02:22:23-04:00   7b9d1dc6df9b1a62c05abdf6f8d3f344
 layout/theme.liquid:
-  development: 2017-10-16T19:31:29-04:00   d2133df316b271890f324c57ad4688e6
+  development: 2017-10-18T22:55:33-04:00   cccea01eba45684be76fe4c30d9ae22b
 locales/de.json:
   development: 2017-10-10T23:49:50-04:00   2c6d11f22c36699a3e2790b06421f09c
 locales/en.default.json:
@@ -176,7 +178,7 @@ sections/article-template.liquid:
 sections/blog-homepage.liquid:
   development: 2017-10-10T23:49:37-04:00   159018c4c64e00c1f36251ac1cce4df9
 sections/blog-recent-and-categories-template.liquid:
-  development: 2017-10-16T19:12:54-04:00   803a6034060d89043eede4979e36eb02
+  development: 2017-10-18T22:55:34-04:00   d64787240676e5163366f134e9c616bf
 sections/blog-template.liquid:
   development: 2017-10-10T23:49:37-04:00   814eb54ab9089d15a8bdcd6979989b63
 sections/carousel.liquid:
@@ -214,13 +216,15 @@ sections/featured-product.liquid:
 sections/footer.liquid:
   development: 2017-10-16T21:24:13-04:00   444a218bcd1c701605d951e41b16f713
 sections/full-image-homepage.liquid:
-  development: 2017-10-10T23:49:38-04:00   21376b46cf78d9a851df2825b4e037f5
+  development: 2017-10-18T22:55:34-04:00   af86ae0bf7f246df559f17ea00a07f78
 sections/header-dev.liquid:
   development: 2017-10-10T23:49:38-04:00   14c563dc712a5b8daac443d59a9eb954
 sections/header-homepage.liquid:
-  development: 2017-10-16T21:30:30-04:00   0201ea215ebb5feb94965ae2a8562dec
+  development: 2017-10-18T22:55:35-04:00   fce9c41bba2d990797375d498938eeef
+sections/header-script.liquid:
+  development: 2017-10-18T22:55:35-04:00   6945e3dda4c7fab87c3c22436276e678
 sections/header.liquid:
-  development: 2017-10-16T19:33:00-04:00   3f0c3df90af4e1339cc3f9981ad77ed5
+  development: 2017-10-18T22:55:36-04:00   ef8d779cca1c0a5a8b4a5e64134d119d
 sections/hero.liquid:
   development: 2017-10-10T23:49:38-04:00   d7ce7b9dbaa78bf494562f4c7c9e3856
 sections/image-bar.liquid:
@@ -244,7 +248,7 @@ sections/password-header.liquid:
 sections/popout-cart-template.liquid:
   development: 2017-10-10T23:49:39-04:00
 sections/product-template.liquid:
-  development: 2017-10-16T20:40:33-04:00   59ca06969fde6161c92a3413143f2844
+  development: 2017-10-18T22:55:36-04:00   24487dcdf1e0a4e7755bc2d0ae768fc2
 sections/quotes.liquid:
   development: 2017-10-10T23:49:39-04:00   df3263eeebad4c2cd54683984280dca7
 sections/register-template.liquid:
