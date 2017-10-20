@@ -31,7 +31,6 @@
 
 }
 .article-page .article-featured-image .article-details-wrap .date-blog {
-<<<<<<< HEAD
 	font-size:20px;
 	font-family:oswaldmedium;
 	color:#4D4D4A;
@@ -44,21 +43,8 @@
 	font-family:oswaldmedium;
 	color:#4D4D4A;
 	letter-spacing:1px;
-=======
-	font-size:18px;
-	font-family:oswaldmedium;
-	color: #4D4D4A;
 }
-.article-page .article-featured-image .article-details-wrap .title {
-	font-size:36px;
-	margin-top: 25px;
-	margin-bottom: 25px;
-	text-transform:uppercase;
-	font-weight:bold;
-	font-family:oswaldmedium;
-	color: #4D4D4A;
->>>>>>> 4a8b6c17ffa880a48dbf86a228070cbf74d5cb1b
-}
+
 
 .mobile-article-details {
 	padding: 12px;
@@ -169,8 +155,3 @@
 .featured-articles-wrap .featured-article-2 .featured-image-2 img {
 	width:100%;
 }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 4a8b6c17ffa880a48dbf86a228070cbf74d5cb1b
