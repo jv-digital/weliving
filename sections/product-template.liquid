@@ -23,6 +23,9 @@
 				<div class="carousel-inner">
 					{% assign slide_counter = 0 %}
 					{% for image in product.images %}
+						{% if forloop.last %}
+							{% break %}
+						{% endif %}
 						{% if slide_counter == 0 %}
 							<div class="item active">
 								<img src="{{image | img_url: 'master'}}">
@@ -94,6 +97,7 @@
 				<span class="title">{{product.title}}</span>
 				<span class="price">$ {{product.price | remove_first:'00'}}</span>
 			</div>
+			{% if product.available %}
 			<div class="addtocart-button-mobile nopadding col-xs-12">
 				<form></form>
 				<form id="AddToCartForm" action="/cart/add" method="post">
@@ -126,6 +130,7 @@
 					</div>
 				</form>
 			</div>
+			{% endif%}
 			<div class="product-description nopadding col-xs-12">
 				<span>{{product.description}}</span>
 			</div>

@@ -97,28 +97,29 @@
 				{% if forloop.first == true %}
 					<div class="item active col-xs-12">
 						<div class="item-image col-xs-12">
-							<img src="{{article.image|img_url:'master'}}">
+							<a href="{{article.url}}"><img src="{{article.image|img_url:'master'}}"></a>
 						</div>
 						<p class="item-text col-xs-12">
 							<span class="article-date">{{article.published_at | date: "%m-%d-%y"}} |</span>
 							<span class="blog-title"> {{blog.title}} </span>
 							<a href="{{article.url}}"><span class="article-title">{{article.title}} </span></a>
 							<span class="article-excerpt"> {{article.excerpt}} </span>
-							<span class="link"><a href="{{article.url}}">read more</a></span>
 						</p>
+						<span class="link col-xs-12"><a href="{{article.url}}">read more</a></span>
 					</div>
 				{% else %}
 					<div class="item col-xs-12">
 						<div class="item-image col-xs-12">
-							<img src="{{article.image|img_url:'master'}}">
+							<a href="{{article.url}}><img src="{{article.image|img_url:'master'}}"></a>
 						</div>
 						<p class="item-text col-xs-12">
 							<span class="article-date">{{article.published_at | date: "%m-%d-%y"}} |</span>
 							<span class="blog-title"> {{blog.title}} </span>
 							<a href="{{article.url}}"><span class="article-title">{{article.title}} </span></a>
 							<span class="article-excerpt"> {{article.excerpt}} </span>
-							<span class="link"><a href="{{article.url}}">read more</a></span>
+							
 						</p>
+						<span class="link col-xs-12"><a href="{{article.url}}">read more</a></span>
 					</div>
 				{% endif %}
 			{% endfor %}

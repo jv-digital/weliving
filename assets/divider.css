@@ -9,7 +9,7 @@
 .divider::before {
   float: right;
   content:'';
-  border-top: 11px solid black;
+  border-top: 11px solid #4D4D4A;
   border-left: 7px solid transparent;
   margin-right:-6px;
 }
@@ -25,5 +25,5 @@
   padding:0;
   margin-top:20px;
   height:1px;
-  background-color: black;
+  background-color: #4D4D4A;
 }

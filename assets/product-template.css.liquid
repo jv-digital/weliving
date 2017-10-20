@@ -90,12 +90,14 @@ input[type=radio] {
 }
 #ash-desktop + label {
 	display:block;
-	background-image: url({{'ash-circle.svg' | asset_url}});
+	border-radius:50%;
 	background-repeat: no-repeat;
 	padding-left: 41px;
 	padding-bottom:5px;
 }
-
+#ash-desktop label img {
+	border-radius: 50%;
+}
 #ash-desktop:checked + label {
 	background-image: url({{'ash-circle-selected.svg'|asset_url}});
 }
