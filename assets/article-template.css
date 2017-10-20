@@ -63,6 +63,7 @@
 .article-page .article-content img { 
 	display: block;
 	margin: 0 auto;
+	max-width: 100%;
 }
 
 .featured-articles-wrap {

@@ -109,7 +109,7 @@
 }
 .about-page .third-hero .third-hero-content-wrapper .third-hero-text-wrapper p {
 	font-family:apercumedium;
-	font-size:17px;
+	font-size:15px;
 	letter-spacing:1px;
 	line-height: 22px;
 	color:#4D4D4A;
@@ -192,9 +192,32 @@
 
 	}
 	.about-page .third-hero {
-		margin-bottom:490px;
+		margin-bottom:600px;
 	}
 	.about-page .third-hero .third-hero-content-wrapper .third-hero-text-wrapper {
-		bottom:-450px;
+		bottom:-580px;
+	}
+}
+
+@media screen and (max-width:340px) {
+	.about-page .first-hero {
+		margin-bottom:180px;
+	}
+
+	.about-page .first-hero .first-hero-content-wrapper .first-hero-text-wrapper{
+		bottom:-160px;
+	}
+
+	.about-page .second-hero {
+		margin-bottom:520px;
+	}
+	.about-page .second-hero .second-hero-content-wrapper .second-hero-text-wrapper{
+		bottom:-500px;
+	}
+	.about-page .third-hero {
+		margin-bottom:770px;
+	}
+	.about-page .third-hero .third-hero-content-wrapper .third-hero-text-wrapper {
+		bottom:-750px;
 	}
 }
