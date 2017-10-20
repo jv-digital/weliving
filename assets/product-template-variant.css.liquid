@@ -90,12 +90,14 @@ input[type=radio] {
 }
 #ash-desktop + label {
 	display:block;
-	background-image: url({{'ash-circle.svg' | asset_url}});
+	border-radius:50%;
 	background-repeat: no-repeat;
 	padding-left: 41px;
 	padding-bottom:5px;
 }
-
+#ash-desktop label img {
+	border-radius: 50%;
+}
 #ash-desktop:checked + label {
 	background-image: url({{'ash-circle-selected.svg'|asset_url}});
 }
@@ -116,7 +118,7 @@ input[type=radio] {
 	display: inline-block;
 	font-weight: normal;
 	font-size:17px;
-	margin-left: 15px;	
+	margin-left: 10px;	
 	line-height:42px;
 }
 .walnut-description p {
@@ -247,6 +249,13 @@ input[type=radio] {
 	letter-spacing:2px;
 	color:#4D4D4A;
 }
+
+.out-of-stock {
+	margin-top: 25px;
+	font-size: 16px;
+	transform: translateY(20px)
+}
+
 @media screen and (max-width:992px) {
 	.product-page-container {
 		padding: 0;
