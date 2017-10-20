@@ -74,6 +74,31 @@
 	font-family:apercubold;
 }
 @media screen and (max-width:992px) {
-
+	.sm-text-align {
+		text-align:initial;
+	}
+	.order-page .order-header {
+		margin-top:30px;
+		margin-bottom:30px;
+	}
+	.order-page .order-header p {
+		font-size:25px;
+	}
+	.order-page .table-wrapper .totals .order-subtotal,
+	.order-page .table-wrapper .totals .shipping-handling,
+	.order-page .table-wrapper .totals .grand-total {
+		padding:0;
+	}
+	.order-page .table-wrapper .totals .order-subtotal p,
+	.order-page .table-wrapper .totals .shipping-handling p,
+	.order-page .table-wrapper .totals .grand-total p {
+		padding:0;
+	}
+	.order-page .table-wrapper .shipping-address,
+	.order-page .table-wrapper .billing-address,
+	.order-page .table-wrapper .payment-method,
+	.order-page .table-wrapper .shipping-method {
+		padding:0;
+	}
 }
 

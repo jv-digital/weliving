@@ -27,12 +27,12 @@
 	margin:3%;
 	margin-bottom:1px;
 	outline:0.8px solid #4D4D4A;
-	outline-offset:2px;
+	outline-offset:1.7px;
 	transform: rotate(45deg);
 }
 #desktop-blog-carousel .carousel-indicators li{
-	width:10px;
-	height:10px;
+	width:9px;
+	height:9px;
 	margin-bottom:0px;
 }
 #desktop-blog-carousel .carousel-inner .item .item-image img {
@@ -159,6 +159,8 @@
 		font-size:30px;
 		margin-bottom:15px;
 		text-transform:uppercase;
+		font-family:oswaldmedium;
+		color:#4D4D4A;
 	}
 	#desktop-blog-carousel {
 		display:none;
@@ -169,6 +171,7 @@
 	.recent-posts #mobile-blog-carousel .carousel-indicators {
 		margin:0 auto;
 		position:initial;
+		margin-top:15px;
 	}
 	.recent-posts #mobile-blog-carousel .carousel-inner .item {
 		padding:0;
@@ -186,6 +189,8 @@
 	.recent-posts #mobile-blog-carousel .carousel-inner .item .item-text {
 		background-color: #F0F0F0;
 		padding:20px;
+		height:230px;
+		margin-bottom:0;
 	}
 	.recent-posts #mobile-blog-carousel .carousel-inner .item .item-text span {
 		display:block;
@@ -193,19 +198,39 @@
 	.recent-posts #mobile-blog-carousel .carousel-inner .item .item-text .blog-title,
 	.recent-posts #mobile-blog-carousel .carousel-inner .item .item-text .article-date {
 		display:inline-block;
+		font-family:oswaldmedium;
+		color:#4D4D4A;
+		letter-spacing: 0px;
+		text-transform: uppercase;
 	}
 	.recent-posts #mobile-blog-carousel .carousel-inner .item .item-text .blog-title {
 		margin-bottom: 10px;
+
 	}
 	.recent-posts #mobile-blog-carousel .carousel-inner .item .item-text .article-title {
 		font-size:18px;
 		margin-bottom:12px;
+		font-family:oswaldmedium;
+		text-transform: uppercase;
+		color:#4D4D4A;
 	}
 	.recent-posts #mobile-blog-carousel .carousel-inner .item .item-text .article-excerpt {
 		margin-bottom:20px;
+		font-family:apercumedium;
+		font-size:16px;
 	}
 	.recent-posts #mobile-blog-carousel .carousel-inner .item .item-text .link {
 		margin-bottom:14px;
+	}
+	.recent-posts #mobile-blog-carousel .carousel-inner .item .link {
+		padding-left:20px;
+		padding-bottom:20px;
+		background-color: #F0F0F0;
+	}
+	.recent-posts #mobile-blog-carousel .carousel-inner .item .link a {
+		text-transform:uppercase;
+		color:#4D4D4A;
+		font-family:apercumedium;
 	}
 	.categories {
 		padding:0;

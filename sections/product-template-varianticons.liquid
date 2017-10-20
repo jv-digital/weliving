@@ -23,9 +23,6 @@
 				<div class="carousel-inner">
 					{% assign slide_counter = 0 %}
 					{% for image in product.images %}
-						{% if forloop.last %}
-							{% break %}
-						{% endif %}
 						{% if slide_counter == 0 %}
 							<div class="item active">
 								<img src="{{image | img_url: 'master'}}">
@@ -130,7 +127,7 @@
 					</div>
 				</form>
 			</div>
-			{% endif%}
+			{% endif %}
 			<div class="product-description nopadding col-xs-12">
 				<span>{{product.description}}</span>
 			</div>
@@ -147,8 +144,9 @@
 					  		{% if input_counter == 0 %}				  		
 						   		<input type="radio" name="id" id="ash-desktop" value="{{variant.id}}" {% if variant == product.selected_or_first_available_variant %} checked {% endif %}/>
 						   		<label for="ash-desktop" class="ash-label">
+						   			<img src="{{variant.image|img_url:'master'}}">
 									<div class="ash-description">
-						   				<p>{{variant.option1}}, {{variant.option2}}</p>
+						   				<p>{{variant.title}}</p>
 						   			</div>
 						   		</label>
 					  			{% assign input_counter = input_counter | plus: 1 %}

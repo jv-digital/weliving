@@ -9,21 +9,21 @@
 .divider::before {
   float: right;
   content:'';
-  border-top: 11px solid black;
-  border-left: 7px solid transparent;
-  margin-right:-6px;
+  border-top: 11px solid #4D4D4A;
+  border-left: 6px solid transparent;
+  margin-right:-5px;
 }
 .divider::after {
   float: right;
   content: '';
   border-top: 11px solid #E4E0DD;
-  border-left: 7px solid transparent;
+  border-left: 6px solid transparent;
   margin-top: -0.5px;
-  margin-right: -8px;
+  margin-right: -7.5px;
 }
 .divider {
   padding:0;
   margin-top:20px;
-  height:1px;
-  background-color: black;
+  height:1.3px;
+  background-color: #4D4D4A;
 }

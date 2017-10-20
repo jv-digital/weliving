@@ -10,10 +10,10 @@
 		<div class="blog-post-description col-xs-12">
 			<span class="article-date">{{article.published_at | date: "%m-%d-%y"}} |</span>
 			<span class="blog-title"> {{blog.title}} </span>
-			<a href="{{article.url}}"><span class="article-title">{{article.title}} </span></a>
+			<span class="article-title">{{article.title}} </span>
 			<span class="article-excerpt"> {{article.excerpt}} </span>
 		</div>
-		<span class="article-link col-md-12"><a href="{{article.url}}">read more</a></span>
+		<span class="article-link col-xs-12 col-md-12"><a href="{{article.url}}">read more</a></span>
 	</div>
 	{%endfor%}
 </div>
