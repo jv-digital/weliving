@@ -164,7 +164,11 @@ layout/account-layout.liquid:
 layout/no-header-footer.liquid:
   development: 2017-10-20T01:11:59-04:00   bae015b1c0c802b7a1c0f3554c6a1cd6
 layout/theme.liquid:
+<<<<<<< HEAD
   development: 2017-10-20T01:11:59-04:00   697e4565f9fbf981a284f2b086d308e3
+=======
+  development: 2017-10-19T22:32:46-04:00   3ef0da5b788c84fdb307d201d917f58c
+>>>>>>> dev-product
 locales/de.json:
   development: 2017-10-20T01:11:59-04:00   2c6d11f22c36699a3e2790b06421f09c
 locales/en.default.json:
@@ -182,7 +186,11 @@ locales/pt-PT.json:
 sections/about-homepage.liquid:
   development: 2017-10-20T01:11:46-04:00   127ceff1bb93a5878c3bf72d8082ccbd
 sections/about-page-template.liquid:
+<<<<<<< HEAD
   development: 2017-10-20T01:11:46-04:00   7ee4de82426d108b67fa95f49ef64173
+=======
+  development: 2017-10-20T01:02:17-04:00   363e93df035087dbc0e649b1f6c9c644
+>>>>>>> dev-product
 sections/about-page.liquid:
   development: 2017-10-20T01:11:46-04:00   29ff1e48525f5d48bae9e71dc87911df
 sections/article-template.liquid:
@@ -200,7 +208,11 @@ sections/cart-drawer-template.liquid:
 sections/cart-drawer_template_binded.liquid:
   development: 2017-10-20T01:11:47-04:00   5751bdea95ee5fe74dd833ce957801f9
 sections/cart-template.liquid:
+<<<<<<< HEAD
   development: 2017-10-20T01:11:47-04:00   b7e1055ba124ee685ce0a213442c5895
+=======
+  development: 2017-10-20T00:25:33-04:00   e0856885e6ba75b3a46b3d85dffd43cd
+>>>>>>> dev-product
 sections/cartjs-scripts.liquid:
   development: 2017-10-20T01:11:47-04:00   039248c28e8748c707497dc76317199d
 sections/collection-template.liquid:
@@ -228,7 +240,11 @@ sections/featured-collection.liquid:
 sections/featured-product.liquid:
   development: 2017-10-20T01:11:48-04:00   26d27b4c962c805fddea8f8247c754c3
 sections/footer.liquid:
+<<<<<<< HEAD
   development: 2017-10-20T01:11:48-04:00   c40ce0cab9c8f1d81bf3c899fea230f6
+=======
+  development: 2017-10-20T00:46:17-04:00   9f4da50ac4356228f2237b9590753a20
+>>>>>>> dev-product
 sections/full-image-homepage.liquid:
   development: 2017-10-20T01:11:48-04:00   862d952c4d2fdeb51163da242c75c101
 sections/header-dev.liquid:
