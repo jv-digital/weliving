@@ -185,16 +185,16 @@
 }
 @media screen and (max-width:415px) {
 	.about-page .second-hero {
-		margin-bottom:360px;
+		margin-bottom:410px;
 	}
 	.about-page .second-hero .second-hero-content-wrapper .second-hero-text-wrapper{
-		bottom:-320px;
+		bottom:-370px;
 
 	}
 	.about-page .third-hero {
-		margin-bottom:430px;
+		margin-bottom:490px;
 	}
 	.about-page .third-hero .third-hero-content-wrapper .third-hero-text-wrapper {
-		bottom:-390px;
+		bottom:-450px;
 	}
 }

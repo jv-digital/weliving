@@ -144,7 +144,6 @@
 					{% else %}
 						{% assign input_counter = 0 %}
 					  	{% for variant in product.variants %}
-					  	{{variant.image}}
 					  		{% if input_counter == 0 %}				  		
 						   		<input type="radio" name="id" id="ash-desktop" value="{{variant.id}}" {% if variant == product.selected_or_first_available_variant %} checked {% endif %}/>
 						   		<label for="ash-desktop" class="ash-label">

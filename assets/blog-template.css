@@ -74,9 +74,27 @@
 	.blog-page .blog-header {
 		margin-top:40px;
 		margin-bottom:10px;
+
+	}
+	.blog-page .blog-header p{
+		font-size:30px;
 	}
 	.blog-page .blog-posts {
 		padding:0;
 		margin-bottom:20px;
+	}
+	.blog-page .blog-posts .blog-post-description {
+		padding:20px;
+	}
+	.blog-page .blog-posts .blog-post-description .article-title {
+		font-size:21px;
+	}
+	.blog-page .blog-posts .blog-post-description .article-excerpt {
+		font-size:15px;
+	}
+	.blog-page .blog-posts .article-link {
+		padding-left:20px;
+		padding-bottom:20px;
+		padding-top:0px;
 	}
 }

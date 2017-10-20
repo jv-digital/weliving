@@ -128,8 +128,9 @@ label[for="subject-input"] {
 	.contact-page .contact-description .contact-text .contact-header-mobile {
 		display:initial;
 		font-size:25px;
-		font-weight:bold;
+		font-family:oswaldmedium;
 		text-transform:uppercase;
+
 	}
 	.contact-page .contact-input .contact-input-wrapper .name-input-wrapper {
 		padding-right:0;

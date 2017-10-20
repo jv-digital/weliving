@@ -208,4 +208,9 @@
     font-size:12px;
     color:#4D4D4A;
   }
+@media screen and (max-width:369px) {
+  .footer-page .email-input input[type=email] {
+    width:90%;
+  }
+}
 }
