@@ -2,7 +2,7 @@
 assets/about-homepage.css:
   development: 2017-10-20T00:04:03-04:00   ff72cebc5983fe2475bcf773eef3b336
 assets/about-page-template.css:
-  development: 2017-10-20T12:46:37-04:00   eff29fd3621ae2c98bdbe90b35c78475
+  development: 2017-10-20T15:49:32-04:00   e94c8ceaef02890b9896b815b834fb81
 assets/account-template.css:
   development: 2017-10-20T00:04:03-04:00   5a72b18f356d036824c87e1c271e612e
 assets/address.css:
@@ -62,7 +62,7 @@ assets/extra-description-homepage.css:
 assets/faq-template.css:
   development: 2017-10-20T00:04:06-04:00   afd219e347ea934eeb6c878731809954
 assets/favicon.png:
-  development: 2017-10-20T00:04:06-04:00   022b863d69be043fbf64c319267aa930
+  development: 2017-10-20T15:30:11-04:00   a2b9a94a2b740f004da309a7c52c410e
 assets/featured-collection-flipped.css:
   development: 2017-10-20T12:46:57-04:00   2116a7dd36565ed5411fe4bd7562c6af
 assets/featured-collection.css:

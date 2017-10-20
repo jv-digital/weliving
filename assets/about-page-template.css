@@ -185,17 +185,17 @@
 }
 @media screen and (max-width:415px) {
 	.about-page .second-hero {
-		margin-bottom:410px;
+		margin-bottom:440px;
 	}
 	.about-page .second-hero .second-hero-content-wrapper .second-hero-text-wrapper{
-		bottom:-370px;
+		bottom:-400px;
 
 	}
 	.about-page .third-hero {
-		margin-bottom:600px;
+		margin-bottom:630px;
 	}
 	.about-page .third-hero .third-hero-content-wrapper .third-hero-text-wrapper {
-		bottom:-580px;
+		bottom:-610px;
 	}
 }
 
@@ -209,15 +209,15 @@
 	}
 
 	.about-page .second-hero {
-		margin-bottom:520px;
+		margin-bottom:550px;
 	}
 	.about-page .second-hero .second-hero-content-wrapper .second-hero-text-wrapper{
-		bottom:-500px;
+		bottom:-530px;
 	}
 	.about-page .third-hero {
-		margin-bottom:770px;
+		margin-bottom:800px;
 	}
 	.about-page .third-hero .third-hero-content-wrapper .third-hero-text-wrapper {
-		bottom:-750px;
+		bottom:-780px;
 	}
 }
