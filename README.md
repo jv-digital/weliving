@@ -1,6 +1,7 @@
 # weliving
 
-Configure with:
+Configure with commands below.
+Password can be found under Apps -> Private Apps.
 
 CURRENT LIVE THEME:
 ```
