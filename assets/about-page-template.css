@@ -152,6 +152,16 @@
 		letter-spacing:0px;
 		line-height: 20px;
 	}
+
+	.about-page .first-hero .first-hero-content-wrapper .first-hero-text-wrapper .text,
+	.about-page .second-hero .second-hero-content-wrapper .second-hero-text-wrapper .text,
+	.about-page .third-hero .third-hero-content-wrapper .third-hero-text-wrapper p {
+		font-size:15px;
+		font-family:apercumedium;
+		letter-spacing:0px;
+		line-height: 20px;
+	}
+	
 	.about-page .first-hero .first-hero-content-wrapper .first-hero-text-wrapper {
 		position:absolute;
 		right:0;
