@@ -32,7 +32,7 @@ assets/blog-homepage.css:
 assets/blog-recent-and-categories-template.css:
   development: 2017-10-19T00:35:22-04:00   1dea0947af8ff3dce364a98663add4f2
 assets/blog-template.css:
-  development: 2017-10-19T20:29:34-04:00   81f7ca03b5507b8a2357780959dea08a
+  development: 2017-10-19T22:24:38-04:00   a3f649277cb5fe864d9963c14a4a9eaf
 assets/bootstrap.min.css:
   development: 2017-10-10T23:49:43-04:00   ec3bb52a00e176a7181d454dffaea219
 assets/bootstrap.min.js:
@@ -186,7 +186,7 @@ sections/blog-homepage.liquid:
 sections/blog-recent-and-categories-template.liquid:
   development: 2017-10-19T00:32:38-04:00   7e0993a9a09561d511f468548eeeaecf
 sections/blog-template.liquid:
-  development: 2017-10-19T20:29:38-04:00   2afc14e626b0d52e8f21cff405485a44
+  development: 2017-10-19T22:23:42-04:00   06febced3e77783a98ccc9522ef723f7
 sections/carousel.liquid:
   development: 2017-10-10T23:49:37-04:00   cdee9b80c17719f149682a0c0cd42aed
 sections/cart-drawer-template.liquid:

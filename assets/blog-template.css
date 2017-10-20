@@ -41,6 +41,10 @@
 	font-family:oswaldmedium;
 }
 
+.blog-page .blog-posts .blog-post-description a:hover {
+	text-decoration: none;
+}
+
 .blog-page .blog-posts .blog-post-description .article-title {
 	font-size:25px;
 	font-family:oswaldmedium;
