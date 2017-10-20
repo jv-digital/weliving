@@ -4,9 +4,9 @@ assets/about-homepage.css:
 assets/about-page-template.css:
   development: 2017-10-18T22:55:31-04:00   d3af4ce891905fcea38023de2adc003f
 assets/account-template.css:
-  development: 2017-10-16T19:12:51-04:00   208c3a2efd3daf4fac9a2f8ca4219add
-assets/ajax-loader.gif:
-  development: 2017-10-10T23:49:42-04:00   deca8b0ecd6974227d157b6d7068995d
+  development: 2017-10-19T20:29:36-04:00   6bfebd0bb98a5bbd9e820626f9137725
+assets/address.css:
+  development: 2017-10-19T20:29:35-04:00   6788395038b3ef3b4a5e705d5d19763b
 assets/apercu-bold-webfont.ttf:
   development: 2017-10-10T23:49:42-04:00   b9a26bc5d555e64e9e32b5e16d498708
 assets/apercu-bolditalic-webfont.ttf:
@@ -20,7 +20,7 @@ assets/apercu-mediumitalic-webfont.ttf:
 assets/arrow.svg:
   development: 2017-10-13T14:18:00-04:00   dd61b16a3bf42ba603189e943829557a
 assets/article-template.css:
-  development: 2017-10-18T23:35:32-04:00   67917bb88bc2c2f2f7f4844a7fd2457d
+  development: 2017-10-19T21:01:28-04:00   f4905189578b5626e039a2481e664f7d
 assets/ash-circle-selected.svg:
   development: 2017-10-10T23:49:42-04:00   4ac2bcfa19394898cce96682a6ecd787
 assets/ash-circle-test.svg:
@@ -32,7 +32,7 @@ assets/blog-homepage.css:
 assets/blog-recent-and-categories-template.css:
   development: 2017-10-19T00:35:22-04:00   1dea0947af8ff3dce364a98663add4f2
 assets/blog-template.css:
-  development: 2017-10-16T19:12:58-04:00   9d8d07fab1f6f93abf06b603fdc69f2e
+  development: 2017-10-19T20:29:34-04:00   81f7ca03b5507b8a2357780959dea08a
 assets/bootstrap.min.css:
   development: 2017-10-10T23:49:43-04:00   ec3bb52a00e176a7181d454dffaea219
 assets/bootstrap.min.js:
@@ -93,6 +93,8 @@ assets/lookbook-template.css:
   development: 2017-10-10T23:49:46-04:00   cec7464eac6ace19e83896d2e42bcbdd
 assets/match-media.min.js:
   development: 2017-10-10T23:49:46-04:00   0b7a66a7f4044b1929c883738c80386b
+assets/order-template.css:
+  development: 2017-10-19T21:01:28-04:00   ddb0403d85bf94718d8199a98b12c38b
 assets/oswald-bold-webfont.woff:
   development: 2017-10-10T23:49:47-04:00   dbf202898874bf3a141ab2873e343d7e
 assets/oswald-bold-webfont.woff2:
@@ -118,7 +120,7 @@ assets/oswald-semibold-webfont.woff:
 assets/oswald-semibold-webfont.woff2:
   development: 2017-10-10T23:49:48-04:00   c72ec34dedb90fb37df8bac99943ec17
 assets/page.css:
-  development: 2017-10-19T01:13:41-04:00   e42eadef5260308347e901c7ce8f89a4
+  development: 2017-10-19T21:43:52-04:00   54de45c57f4ae431c5fc2b0ba59edb0f
 assets/password.js:
   development: 2017-10-10T23:49:48-04:00   b0c076ff2a8af579b96b2d86d1887522
 assets/product-template.css.liquid:
@@ -154,7 +156,7 @@ config/settings_schema.json:
 layout/no-header-footer.liquid:
   development: 2017-10-11T02:22:23-04:00   7b9d1dc6df9b1a62c05abdf6f8d3f344
 layout/theme.liquid:
-  development: 2017-10-19T00:57:50-04:00   296818efeee756360b6de2e3d6b7f8fc
+  development: 2017-10-19T20:29:37-04:00   51bd84b47a71ff2781da197e4bc2bf31
 locales/de.json:
   development: 2017-10-10T23:49:50-04:00   2c6d11f22c36699a3e2790b06421f09c
 locales/en.default.json:
@@ -176,13 +178,13 @@ sections/about-page-template.liquid:
 sections/about-page.liquid:
   development: 2017-10-10T23:49:36-04:00   29ff1e48525f5d48bae9e71dc87911df
 sections/article-template.liquid:
-  development: 2017-10-18T23:36:44-04:00   d91b58c6272d449f82b7ba60e8a29ceb
+  development: 2017-10-19T20:29:35-04:00   a9c1988b433377ead9fc77fb267c72b7
 sections/blog-homepage.liquid:
   development: 2017-10-18T23:47:18-04:00   18dfd4c5996859bb91cfbf49357cd30a
 sections/blog-recent-and-categories-template.liquid:
   development: 2017-10-19T00:32:38-04:00   7e0993a9a09561d511f468548eeeaecf
 sections/blog-template.liquid:
-  development: 2017-10-10T23:49:37-04:00   814eb54ab9089d15a8bdcd6979989b63
+  development: 2017-10-19T20:29:38-04:00   2afc14e626b0d52e8f21cff405485a44
 sections/carousel.liquid:
   development: 2017-10-10T23:49:37-04:00   cdee9b80c17719f149682a0c0cd42aed
 sections/cart-drawer-template.liquid:
@@ -222,11 +224,11 @@ sections/full-image-homepage.liquid:
 sections/header-dev.liquid:
   development: 2017-10-10T23:49:38-04:00   14c563dc712a5b8daac443d59a9eb954
 sections/header-homepage.liquid:
-  development: 2017-10-18T22:55:35-04:00   fce9c41bba2d990797375d498938eeef
+  development: 2017-10-19T20:29:38-04:00   ce8a63d45553b927f31779ed3712ef20
 sections/header-script.liquid:
   development: 2017-10-18T22:55:35-04:00   6945e3dda4c7fab87c3c22436276e678
 sections/header.liquid:
-  development: 2017-10-18T22:55:36-04:00   ef8d779cca1c0a5a8b4a5e64134d119d
+  development: 2017-10-19T21:01:28-04:00   2bdaa9f33a53fcffa30284c601fff15f
 sections/hero.liquid:
   development: 2017-10-10T23:49:38-04:00   d7ce7b9dbaa78bf494562f4c7c9e3856
 sections/image-bar.liquid:
@@ -404,15 +406,15 @@ templates/cart.liquid:
 templates/collection.liquid:
   development: 2017-10-10T23:49:54-04:00   5db0256874fca1cc72a6f068888fe095
 templates/customers/account.liquid:
-  development: 2017-10-16T19:12:55-04:00   46c73a3befbe34d5f55587f422856dc6
+  development: 2017-10-19T20:29:39-04:00   5e12cd8c33dc37b953e603ccc962f98e
 templates/customers/activate_account.liquid:
   development: 2017-10-10T23:49:54-04:00   857243216dbada72fb0fc9bc256da757
 templates/customers/addresses.liquid:
-  development: 2017-10-10T23:49:54-04:00   f430f4d7180c00a1e2c058124c26c0e9
+  development: 2017-10-19T20:29:40-04:00   115f28c9c737d3adb8f9eff3f81061d8
 templates/customers/login.liquid:
   development: 2017-10-10T23:49:54-04:00   aef8ccbc00c257d1bccdf36c36e42269
 templates/customers/order.liquid:
-  development: 2017-10-10T23:49:54-04:00   e6fc7179a5a3904781b3847d8ef8c0f7
+  development: 2017-10-19T21:01:28-04:00   4d42284b59c9d85e512e725e84ff726a
 templates/customers/register.liquid:
   development: 2017-10-10T23:49:54-04:00   f24402b85dc6ed348d891665dfaf0841
 templates/customers/reset_password.liquid:
