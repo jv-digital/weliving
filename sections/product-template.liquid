@@ -23,6 +23,9 @@
 				<div class="carousel-inner">
 					{% assign slide_counter = 0 %}
 					{% for image in product.images %}
+						{% if forloop.last %}
+							{% break %}
+						{% endif %}
 						{% if slide_counter == 0 %}
 							<div class="item active">
 								<img src="{{image | img_url: 'master'}}">
@@ -94,6 +97,7 @@
 				<span class="title">{{product.title}}</span>
 				<span class="price">$ {{product.price | remove_first:'00'}}</span>
 			</div>
+			{% if product.available %}
 			<div class="addtocart-button-mobile nopadding col-xs-12">
 				<form></form>
 				<form id="AddToCartForm" action="/cart/add" method="post">
@@ -126,9 +130,12 @@
 					</div>
 				</form>
 			</div>
+			{% endif%}
 			<div class="product-description nopadding col-xs-12">
 				<span>{{product.description}}</span>
 			</div>
+			{% if product.available %}
+
 			<div class="addtocart-button-desktop nopadding col-md-12">
 				<form id="AddToCartForm" action="/cart/add" method="post" data-cart-submit>
 					{% if product.has_only_default_variant %}
@@ -158,14 +165,18 @@
 					<input id="add-to-cart-product" type="submit" value="ADD TO CART">
 				</form>
 			</div>
-			<div class="social-media col-md-12">
+
+			{% else %}
+			<div class="col-12-xs out-of-stock">Product currently out of stock.</div>
+			{% endif %}
+			{% comment %} <div class="social-media col-md-12">
 				<div class="product-media-links col-xs-12">
-					<a href="#"><img src="http://via.placeholder.com/35x35"></a>
-					<a href="#"><img src="http://via.placeholder.com/35x35"></a>
-					<a href="#"><img src="http://via.placeholder.com/35x35"></a>
-					<a href="#"><img src="http://via.placeholder.com/35x35"></a>
+					<a href="#"><img src="https://cdn.shopify.com/s/files/1/2176/2625/files/Instagram_1.png?9899784183095026280"></a>
+					<a href="#"><img src="https://cdn.shopify.com/s/files/1/2176/2625/files/Facebook_2.png?9899784183095026280"></a>
+					<a href="#"><img src="https://cdn.shopify.com/s/files/1/2176/2625/files/Pinterest_1.png?9899784183095026280"></a>
+					<a href="#"><img src="https://cdn.shopify.com/s/files/1/2176/2625/files/Twitter_1.png?9899784183095026280"></a>
 				</div>
-			</div>
+			</div> {% endcomment %}
 		</div>
 	</div>
 	<div class="product-showcase row">

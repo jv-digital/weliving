@@ -26,8 +26,12 @@
 				"type": "text",
 				"id": "button_label",
 				"label":"Button Label"
+			},
+			{
+				"type": "text",
+				"id": "button_link",
+				"label":"Button Link"
 			}
-
 		],
 		"presets": [
 		{
@@ -36,7 +40,8 @@
 			"settings": {
 				"title":"Collection Title",
 				"description":"Describe your product here.",
-				"button_label":"shop now"
+				"button_label":"shop now",
+				"button_link":"/collections/products"
 			}
 		}
 	]
@@ -57,10 +62,7 @@
   						<span class="title"><b>{{ section.settings.title }}</b></span>
   						<span class="description">{{ section.settings.description }}</span>
   					</p>
-  					<form></form>
-  					<form class="button" action="/collections/products">
-  						<button class="button-1">{{ section.settings.button_label }}</button>
-  					</form>
+					<a href="{{section.settings.button_link}}" class="feature-collection-button">{{ section.settings.button_label }}</a>
   				</div>	
    			</div>
 	</div>

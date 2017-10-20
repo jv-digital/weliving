@@ -1,0 +1,74 @@
+.address-page {
+	margin-bottom:50px;
+}
+.address-page .address-header {
+	text-align:center;
+	margin-top:70px;
+}
+.address-page .address-header p {
+	font-size:33px;
+	font-family:oswaldmedium;
+	text-transform:uppercase;
+	letter-spacing:3px;
+	color:#4D4D4A;
+}
+.address-page .address-form-wrapper {
+	float:none;
+	margin:0 auto;
+	margin-top:40px;
+}
+.address-page .address-form-wrapper form div {
+	padding-bottom:25px;
+}
+.address-page .address-form-wrapper form .address1 input,
+.address-page .address-form-wrapper form .address2 input,
+.address-page .address-form-wrapper form .city input,
+.address-page .address-form-wrapper form .state input,
+.address-page .address-form-wrapper form .zip-code input {
+	width:100%;
+	background:none;
+	border:none;
+	border-bottom:1px solid #4D4D4A;
+}
+label[for="address1"],
+label[for="address2"],
+label[for="city"],
+label[for="state"],
+label[for="zip-code"] {
+	font-family:apercumedium;
+	letter-spacing:1px;
+
+	color:#4D4D4A;
+	text-transform: uppercase;
+	font-weight:normal;
+}
+.address-page .address-form-wrapper form .submit-button {
+	text-align:center;
+	margin-top:10px;
+}
+.address-page .address-form-wrapper form .submit-button input {
+	background:none;
+	border: 1.5px solid #4D4D4A;
+	width:80%;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-family:apercumedium;
+}
+
+@media screen and (max-width:992px) {
+	.address-page {
+		margin-bottom:60px;
+	}
+	.address-page .address-header {
+		margin-top:40px;
+	}
+	.address-page .address-header p {
+		font-size:25px;
+	}
+	.address-page .address-form-wrapper {
+		padding:0;
+	}
+	.address-page .address-form-wrapper form .submit-button input {
+		width:100%;
+	}
+}

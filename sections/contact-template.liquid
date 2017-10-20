@@ -1,4 +1,5 @@
 <div class="contact-page container">
+	<form></form>
 	{% form 'contact' %}
 	<div class="contact-description row">
 		<div class="contact-text col-md-7">
@@ -15,7 +16,7 @@
 			</div>
 			<div class="email-input-wrapper col-xs-12 col-md-6">
 				<label for="email-input">email address*</label>
-				<input type="text" id="email-input" name="contact[email]" class="col-md-6" required>
+				<input type="email" id="email-input" name="contact[email]" class="col-md-6" required>
 			</div>
 			<div class="subject-input-wrapper col-xs-12 col-md-12">
 				<label for="subject-input">subject</label>
@@ -23,7 +24,7 @@
 			</div>
 			<div class="message-input-wrapper col-xs-12 col-md-12">
 				<label for="message-input">message</label>
-				<textarea rows="10" name="message-input" name="contact[message]"></textarea>
+				<textarea rows="10" id="message-input" name="contact[body]"></textarea>
 			</div>
 			<div class="submit-button col-xs-12 col-md-12">
 				<input type="submit" value="SEND"> 

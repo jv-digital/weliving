@@ -42,20 +42,21 @@
 		<div class="mobile-title col-xs-12 hidden-md hidden-lg">
 				<p><b>{{section.settings.title}}</b></p>
 		</div>
-		<div class="blog-image vertical-align col-xs-12">
+		{% assign article = articles[section.settings.article] %}
+		{% assign blog = blogs[section.settings.blog] %}
+		<a href="/blogs/posts?view=recent-and-categories"><div class="blog-image vertical-align col-xs-12">
 			<img src="{{section.settings.image | img_url:'master'}}">
 			<div class="desktop-title col-md-11 hidden-sm hidden-xs"> 
 				<p><b>{{section.settings.title}}</b></p>
 			</div>
-		</div>
+		</div></a>
 		<div class="article-background col-xs-12">
 			<div class="article-info col-xs-11">
-				{% assign article = articles[section.settings.article] %}
-				{% assign blog = blogs[section.settings.blog] %}
+				
 				<p class="text">
 					<span class="article-date">{{article.published_at | date: "%m-%d-%y"}} |</span>
 					<span class="blog-title"> {{blog.title}} </span>
-					<span class="article-title">{{article.title}} </span>
+					<a href="{{article.url}}"><span class="article-title">{{article.title}} </span></a>
 					<span class="article-excerpt"> {{article.excerpt}} </span>
 					<span class="link"><a href="{{article.url}}">read more</a></span>
 				</p>

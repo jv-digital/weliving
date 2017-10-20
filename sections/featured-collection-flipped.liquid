@@ -26,8 +26,12 @@
 				"type": "text",
 				"id": "button_label",
 				"label":"Button Label"
+			},
+			{
+				"type": "text",
+				"id": "button_link",
+				"label":"Button Link"
 			}
-
 		],
 		"presets": [
 		{
@@ -36,7 +40,8 @@
 			"settings": {
 				"title":"Collection Title",
 				"description":"Describe your product here.",
-				"button_label":"Take a closer look"
+				"button_label":"Take a closer look",
+				"button_link":"/collections/products"
 			}
 		}
 	]
@@ -56,9 +61,7 @@
 					<span class="title-2"><b>{{section.settings.title}}</b></span>
 					<span>{{ section.settings.description }}</span>
 				</p>
-				<div class="button-2">
-					<button class="button-3">{{ section.settings.button_label }}</button>
-				</div>
+				<a href="{{section.settings.button_link}}" class="feature-collection-button">{{ section.settings.button_label }}</a>
 			</div>	
    			<div class="angle-2 hidden-xs hidden-sm"></div>
     	</div>

@@ -14,7 +14,7 @@ body {
 	float:none;
 	margin:0 auto;
 	padding:0;
-	border-bottom:1px solid black;
+	border-bottom:1px solid #4D4D4A;
 	padding-bottom:15px;
 	padding-top:40px;
 }
@@ -25,12 +25,13 @@ body {
 	letter-spacing:2px;
 	margin-bottom:0px;
 	margin-top:0px;
+	color:#4D4D4A;
 }
 .cart-page .cart-labels {
 	float:none;
 	margin:0 auto;
 	overflow:auto;
-	border-bottom:1px solid black;
+	border-bottom:1px solid #4D4D4A;
 	padding-top:20px;
 	padding-bottom:8px;
 }
@@ -38,6 +39,7 @@ body {
 	font-family:oswaldregular;
 	text-transform: uppercase;
 	letter-spacing:1px;
+	color:#4D4D4A;
 }
 .cart-page .cart-labels .item-qty {
 	padding-left:13px;
@@ -53,7 +55,7 @@ body {
 	align-items:center;
 	float:none;
 	margin:0 auto;
-	border-bottom:1px solid black;
+	border-bottom:1px solid #4D4D4A;
 }
 .cart-page .line-item-image img {
 	width:100%;
@@ -73,6 +75,7 @@ body {
 	font-family:oswaldregular;
 	font-size:15px;
 	letter-spacing:1px;
+	color:#4D4D4A;
 	text-transform:uppercase;
 	margin-bottom:0;
 }
@@ -84,8 +87,8 @@ body {
 .cart-page .line-item-info .line-item-quantity .subtract-arrow {
 	width:10px;
 	height:10px;
-	border-bottom:1px solid black;
-	border-left:1px solid black;
+	border-bottom:1px solid #4D4D4A;
+	border-left:1px solid #4D4D4A;
 	display:inline-block;
 	transform:rotate(45deg);
 
@@ -93,8 +96,8 @@ body {
 .cart-page .line-item-info .line-item-quantity .add-arrow {
 	width:10px;
 	height:10px;
-	border-top:1px solid black;
-	border-right:1px solid black;
+	border-top:1px solid #4D4D4A;
+	border-right:1px solid #4D4D4A;
 	display:inline-block;
 	transform:rotate(45deg);
 }
@@ -151,21 +154,15 @@ body {
 	display:block;
 	padding-bottom:7px;
 }
-.cart-page .checkout-info .checkout-prices .block .grand-total {
-	font-family:apercubold;
+.cart-page .checkout-info .checkout-prices .grand-total {
+	font-family:apercumedium;
+	color:#4D4D4A;
+	font-size:16px;
 }
-.cart-page .checkout-info .checkout-buttons #add-to-cart {
-	background:none;
-	border:1.5px solid black;
-	color:black;
-	text-transform: uppercase;
-	letter-spacing:1px;
-	font-family: apercumedium;
-	padding:15px 100px 15px 100px;	
-}
+
 .cart-page .checkout-info .checkout-buttons #checkout {
 	float:right;
-	background-color:black;
+	background-color:#4D4D4A;
 	border:none;
 	color:white;
 	text-transform: uppercase;

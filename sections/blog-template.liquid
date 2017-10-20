@@ -5,15 +5,15 @@
 	{% for article in blog.articles %}
 	<div class="blog-posts col-xs-12 col-md-6">
 		<div class="blog-post-image col-xs-12 col-md-12">
-			<img src="{{article.image | img_url: 'master'}}">
+			<a href="{{article.url}}"><img src="{{article.image | img_url: 'master'}}"></a>
 		</div>
 		<div class="blog-post-description col-xs-12">
 			<span class="article-date">{{article.published_at | date: "%m-%d-%y"}} |</span>
 			<span class="blog-title"> {{blog.title}} </span>
-			<span class="article-title">{{article.title}} </span>
+			<a href="{{article.url}}"><span class="article-title">{{article.title}} </span></a>
 			<span class="article-excerpt"> {{article.excerpt}} </span>
-			<span class="link"><a href="{{article.url}}">read more</a></span>
 		</div>
+		<span class="article-link col-md-12"><a href="{{article.url}}">read more</a></span>
 	</div>
 	{%endfor%}
 </div>

@@ -2,21 +2,21 @@
   <div class="account-header col-xs-12">
     <p>order history</p>
   </div>
-  <div class="order-labels col-md-8">
-    <p class="order-number-label col-md-2">order#</p>
-    <p class="date-label col-md-1">date</p>
+  <div class="order-labels col-xs-12 col-md-8">
+    <p class="order-number-label col-xs-5 col-md-2">order#</p>
+    <p class="date-label col-xs-5 col-md-1">date</p>
     <p class="price-label col-md-3">order total</p>
     <p class="customer-label col-md-2">ship to</p>
     <p class="status-label col-md-2">order status</p>
   </div>
   {% for order in customer.orders %}
-    <div class="order-wrapper col-md-8">
-      <p class="order-number col-md-2">{{order.order_number}}</p>
-      <p class="date col-md-2">{{order.created_at}}</p>
-      <p class="price col-md-2">{{order.total_price}}</p>
+    <div class="order-wrapper col-xs-12 col-md-8">
+      <p class="order-number col-xs-5 col-md-2">{{order.order_number}}</p>
+      <p class="date col-xs-4 col-md-2">{{order.created_at | date:'%m/%d/%Y'}}</p>
+      <p class="price col-md-2">{{order.total_price | money}}</p>
       <p class="customer col-md-2">{{order.customer.first_name}}</p>
       <p class="status col-md-2">{{order.fulfillment_status}}</p>
-      <a href="{{order.customer_url}}" class="col-md-2">view order</a>
+      <a href="{{order.customer_url}}" class="order-url col-xs-3 col-md-2">view order</a>
     </div>
   {% endfor %}
 </div>

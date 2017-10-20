@@ -6,6 +6,9 @@ body {
 .header .mobile-menu-wrapper {
   display:none;
 }
+.header .dropdown-links {
+  display:none;
+}
 .selected-shop,
 .selected-about,
 .selected-blog,
@@ -108,6 +111,15 @@ body {
   padding-left:40px;
   margin-bottom:9px;
 }
+
+.header .sign-in-checkout-wrapper .checkout-img .cart-count {
+  position: absolute;
+  transform: translateX(-24px) translateY(6px);
+  color: #4D4D4A;
+  font-size: 12px;
+  font-family:apercumedium;
+}
+
 #shopify-section-header {
   border-bottom:.75px solid black;
 }
@@ -183,8 +195,79 @@ body {
 }
 
 @media screen and (max-width:992px) {
+  .header .mobile-menu-wrapper .mobile-menu p {
+    font-family:apercumedium;
+    font-size:15px;
+    letter-spacing: 1px;
+  }
   .header .navigation-links-wrapper {
     display:none;
+  }
+  .header .dropdown-links {
+    position:absolute;
+    width:100%;
+    left:0;
+    top:0;
+    background-color:#E4E0DD;
+    z-index:10;
+    padding-top:20px;
+    display:none;
+  }
+  .header .dropdown-links .submenu {
+    text-align:center;
+    background-color:#E4E0DD;
+    padding:0;
+    margin:0;
+    list-style:none;
+  }
+  .header .dropdown-links .dropdown-image {
+    max-height:80px;
+    max-width:80px;
+    display:block;
+    margin:0 auto;
+    padding-bottom:25px;
+  }
+  .header .dropdown-links .close-button {
+    position:absolute;
+    top:15px;
+    left:30px;
+    font-family:times;
+    transform:rotate(45deg);
+  }
+  .header .dropdown-links .close-button p {
+    font-size:45px;
+    color:#4D4D4A;
+  }
+  .header .dropdown-links .submenu li {
+    padding-bottom:20px;
+  }
+  .header .dropdown-links .submenu li a {
+    text-transform:uppercase;
+    color:#4D4D4A;
+    font-size:15px;
+    font-family:apercumedium;
+  }
+  .header .dropdown-links .submenu .sub-dropdown .sub-menu {
+    display:none;
+  }
+  .header .dropdown-links .submenu #sub-menu {
+    padding-bottom:20px;
+
+  }
+  .header .dropdown-links .submenu #sub-menu .account-options {
+    list-style: none;
+    padding-top:15px;
+    padding-left:0px;
+    display:none;
+  }
+  .header .dropdown-links .submenu #sub-menu .account-options li {
+    padding-bottom:20px;
+  }
+  .header .dropdown-links .submenu #sub-menu .account-options li a {
+    font-family:aperculight;
+  }
+  .header .dropdown-links .submenu #sub-menu .account-options .log-out {
+    padding-bottom:5px;
   }
   .header .sign-in-checkout-wrapper .sign-in {
     display:none;

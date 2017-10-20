@@ -5,21 +5,32 @@
 		</div>
 	</div>
 	<div class="dropdown-links" id="dropdown">
-		<img class="dropdown-image" src="https://cdn.shopify.com/s/files/1/2176/2625/files/weliving_logo.png?11859824361046747801">
+		<a href="/"><img class="dropdown-image" src="https://cdn.shopify.com/s/files/1/2176/2625/files/weliving_logo.png?11859824361046747801"></a>
+		<div class="close-button"><p>+</p></div>
 		<ul class="submenu">
-			<li><a href="#">shop</a></li>
-			<li><a href="#">about</a></li>
-			<li><a href="#">blog</a></li>
-			<li><a href="#">lookbook</a></li>
+			<li><a href="/collections/products">shop</a></li>
+			<li><a href="/pages/about?view=about">about</a></li>
+			<li><a href="/blogs/posts?view=recent-and-categories">blog</a></li>
+			<li><a href="/pages/lookbook?view=lookbook">lookbook</a></li>
 			<li class="sub-dropdown">
-				<a href="#">need help</a>
+				<a href="#footer">need help</a>
 				<ul class="sub-menu">
-					<li><a href="#">shipping & return</a><li>
-					<li><a href="#">faq</a></li>
-					<li><a href="#">contact</a></li>
+					<li><a href="/pages/shipping-and-return?view=shipping-and-return">shipping & return</a><li>
+					<li><a href="pages/faq?view=faq">faq</a></li>
+					<li><a href="/pages/contact?view=contact">contact</a></li>
 				</ul>
 			</li>
-			<li class="sub-menu"><a href="#">sign in</a></li>
+			{% if customer %}
+				<li id="sub-menu"><a href="#">my account</a>
+					<ul class="account-options">
+						<li><a href="/account/addresses">manage address</a></li>
+						<li><a href="/account">order history</a></li>
+						<li class="log-out">{{ 'Log out' | customer_logout_link }}</li>
+					</ul>
+				</li>
+			{% else %}
+				<li><a href="/account/login">sign in</a></li>
+			{% endif %}
 		</ul>
 	</div>
 	<div class="alt-home-icon-wrapper col-xs-6 col-md-2">
@@ -38,9 +49,9 @@
 		          <p class="alt-dropdown-text">need help</p>
 		        </div>
 		        <div class="alt-dropdown-content">
-		          <a href="#">shipping & return</a>
-		          <a href="#">faq</a>
-		          <a href="#">contact</a>
+		          <a href="/pages/shipping-and-return?view=shipping-and-return">shipping & return</a>
+		          <a href="pages/faq?view=faq">faq</a>
+		          <a href="/pages/contact?view=contact">contact</a>
 		        </div>
 		    </li>
 		</ul>
@@ -63,17 +74,7 @@
 			</div>
 		{%endif%}
 		<div class="alt-checkout-img">
-			<a href="/cart"><img src="{{'cart.svg'|asset_url}}"></a>
+			<a href="/cart"><img src="{{'cart-homepage.svg'|asset_url}}"><span class="cart-count" v-cloak>${cart.item_count}</span></a>
 		</div>
 	</div>
 </div>
-<script>
-	$(document).ready(function() {
-		$(".alt-mobile-menu-dropdown").click(function() {
-			$(".dropdown-links").slideDown(500);
-		});
-		$(".sub-menu").click(function() {
-			$(".")
-		})
-	});
-</script>

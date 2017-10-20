@@ -3,6 +3,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}" type="image/png" />
 		{{'header-homepage.css' |asset_url |stylesheet_tag}}
 		{{'header.css'|asset_url|stylesheet_tag}}
 		{{'footer.css'|asset_url|stylesheet_tag}}
@@ -20,7 +21,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		{{'bootstrap.min.js'| asset_url | script_tag}}
 		{{'jquery.bcSwipe.min.js'|asset_url|script_tag}}
-		{{ 'cart.min.js' | asset_url | script_tag }}
 		<script src="https://unpkg.com/vue"></script>
 		{{'blog-recent-and-categories-template.css' | asset_url | stylesheet_tag}}
 		{{'blog-template.css' | asset_url| stylesheet_tag}}
@@ -29,16 +29,23 @@
 		{{'terms-and-conditions.css'|asset_url|stylesheet_tag}}
 		{{'faq-template.css' | asset_url | stylesheet_tag}}
 		{{'contact-template.css' | asset_url | stylesheet_tag}}
+		{{'page.css' | asset_url | stylesheet_tag}}
 		{{'article-template.css'|asset_url|stylesheet_tag}}
 		{{'fonts.css'|asset_url|stylesheet_tag}}
 		{{'lookbook-template.css'|asset_url|stylesheet_tag}}
 		{{'cart-drawer-template.css'|asset_url|stylesheet_tag}}
 		{{'account-template.css'|asset_url|stylesheet_tag}}
 		{{'register-template.css' | asset_url | stylesheet_tag}}
+		<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+		{{'address.css'|asset_url|stylesheet_tag}}
+		{{'order-template.css'|asset_url|stylesheet_tag}}
 		{{content_for_header}}
 		<style>
 				body {
   						background-color:#E4E0DD;
+				}
+				[v-cloak] {
+					display: none;
 				}
 		</style>
 	</head>
@@ -56,60 +63,9 @@
 		{% endif %}
 		<script>
 			$('.carousel').bcSwipe({ threshold: 50 });
-
-			function subtract(clicked_id) {
-				var item_number = parseInt(clicked_id.substr(clicked_id.length - 1));
-				var line_quantity_list = document.getElementsByClassName("line-quantity");
-				var line_quantity = line_quantity_list[item_number];
-				line_quantity.stepDown(1);
-				var line_quantity_value = line_quantity_list[item_number].value;
-				CartJS.updateItem(item_number + 1, line_quantity_value);
-			}
-			function add(clicked_id) {
-				var item_number = parseInt(clicked_id.substr(clicked_id.length - 1));
-				var line_quantity_list = document.getElementsByClassName("line-quantity");
-				var line_quantity = line_quantity_list[item_number];
-				line_quantity.stepUp(1);
-				var line_quantity_value = line_quantity_list[item_number].value;
-				CartJS.updateItem(item_number + 1, line_quantity_value);
-			}
-			jQuery(function() {
-                CartJS.init({{ cart | json }});
-
-				let vueData = {
-					cartOpen: false,
-					cart: {{ cart | json }}
-				};
-
-				let cartView = new Vue({
-					delimiters: ['${', '}'], // Because shopify already uses double curly brackets.
-					el: '.cart-drawer',
-					data: vueData
-				});
-				console.log('initial cart', vueData, cartView);
-
-				$('.close').click(function() { 
-					//$('.cart-drawer').animate({width:'toggle'},100);
-					vueData.cartOpen = false;
-				});
-				$('#add-to-cart-product').click(function() {
-					//$('.cart-drawer').slide({width:'toggle'},200);
-					vueData.cartOpen = true;
-				});
-
-				$(document).on('cart.ready', function(event, cartData) {
-					vueData.cart = cartData;
-					console.log('cart ready', event, cartData, vueData, cartView);
-				});
-
-				$(document).on('cart.requestComplete', function(event, cartData) {
-					vueData.cart = cartData;
-					console.log('cart request', event, cartData, vueData, cartView);
-				});
-            });
-
-
 		</script>
+		{% section 'cartjs-scripts' %}
+		{% section 'header-script' %}
 	</body>
 </html>
 

@@ -80,7 +80,7 @@
   font-size:14px;
   color:#4D4D4A;
 }
-.footer-page .email-input input[type=text] {
+.footer-page .email-input input[type=email] {
   background:none;
   border:none;
   border-bottom:1px solid #4D4D4A;
@@ -89,10 +89,14 @@
   padding-bottom:5px;
   width:275px;
 }
-.footer-page .email-input a {
-  position:absolute;
-  right:86px;
-  bottom:5px;
+.footer-page .email-input button {
+  margin-left: -40px;
+  padding: 5px 10px;
+  border: none;
+  background: none;
+}
+.footer-page .email-input button img {
+  width: 20px;
 }
 .footer-page .social-media-space {
   padding-top:10px;
@@ -101,7 +105,8 @@
   padding-left:20px;
 }
 .footer-page .social-media-space .social-media-links a img {
-  padding-right:20px;
+  padding-right:30px;
+  height:18px;
 }
 .footer-page .phone-number {
   padding-left:100px;
@@ -203,4 +208,9 @@
     font-size:12px;
     color:#4D4D4A;
   }
+@media screen and (max-width:369px) {
+  .footer-page .email-input input[type=email] {
+    width:90%;
+  }
+}
 }

@@ -47,4 +47,17 @@
 	.homepage-full-image .full-image-mobile img {
 		width:100%;
 	}
+	.homepage-full-image .full-image-mobile .mobile-description {
+		position:absolute;
+		text-align:center;
+		width:70%;
+		margin-left:15%;
+		margin-right:15%;
+		top:41%;
+		font-family:aperculight;
+		font-size:15px;
+		letter-spacing:2px;
+		color:white;
+		text-transform:uppercase;
+	}
 }

@@ -32,9 +32,11 @@
 	text-align:center;
 }
 .register-page .register-wrap .register-header p {
-	font-weight:bold;
 	margin-bottom:50px;
-	font-size:25px;
+	font-size:35px;
+	font-family:oswaldmedium;
+	letter-spacing:3px;
+	color:#4D4D4A;
 	text-transform:uppercase;
 }
 .register-page .register-wrap .email-register, 
@@ -49,15 +51,18 @@
 }
 .register-page .register-wrap .register-button input {
 	background:none;
-	border:2px solid black;
+	border:2px solid #4D4D4A;
 	padding:10px 80px 10px 80px;
-	font-weight:bold;
+	font-family:apercumedium;
 }
 .register-page .register-wrap .email-register label,
 .register-page .register-wrap .password-register label,
 .register-page .register-wrap .password-confirm label {
 	display:block;
 	text-transform:uppercase;
+	font-family:apercumedium;
+	letter-spacing:1px;
+	color:#4D4D4A;
 }
 
 .register-page .register-wrap .email-register input,
@@ -67,7 +72,7 @@
 	border-top:0;
 	border-left:0;
 	border-right:0;
-	border-bottom:1px solid black;
+	border-bottom:1px solid #4D4D4A;
 	padding-top:10px;
 	background-color:transparent;
 }
@@ -75,8 +80,14 @@
 	text-align:center;
 	margin-top:30px;
 }
+.register-page .register-wrap .sign-in-link p {
+	font-family:apercumedium;
+	letter-spacing:1px;
+	color:#4D4D4A;
+}
 .register-page .register-wrap .sign-in-link a {
-	color:black;
+	color:#4D4D4A;
+	letter-spacing:1px;
 	text-decoration:underline;
 }
 

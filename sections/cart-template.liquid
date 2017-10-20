@@ -9,61 +9,40 @@
 		<p class="item-remove col-md-1">edit</p>
 	</div>
 	<form action="/cart" method="post">
-		{% for line in cart.items %}
-			<div class="line-item-wrapper col-md-10">
-				<div class="line-item-image col-xs-4 col-md-1">
-					<img src="{{line.image| img_url:'master'}}">
+		<div class="line-item-wrapper col-md-10" v-for="item in cart.items">
+			<div class="line-item-image col-xs-4 col-md-1">
+				<img v-bind:src="item.image">
+			</div>
+			<div class="line-item-info col-xs-8 col-md-11">
+				<div class="line-item-name col-xs-12 col-md-3">
+					<p>${item.title}</p>
 				</div>
-				<div class="line-item-info col-xs-8 col-md-11">
-					<div class="line-item-name col-xs-12 col-md-3">
-						<p>{{line.title}}</p>
-					</div>
-					<div class="line-item-quantity col-xs-7 col-md-3">
-						<div onclick="subtract(this.id)" id="subtract-arrow-{{forloop.index0}}" class="subtract-arrow"></div>
-						<input class="line-quantity" type="number" min="1" size="2" name="updates[]" id="updates_{{ line.id }}" value="{{line.quantity}}">
-						<div onclick="add(this.id)" id="add-arrow-{{forloop.index0}}" class="add-arrow"></div>
-					</div>
-					<div class="line-item-price col-xs-5 col-md-3">
-						<p>{{line.price | money}}</p>
-					</div>
-					<div class="line-item-remove col-xs-12 col-md-3">
-						<a href="/cart/change?line={{ forloop.index }}&quantity=0">Delete</a>
-					</div>
+				<div class="line-item-quantity col-xs-7 col-md-3">
+					<div v-bind:data-cart-update-id="item.variant_id" v-bind:data-cart-quantity="item.quantity - 1" class="subtract-arrow"></div>
+					<input class="line-quantity" type="number" min="1" size="2" name="updates[]" v-bind:value="item.quantity">
+					<div v-bind:data-cart-add="item.variant_id" class="add-arrow"></div>
+				</div>
+				<div class="line-item-price col-xs-5 col-md-3">
+					<p>$ ${item.price * item.quantity / 100}</p>
+				</div>
+				<div class="line-item-remove col-xs-12 col-md-3">
+					<a v-bind:data-cart-remove-id="item.variant_id">Delete</a>
 				</div>
 			</div>
-		{% endfor %}
+		</div>
 		<div class="checkout-info col-md-10">
 			<div class="checkout-prices col-md-12">
 				<p class="block">
 					<span>subtotal</span>
-					<span>tax</span>
-					<span class="grand-total">grand total</span>
 				</p>
 				<p class="block">
-					<span class="subtotal">{{cart.total_price | money}}</span>
-					<span class="tax">???</span>
-					<span class="grand-total">???</span>
+					<span class="subtotal">$ ${cart.total_price / 100}</span>
 				</p>
+				<p class="grand-total">Proceed to checkout for Grand Total</p>
 			</div>
 			<div class="checkout-buttons">
-				<input type="submit" id="add-to-cart" value="add to cart">
 				<input type="submit" id="checkout" name="checkout" value="check out">
 			</div>
 		</div>
 	</form>
 </div>
-<script>
-	function subtract(clicked_id) {
-		var item_number = parseInt(clicked_id.substr(clicked_id.length - 1));
-		var line_quantity_list = document.getElementsByClassName("line-quantity");
-		var line_quantity = line_quantity_list[item_number];
-		line_quantity.stepDown(1);
-	}
-	function add(clicked_id) {
-		var item_number = parseInt(clicked_id.substr(clicked_id.length - 1));
-		var line_quantity_list = document.getElementsByClassName("line-quantity");
-		var line_quantity = line_quantity_list[item_number];
-		line_quantity.stepUp(1);
-	}
-</script>
-

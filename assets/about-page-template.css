@@ -80,7 +80,7 @@
 }
 .about-page .third-hero {
 	position:relative;
-	margin-bottom:760px;
+	margin-bottom:650px;
 	color:#4D4D4A;
 }
 .about-page .third-hero .third-hero-content-wrapper .desktop-image {
@@ -97,7 +97,7 @@
 	padding-bottom:35px;
 	position:absolute;
 	right:125px;
-	bottom:-650px;
+	bottom:-470px;
 }
 .about-page .third-hero .third-hero-text-wrapper .title {
 	font-family:oswaldmedium;
@@ -107,9 +107,9 @@
 	margin-bottom:20px;
 	color:#4D4D4A;
 }
-.about-page .third-hero .third-hero-content-wrapper .third-hero-text-wrapper .text {
+.about-page .third-hero .third-hero-content-wrapper .third-hero-text-wrapper p {
 	font-family:apercumedium;
-	font-size:17px;
+	font-size:15px;
 	letter-spacing:1px;
 	line-height: 22px;
 	color:#4D4D4A;
@@ -152,6 +152,7 @@
 		letter-spacing:0px;
 		line-height: 20px;
 	}
+	
 	.about-page .first-hero .first-hero-content-wrapper .first-hero-text-wrapper {
 		position:absolute;
 		right:0;
@@ -172,14 +173,51 @@
 		padding:35px 20px 25px 20px;
 	}
 	.about-page .third-hero {
-		margin-bottom:490px;
+		margin-bottom:320px;
 	}
 	.about-page .third-hero .third-hero-content-wrapper .third-hero-text-wrapper{
-		top:50%;
 		right:0;
 		left:0;
-		bottom:auto;
+		bottom:-250px;
 		margin:0 auto;
 		padding:35px 20px 25px 20px;
+	}
+}
+@media screen and (max-width:415px) {
+	.about-page .second-hero {
+		margin-bottom:410px;
+	}
+	.about-page .second-hero .second-hero-content-wrapper .second-hero-text-wrapper{
+		bottom:-370px;
+
+	}
+	.about-page .third-hero {
+		margin-bottom:600px;
+	}
+	.about-page .third-hero .third-hero-content-wrapper .third-hero-text-wrapper {
+		bottom:-580px;
+	}
+}
+
+@media screen and (max-width:340px) {
+	.about-page .first-hero {
+		margin-bottom:180px;
+	}
+
+	.about-page .first-hero .first-hero-content-wrapper .first-hero-text-wrapper{
+		bottom:-160px;
+	}
+
+	.about-page .second-hero {
+		margin-bottom:520px;
+	}
+	.about-page .second-hero .second-hero-content-wrapper .second-hero-text-wrapper{
+		bottom:-500px;
+	}
+	.about-page .third-hero {
+		margin-bottom:770px;
+	}
+	.about-page .third-hero .third-hero-content-wrapper .third-hero-text-wrapper {
+		bottom:-750px;
 	}
 }

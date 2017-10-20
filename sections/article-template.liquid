@@ -30,15 +30,19 @@
 <div class="article-page container">
 	<div class="article-featured-image col-md-12">
 		<img id="hero" src="{{ article.image | img_url:'master'}}">
-		<div class="article-details-wrap col-md-4">
+		<div class="article-details-wrap col-md-4 hidden-xs">
 			<p class="date-blog"> {{article.published_at | date: "%m-%d-%y"}} | {{blog.title}} </p>
 			<p class="title">{{article.title}}</p>
-			<div class="article-social-media-link">
+			{% comment %} <div class="article-social-media-link">
 				<img src="https://via.placeholder.com/30x30">
 				<img src="https://via.placeholder.com/30x30">
 				<img src="https://via.placeholder.com/30x30">
-			</div>
+			</div> {% endcomment %}
 		</div>
+	</div>
+	<div class="mobile-article-details visible-xs">
+		<p class="date-blog"> {{article.published_at | date: "%m-%d-%y"}} | {{blog.title}} </p>
+		<p class="title">{{article.title}}</p>
 	</div>
 	<div class="article-content col-md-push-5 col-md-7">
 		<p>{{article.content}}</p>
@@ -48,28 +52,28 @@
 			{% assign blog1 = blogs[section.settings.featured_blog_1] %}
 			{% assign article1 = articles[section.settings.featured_article_1] %}
 			<div class="featured-image-1 col-xs-12 col-md-12">
-				<img src="{{article1.image | img_url: 'master'}}">
+				<a href="{{article.url}}"><img src="{{article1.image | img_url: 'master'}}"></a>
 				<div class="featured-description-1 col-xs-12">
 					<span class="article-date">{{article1.published_at | date: "%m-%d-%y"}} |</span>
 					<span class="blog-title"> {{blog1.title}} </span>
 					<span class="article-title">{{article1.title}} </span>
 					<span class="article-excerpt"> {{article1.excerpt}} </span>
-					<span class="link"><a href="{{article1.url}}">read more</a></span>
 				</div>
+				<span class="link col-xs-12 col-md-12"><a href="{{article1.url}}">read more</a></span>
 			</div>
 		</div>
 		<div class="featured-article-2 col-xs-12 col-md-6">
 			{% assign blog2 = blogs[section.settings.featured_blog_2] %}
 			{% assign article2 = articles[section.settings.featured_article_2] %}
 			<div class="featured-image-2 col-xs-12 col-md-12">
-				<img src="{{article2.image | img_url: 'master'}}">
+				<a href="{{article.url}}"><img src="{{article2.image | img_url: 'master'}}"></a>
 				<div class="featured-description-2 col-xs-12">
 					<span class="article-date">{{article2.published_at | date: "%m-%d-%y"}} |</span>
 					<span class="blog-title"> {{blog2.title}} </span>
 					<span class="article-title">{{article2.title}} </span>
 					<span class="article-excerpt"> {{article2.excerpt}} </span>
-					<span class="link"><a href="{{article2.url}}">read more</a></span>
 				</div>
+				<span class="link col-xs-12 col-md-12"><a href="{{article2.url}}">read more</a></span>
 			</div>
 		</div>
 	</div>
