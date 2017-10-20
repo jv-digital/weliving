@@ -82,6 +82,7 @@
 	.blog-page .blog-posts {
 		padding:0;
 		margin-bottom:20px;
+		background:#F0F0F0;
 	}
 	.blog-page .blog-posts .blog-post-description {
 		padding:20px;
@@ -96,5 +97,6 @@
 		padding-left:20px;
 		padding-bottom:20px;
 		padding-top:0px;
+		display: inline-block;
 	}
 }

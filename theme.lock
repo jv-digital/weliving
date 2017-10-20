@@ -20,7 +20,7 @@ assets/apercu-mediumitalic-webfont.ttf:
 assets/arrow.svg:
   development: 2017-10-20T00:04:04-04:00   dd3b7d69ea8737aa60fe1be5cabe25bf
 assets/article-template.css:
-  development: 2017-10-20T12:47:01-04:00   9d6a884bfddad3560425866368700e1d
+  development: 2017-10-20T13:21:16-04:00   56db6a1eaf217d4b87e300995235941e
 assets/ash-circle-selected.svg:
   development: 2017-10-20T00:04:04-04:00   4ac2bcfa19394898cce96682a6ecd787
 assets/ash-circle-test.svg:
@@ -32,7 +32,7 @@ assets/blog-homepage.css:
 assets/blog-recent-and-categories-template.css:
   development: 2017-10-20T12:47:26-04:00   4c09d59047a9640017c6024dd8be046b
 assets/blog-template.css:
-  development: 2017-10-20T12:46:15-04:00   0734e12020aee66911b25ef6af864c89
+  development: 2017-10-20T13:20:22-04:00   7746f89118bb1de4a356966ed5757a54
 assets/bootstrap.min.css:
   development: 2017-10-20T00:04:04-04:00   ec3bb52a00e176a7181d454dffaea219
 assets/bootstrap.min.js:
@@ -52,7 +52,7 @@ assets/cart.svg:
 assets/checkout-image-ph.png:
   development: 2017-10-20T00:04:05-04:00   e13809a6424c5f4ac5cae85da417841a
 assets/collection-template.css:
-  development: 2017-10-20T12:59:35-04:00   4979de6a4db707afe24288f9a3ffd3c6
+  development: 2017-10-20T12:47:15-04:00   4979de6a4db707afe24288f9a3ffd3c6
 assets/contact-template.css:
   development: 2017-10-20T12:47:13-04:00   cf1ecbacbe8f242f96ab8a7c5620062c
 assets/divider.css:
@@ -130,9 +130,9 @@ assets/page.css:
 assets/password.js:
   development: 2017-10-20T00:04:09-04:00   b0c076ff2a8af579b96b2d86d1887522
 assets/product-template-variant.css.liquid:
-  development: 2017-10-20T12:54:24-04:00   3f68e00a69559a8f814d3e8a895eee3b
+  development: 2017-10-20T13:03:47-04:00   3f68e00a69559a8f814d3e8a895eee3b
 assets/product-template.css.liquid:
-  development: 2017-10-20T12:53:24-04:00   0f6e1f3f376b3006a53fce765369a0c3
+  development: 2017-10-20T13:04:04-04:00   0f6e1f3f376b3006a53fce765369a0c3
 assets/register-template.css:
   development: 2017-10-20T00:04:09-04:00   0fc835fdc2c97a7377c00825205ee60c
 assets/rivets-cart.min.js:
