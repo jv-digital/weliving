@@ -1,30 +1,73 @@
-<div class="header">
-  <img class="home-icon" src="http://via.placeholder.com/65x65">
-  <nav>
-    <ul>
-      <li>
-        <a href="#"> Shop </a>
+<div class="header container">
+  <div class="mobile-menu-wrapper col-xs-3">
+    <div class="mobile-menu">
+      <p>menu</p>
+    </div>
+  </div>
+  <div class="dropdown-links" id="dropdown">
+    <a href="/"><img class="dropdown-image" src="https://cdn.shopify.com/s/files/1/2176/2625/files/weliving_logo.png?11859824361046747801"></a>
+    <div class="close-button"><p>+</p></div>
+    <ul class="submenu">
+      <li><a href="/collections/products">shop</a></li>
+      <li><a href="/pages/about?view=about">about</a></li>
+      <li><a href="/blogs/posts?view=recent-and-categories">blog</a></li>
+      <li><a href="/pages/lookbook?view=lookbook">lookbook</a></li>
+      <li class="sub-dropdown">
+        <a href="#footer">need help</a>
+        <ul class="sub-menu">
+          <li><a href="/pages/shipping-and-return?view=shipping-and-return">shipping & return</a><li>
+          <li><a href="pages/faq?view=faq">faq</a></li>
+          <li><a href="/pages/contact?view=contact">contact</a></li>
+        </ul>
       </li>
-      <li>
-        <a href="#"> About </a>
-      </li>
-      <li>
-        <a href="#"> Blog </a>
-      </li>
-      <li>
-        <a href="#"> Lookbook </a>
-      </li>
-      <li>
-        <a href="#"> Need Help </a>
-      </li>
-      <li class="last-child-nav">
-        <a href="#"> Sign In
-      </li>
+      {% if customer %}
+        <li id="sub-menu"><a href="#">my account</a>
+          <ul class="account-options">
+            <li><a href="/account/addresses">manage address</a></li>
+            <li><a href="/account">order history</a></li>
+            <li class="log-out">{{ 'Log out' | customer_logout_link }}</li>
+          </ul>
+        </li>
+      {% else %}
+        <li><a href="/account/login">sign in</a></li>
+      {% endif %}
     </ul>
-  </nav>
-  <img class="checkout-image" src="http://via.placeholder.com/30x30">
-  <hr>
+  </div>
+  <div class="home-icon-wrapper col-xs-6 col-md-2">
+    <div class="home-icon">
+      <a href="/"><img src="https://cdn.shopify.com/s/files/1/2176/2625/files/Logo_Blue.png?1967539470793251460"></a>
+    </div>
+  </div>
+  <div class="navigation-links-wrapper col-md-8">
+    <ul class="navigation">
+      {% for link in linklists.main-menu.links %}
+        <li><a class="{{link.active}}" href="{{link.url}}">{{link.title}}</a></li>
+      {% endfor %} 
+  </div>
+  <div class="sign-in-checkout-wrapper col-xs-3 col-md-2">
+    {% if customer %}
+      <div class="account-dropdown">
+        <div class="account-hover">
+          <p>my account</p>
+        </div>
+        <div class="account-links">
+          <a href="/account/addresses">manage address</a>
+          <a href="/account">order history</a>
+          {{ 'Log out' | customer_logout_link }}
+        </div>
+      </div>
+    {% else %}
+      <div class="sign-in">
+        <p><a href="/account/login">sign in</a></p>
+      </div>
+    {% endif %}
+    <div class="checkout-img">
+      <a href="/cart"><img src="{{'cart.svg'|asset_url}}"><span class="cart-count" v-cloak>${cart.item_count}</span></a>
+    </div>
+  </div>
 </div>
+
+
 
 
 

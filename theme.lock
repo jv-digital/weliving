@@ -82,7 +82,7 @@ assets/header-homepage.css:
 assets/header-script.js:
   development: 2017-10-20T19:14:32-04:00   1da7423777910457ec6b1a5d849caf8b
 assets/header.css:
-  development: 2017-10-20T19:14:32-04:00   2e9362dde18c2566f321406eedc0fa6c
+  development: 2017-10-29T16:35:58-04:00   a88fac4f8b59b356c319f5bac97c5ebd
 assets/home-icon-ph.png:
   development: 2017-10-20T19:14:32-04:00   fabbfff95844abb26dddbce8f2585a53
 assets/ico-select.svg.liquid:
@@ -166,7 +166,7 @@ layout/account-layout.liquid:
 layout/no-header-footer.liquid:
   development: 2017-10-20T19:14:37-04:00   04f5e14d0bb12a44fdf8667e587dea73
 layout/theme.liquid:
-  development: 2017-10-29T04:35:12-04:00   899a1ec4f7774d1c459d08406fb9ad0b
+  development: 2017-10-29T15:19:50-04:00   d9de7114144bf5a29e95f404c68ac3f4
 locales/de.json:
   development: 2017-10-20T19:14:37-04:00   2c6d11f22c36699a3e2790b06421f09c
 locales/en.default.json:
@@ -192,11 +192,11 @@ sections/article-template.liquid:
 sections/blog-homepage.liquid:
   development: 2017-10-20T19:14:23-04:00   7bd9d0d4a6a54cdd204f249f65409b87
 sections/blog-recent-and-categories-template.liquid:
-  development: 2017-10-20T19:14:23-04:00   bc961adb58ca7692d31a1b4429ca2dc9
+  development: 2017-10-29T14:39:28-04:00   cc8a432c8fee263d7c7a2f9a55515c23
 sections/blog-template.liquid:
   development: 2017-10-20T19:14:23-04:00   06febced3e77783a98ccc9522ef723f7
 sections/carousel.liquid:
-  development: 2017-10-20T19:14:23-04:00   531d383767a105bab1b5a27cb5bb8392
+  development: 2017-10-29T15:52:14-04:00   f8b825689045dd081295fb8c1fb2385c
 sections/cart-drawer-template.liquid:
   development: 2017-10-20T19:14:23-04:00   5b713fbfd43ebba62a6be108d2c04993
 sections/cart-drawer_template_binded.liquid:
@@ -234,7 +234,7 @@ sections/footer.liquid:
 sections/full-image-homepage.liquid:
   development: 2017-10-20T19:14:24-04:00   862d952c4d2fdeb51163da242c75c101
 sections/header-dev.liquid:
-  development: 2017-10-20T19:14:24-04:00   14c563dc712a5b8daac443d59a9eb954
+  development: 2017-10-29T16:36:57-04:00   54a07626576f66ab3deee5a1e28d5454
 sections/header-homepage.liquid:
   development: 2017-10-20T19:14:24-04:00   2280967fc6fd11fe02cb18fed21bff01
 sections/header-script.liquid:

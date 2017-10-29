@@ -9,11 +9,7 @@ body {
 .header .dropdown-links {
   display:none;
 }
-.selected-shop,
-.selected-about,
-.selected-blog,
-.selected-lookbook,
-.selected-help {
+.true {
   bottom:-5px;
   height:4px;
   position:absolute;
@@ -41,7 +37,7 @@ body {
   width:90px;
   left:-5px;
 }
-#shopify-section-header .header {
+#shopify-section-header-dev .header {
   padding-left:0;
   padding-right:0;
   padding-top:15px;
