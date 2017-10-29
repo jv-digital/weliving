@@ -33,15 +33,15 @@
 .article-page .article-featured-image .article-details-wrap .date-blog {
 	font-size:20px;
 	font-family:oswaldmedium;
-	color:#4D4D4A;
+	color:4D4E4C;
 	letter-spacing:1px;
 }
 .article-page .article-featured-image .article-details-wrap .title {
-	font-size:30px;
+	font-size:33px;
 	margin-bottom:50px;
 	text-transform:uppercase;
 	font-family:oswaldmedium;
-	color:#4D4D4A;
+	color:4D4E4C;
 	letter-spacing:1px;
 }
 
@@ -54,10 +54,10 @@
 	padding-left:20px;
 }
 .article-page .article-content p {
-	font-size:16px;
+	font-size:18px;
 	line-height:28px;
 	font-family:aperculight;
-	color:#4D4D4A;
+	color:#4D4E4C
 }
 
 .article-page .article-content img { 
@@ -94,7 +94,7 @@
 	text-transform:uppercase;
 	font-family:oswaldmedium;
 	letter-spacing:1px;
-	color:#4D4D4A;
+	color:4D4E4C;
 }
 .featured-articles-wrap .featured-article-1 .featured-description-1 .article-date,
 .featured-articles-wrap .featured-article-2 .featured-description-2 .article-date,
@@ -104,7 +104,7 @@
 	display:inline-block;
 	text-transform: uppercase;
 	font-family:oswaldmedium;
-	color:#4D4D4A;
+	color:4D4E4C;
 }
 .featured-articles-wrap .featured-article-1 .featured-description-1 .article-excerpt,
 .featured-articles-wrap .featured-article-2 .featured-description-2 .article-excerpt {
@@ -112,7 +112,7 @@
 	margin-bottom:0;
 	font-family:apercumedium;
 	letter-spacing:1px;
-	color:#4D4D4A;
+	color:4D4E4C;
 }
 .featured-articles-wrap .featured-article-1 .link,
 .featured-articles-wrap .featured-article-2 .link {
@@ -124,7 +124,7 @@
 	font-family:apercubold;
 	text-transform:uppercase;
 	letter-spacing:1px;
-	color:#4D4D4A;
+	color:4D4E4C;
 }
 .featured-articles-wrap .featured-article-2 {
 	padding-right:75px;
@@ -145,7 +145,7 @@
 	.mobile-article-details .date-blog {
 		font-size:15px;
 		font-family:oswaldmedium;
-		color: #4D4D4A;
+		color: 4D4E4C;
 		text-transform: uppercase;
 		margin-bottom:0px;
 	}
@@ -154,7 +154,7 @@
 		margin-top:0px;
 		text-transform:uppercase;
 		font-family:oswaldmedium;
-		color: #4D4D4A;
+		color: 4D4E4C;
 	}
 	.article-page .article-content {
 		padding-top:0;

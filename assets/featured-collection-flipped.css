@@ -38,23 +38,23 @@
 
 .content-2 .text-button-2 .text-2 .title-2{
   line-height:50px;
-  font-size:40px;
+  font-size:42px;
   margin-bottom:40px;
   text-transform: uppercase;
-  font-family:oswaldregular;
+  font-family:oswaldmedium;
   letter-spacing:2px;
-  color:#466171;
+  color:#3D6379;
 }
 
 .content-2 span {
     display:block;
-    font-size:25px;
+    font-size:26px;
     font-family:apercumedium;
     line-height:30px;
     position: relative;
     z-index: 0;
     letter-spacing:2px;
-    color:#4D4D4A;
+    color:#4D4E4C;
 }
 
 .feature-collection-button {
@@ -63,15 +63,16 @@
   padding:7px 55px 7px 55px;
   background: none;
   outline: none;
-  border: 2px solid black;
-  font-family: apercumedium;
+  border: 2px solid #4D4E4C;
+  font-family: apercubold;
+  font-size:16px;
   text-decoration: none;
-  color: #4D4D4A;
+  color: #4D4E4C;
 }
 
 .feature-collection-button:hover {
   text-decoration: none;
-  color: #4D4D4A;
+  color: #4D4E4C;
 }
 
 .angle-2 {
@@ -100,6 +101,7 @@
   bottom:-81px;
   left:0;
   right:0;
+  z-index: -100;
 }
 
 @media screen and (max-width:1200px) {

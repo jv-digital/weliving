@@ -13,12 +13,12 @@
 	margin-top:70px;
 }
 .about-page .about-header p {
-	font-size:40px;
+	font-size:42px;
 	font-family:oswaldmedium;
 	letter-spacing:4px;
 	margin:0;
 	text-transform:uppercase;
-	color:#4D4D4A;
+	color:#4D4E4C;
 }
 .about-page .first-hero .first-hero-text-wrapper {
 	background-color:#F0F0F0;
@@ -31,18 +31,18 @@
 }
 .about-page .first-hero .first-hero-content-wrapper .first-hero-text-wrapper .text {
 	font-family:apercumedium;
-	font-size:17px;
+	font-size:18px;
 	letter-spacing:1px;
 	line-height: 22px;
-	color:#4D4D4A;
+	color:#4D4E4C;
 }
 .about-page .first-hero .first-hero-text-wrapper .title {
 	font-family:oswaldmedium;
 	letter-spacing:3px;
-	font-size:35px;
+	font-size:33px;
 	text-transform:uppercase;
 	margin-bottom:20px;
-	color:#4D4D4A;
+	color:#4D4E4C;
 }
 .about-page .first-hero .first-hero-content-wrapper .desktop-image {
 	width:100%;
@@ -66,22 +66,22 @@
 .about-page .second-hero .second-hero-content-wrapper .second-hero-text-wrapper .title {
 	font-family:oswaldmedium;
 	letter-spacing:3px;
-	font-size:35px;
+	font-size:33px;
 	text-transform:uppercase;
 	margin-bottom:20px;
-	color:#4D4D4A;
+	color:#4D4E4C;
 }
 .about-page .second-hero .second-hero-content-wrapper .second-hero-text-wrapper .text {
 	font-family:apercumedium;
-	font-size:17px;
+	font-size:18px;
 	letter-spacing:1px;
 	line-height: 22px;
-	color:#4D4D4A;
+	color:#4D4E4C;
 }
 .about-page .third-hero {
 	position:relative;
 	margin-bottom:650px;
-	color:#4D4D4A;
+	color:#4D4E4C;
 }
 .about-page .third-hero .third-hero-content-wrapper .desktop-image {
 	width:100%;
@@ -102,17 +102,17 @@
 .about-page .third-hero .third-hero-text-wrapper .title {
 	font-family:oswaldmedium;
 	letter-spacing:3px;
-	font-size:35px;
+	font-size:33px;
 	text-transform:uppercase;
 	margin-bottom:20px;
-	color:#4D4D4A;
+	color:#4D4E4C;
 }
 .about-page .third-hero .third-hero-content-wrapper .third-hero-text-wrapper p {
 	font-family:apercumedium;
-	font-size:15px;
+	font-size:18px;
 	letter-spacing:1px;
 	line-height: 22px;
-	color:#4D4D4A;
+	color:#4D4E4C;
 }
 @media screen and (max-width:992px) {
 	.about-page .about-header {
