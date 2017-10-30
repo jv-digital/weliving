@@ -44,7 +44,7 @@ assets/cart-drawer-template.css:
 assets/cart-homepage.svg:
   development: 2017-10-20T19:14:30-04:00   d1dbb96831001eab0e4c96e7a1f11d50
 assets/cart-template.css:
-  development: 2017-10-20T19:14:30-04:00   30ef42d522ff01002d1b8d3e45bcced6
+  development: 2017-10-30T11:39:08-04:00   a25b60e66f91b9eeb72bdcdae360f9b7
 assets/cart.min.js:
   development: 2017-10-20T19:14:30-04:00   47fa875e207be7a6dd21ea25851d4a9a
 assets/cart.svg:
@@ -77,6 +77,10 @@ assets/gift-card.js:
   development: 2017-10-20T19:14:31-04:00   a1d43f6622fa48a0222c69f8760b4aeb
 assets/gift-card.scss.liquid:
   development: 2017-10-20T19:14:32-04:00   988e9d38ea6182645170090e4e3c55e6
+assets/header-dev.css:
+  development: 2017-10-30T11:26:15-04:00   144adf72e71c4e23f03c3a8f73ce8891
+assets/header-homepage-dev.css:
+  development: 2017-10-30T10:10:16-04:00   8893ab803be519859e152aa47abfe985
 assets/header-homepage.css:
   development: 2017-10-20T19:14:32-04:00   8893ab803be519859e152aa47abfe985
 assets/header-script.js:
@@ -164,9 +168,9 @@ config/settings_schema.json:
 layout/account-layout.liquid:
   development: 2017-10-20T19:14:37-04:00   d16ebd9e7d51e909ae405b9370198931
 layout/no-header-footer.liquid:
-  development: 2017-10-20T19:14:37-04:00   04f5e14d0bb12a44fdf8667e587dea73
+  development: 2017-10-30T11:34:21-04:00   c152d88b987cb9637ee55e1d2a7d4868
 layout/theme.liquid:
-  development: 2017-10-29T15:19:50-04:00   d9de7114144bf5a29e95f404c68ac3f4
+  development: 2017-10-30T10:24:52-04:00   a8a4e4a752b9bd6ac8e0df0e6aa67a8b
 locales/de.json:
   development: 2017-10-20T19:14:37-04:00   2c6d11f22c36699a3e2790b06421f09c
 locales/en.default.json:
@@ -234,7 +238,7 @@ sections/footer.liquid:
 sections/full-image-homepage.liquid:
   development: 2017-10-20T19:14:24-04:00   862d952c4d2fdeb51163da242c75c101
 sections/header-dev.liquid:
-  development: 2017-10-29T16:36:57-04:00   54a07626576f66ab3deee5a1e28d5454
+  development: 2017-10-30T11:23:08-04:00   307475008031479d918aa1f495613b15
 sections/header-homepage.liquid:
   development: 2017-10-20T19:14:24-04:00   2280967fc6fd11fe02cb18fed21bff01
 sections/header-script.liquid:
@@ -416,7 +420,7 @@ templates/blog.liquid:
 templates/blog.recent-and-categories.liquid:
   development: 2017-10-20T19:14:41-04:00   ffa6964360df603f3326f81d5dcc565d
 templates/cart.liquid:
-  development: 2017-10-20T19:14:41-04:00   7d7d619dec65755aea0025d9d4898e41
+  development: 2017-10-30T11:37:53-04:00   4609e917163f81431482b873f16dbac8
 templates/collection.liquid:
   development: 2017-10-20T19:14:41-04:00   327c105743f8a5409bfa769f5f0a20aa
 templates/customers/account.liquid:
