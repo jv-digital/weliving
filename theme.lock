@@ -77,8 +77,8 @@ assets/gift-card.js:
   development: 2017-10-20T19:14:31-04:00   a1d43f6622fa48a0222c69f8760b4aeb
 assets/gift-card.scss.liquid:
   development: 2017-10-20T19:14:32-04:00   988e9d38ea6182645170090e4e3c55e6
-assets/header-dev.css:
-  development: 2017-10-30T11:26:15-04:00   144adf72e71c4e23f03c3a8f73ce8891
+assets/header-editable.css:
+  development: 2017-10-30T11:44:40-04:00   144adf72e71c4e23f03c3a8f73ce8891
 assets/header-homepage-dev.css:
   development: 2017-10-30T10:10:16-04:00   8893ab803be519859e152aa47abfe985
 assets/header-homepage.css:
@@ -237,8 +237,8 @@ sections/footer.liquid:
   development: 2017-10-20T19:14:24-04:00   dcbdaf8fb6c597c8d1a3dd2326185413
 sections/full-image-homepage.liquid:
   development: 2017-10-20T19:14:24-04:00   862d952c4d2fdeb51163da242c75c101
-sections/header-dev.liquid:
-  development: 2017-10-30T11:23:08-04:00   307475008031479d918aa1f495613b15
+sections/header-editable.liquid:
+  development: 2017-10-30T11:49:25-04:00   307475008031479d918aa1f495613b15
 sections/header-homepage.liquid:
   development: 2017-10-20T19:14:24-04:00   2280967fc6fd11fe02cb18fed21bff01
 sections/header-script.liquid:
