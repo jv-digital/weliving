@@ -21,12 +21,6 @@ assets/arrow.svg:
   development: 2017-10-20T00:04:04-04:00   dd3b7d69ea8737aa60fe1be5cabe25bf
 assets/article-template.css:
   development: 2017-10-20T13:22:21-04:00   56db6a1eaf217d4b87e300995235941e
-assets/ash-circle-selected.svg:
-  development: 2017-10-20T00:04:04-04:00   4ac2bcfa19394898cce96682a6ecd787
-assets/ash-circle-test.svg:
-  development: 2017-10-20T00:04:04-04:00   8feb83267a883472afcfeada80074cdf
-assets/ash-circle.svg:
-  development: 2017-10-20T00:04:04-04:00   0da6e34c8209c9939c5dff9f09dc3cfe
 assets/blog-homepage.css:
   development: 2017-10-20T12:46:49-04:00   4cc5026b778e912edde78c1bcce9c98e
 assets/blog-recent-and-categories-template.css:
@@ -52,7 +46,7 @@ assets/cart.svg:
 assets/checkout-image-ph.png:
   development: 2017-10-20T00:04:05-04:00   e13809a6424c5f4ac5cae85da417841a
 assets/collection-template.css:
-  development: 2017-10-20T12:47:15-04:00   4979de6a4db707afe24288f9a3ffd3c6
+  development: 2017-11-02T11:44:49-04:00   839e922ea8d2e1f8165a5871c87d5ac3
 assets/contact-template.css:
   development: 2017-10-20T12:47:13-04:00   cf1ecbacbe8f242f96ab8a7c5620062c
 assets/divider.css:
@@ -132,7 +126,7 @@ assets/page.css:
 assets/password.js:
   development: 2017-10-20T00:04:09-04:00   b0c076ff2a8af579b96b2d86d1887522
 assets/product-template-variant.css.liquid:
-  development: 2017-10-20T13:03:47-04:00   3f68e00a69559a8f814d3e8a895eee3b
+  development: 2017-11-02T12:20:37-04:00   38032fb974a8899056016a7c056db43e
 assets/product-template.css.liquid:
   development: 2017-10-20T13:04:04-04:00   0f6e1f3f376b3006a53fce765369a0c3
 assets/register-template.css:
@@ -153,12 +147,6 @@ assets/theme.scss.liquid:
   development: 2017-10-20T00:04:10-04:00   42bad9f851061324fbd17c82586b1cd1
 assets/vendor.js:
   development: 2017-10-20T00:04:10-04:00   cd99e9bb52efe1626bd29e5ab829f790
-assets/walnut-circle-selected.svg:
-  development: 2017-10-20T00:04:10-04:00   a31b31e7f2b1e151e733ae6a4755604f
-assets/walnut-circle.PNG:
-  development: 2017-10-20T00:04:10-04:00   d7e702eda1f9c4395022ed704439daed
-assets/walnut-circle.svg:
-  development: 2017-10-20T00:04:11-04:00   833fad511748eacc57a3ea1a1c604c49
 config/settings_data.json:
   development: 2017-10-20T01:36:13-04:00   646fab306e37545f8350e74d75a80ee7
 config/settings_schema.json:
@@ -168,7 +156,7 @@ layout/account-layout.liquid:
 layout/no-header-footer.liquid:
   development: 2017-10-20T12:46:02-04:00   04f5e14d0bb12a44fdf8667e587dea73
 layout/theme.liquid:
-  development: 2017-10-20T00:04:11-04:00   697e4565f9fbf981a284f2b086d308e3
+  development: 2017-11-01T10:45:54-04:00   61f574ed56b3ab0b4566fd4f571fb210
 locales/de.json:
   development: 2017-10-20T00:04:11-04:00   2c6d11f22c36699a3e2790b06421f09c
 locales/en.default.json:
@@ -200,15 +188,15 @@ sections/blog-template.liquid:
 sections/carousel.liquid:
   development: 2017-10-20T00:03:59-04:00   531d383767a105bab1b5a27cb5bb8392
 sections/cart-drawer-template.liquid:
-  development: 2017-10-20T00:03:59-04:00   5b713fbfd43ebba62a6be108d2c04993
+  development: 2017-11-02T11:09:55-04:00   5ad0ab8be86744aca0da4d85231fd474
 sections/cart-drawer_template_binded.liquid:
-  development: 2017-10-20T19:14:23-04:00   5751bdea95ee5fe74dd833ce957801f9
+  development: 2017-11-01T14:37:58-04:00   5751bdea95ee5fe74dd833ce957801f9
 sections/cart-template.liquid:
-  development: 2017-10-20T19:14:23-04:00   e0856885e6ba75b3a46b3d85dffd43cd
+  development: 2017-11-02T11:17:31-04:00   4306aae359f4dbde92fb43e02d004461
 sections/cartjs-scripts.liquid:
   development: 2017-10-20T00:03:59-04:00   039248c28e8748c707497dc76317199d
 sections/collection-template.liquid:
-  development: 2017-10-20T19:14:23-04:00   91587fbe1900f85a0649ea6be9f1d384
+  development: 2017-11-02T11:37:10-04:00   7646bd9e3ab7d5e16577dd557c8fee15
 sections/contact-template.liquid:
   development: 2017-10-20T12:47:42-04:00   2e8185c9cbb29777b81a9f6b5014be94
 sections/custom-content.liquid:
@@ -266,7 +254,7 @@ sections/password-header.liquid:
 sections/popout-cart-template.liquid:
   development: 2017-10-20T00:04:01-04:00
 sections/product-template-varianticons.liquid:
-  development: 2017-10-20T12:47:16-04:00   337354d71749b18bfb4456517c67dd98
+  development: 2017-11-02T12:17:21-04:00   61113ee408ab215dbcc795df47867b94
 sections/product-template.liquid:
   development: 2017-10-20T12:46:38-04:00   5a49d055d38a7906e02e0d168662bda4
 sections/quotes.liquid:
@@ -450,6 +438,6 @@ templates/page.lookbook.liquid:
 templates/password.liquid:
   development: 2017-10-20T00:04:14-04:00   907f683cb6c52199efff0cc7937b3304
 templates/product.liquid:
-  development: 2017-10-20T00:04:14-04:00   120c880eb3cf4a95d49709c72edace1e
+  development: 2017-11-01T10:23:52-04:00   f89e77bf88668ce9327567b5a2780200
 templates/search.liquid:
   development: 2017-10-20T00:04:15-04:00   050d6da53d619b718d39535b7d821f22

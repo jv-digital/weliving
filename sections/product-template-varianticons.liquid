@@ -1,5 +1,3 @@
-{% include 'color-variables' %}
-
 <div class="container product-page-container nopadding">
 	<div class="carousel-description-wrapper row">
 		<div class="mobile-carousel">
@@ -50,8 +48,18 @@
 			<div id="product-page-desktop-carousel" class="carousel slide carousel-fade col-md-7" data-ride="carousel" data-interval="false">
 				<ol class="carousel-indicators">
 				{% assign indicator_counter = 0 %}
+				{% assign num_variants = 0 %}
+				{% for variant in product.variants %}
+					{% if forloop.first %}
+						{% assign num_variants = forloop.length %}
+						{% break %}
+					{% endif %}
+				{% endfor %}
 				{% for image in product.images %}
-					{% if forloop.last %}
+					{% if forloop.first %}
+						{% assign break_point = forloop.length | minus: num_variants %}
+					{% endif %}
+					{% if forloop.index == break_point %}
 						{% break %}
 					{% endif %}
 					{% if indicator_counter == 0 %}
@@ -71,7 +79,10 @@
 					<div class="carousel-inner">
 						{%assign slide_counter = 0%}
 						{%for image in product.images%}
-							{% if forloop.last %}
+							{% if forloop.first %}
+								{% assign break_point = forloop.length | minus: num_variants %}
+							{% endif %}
+							{% if forloop.index == break_point %}
 								{% break %}
 							{% endif %}
 							{% if slide_counter == 0 %}
@@ -102,25 +113,37 @@
 						{% assign variant = product.variants.first %}
 						<input type="hidden" name="id" value="{{variant.id}}">
 					{% else %}
-						{% assign input_counter = 0 %}
-					  	{% for variant in product.variants %}
-					  		{% if input_counter == 0 %}				  		
-						   		<input type="radio" name="id" id="ash" value="{{variant.id}}" {% if variant == product.selected_or_first_available_variant %} checked {% endif %}/>
-						   		<label for="ash" class="ash-label col-xs-6">
-									<div class="ash-description">
-						   				<p>{{variant.option1}}, {{variant.option2}}</p>
-						   			</div>
-						   		</label>
-					  			{% assign input_counter = input_counter | plus: 1 %}
+						<div class="mobile-labels">
+						{% for images in product.images %}
+							{% if forloop.index == 1 %}
+								{% assign start_index = forloop.length %}
+								{% break %}
+							{%endif%}
+						{% endfor %}
+						{% assign start_index = start_index | minus: num_variants | plus: 1 %}
+						{% assign variant_counter = 1 %}
+					  	{% for variant_image in product.images %}	
+					  		{% if forloop.index < start_index %}
+					  			{% continue %}
 					  		{% else %}
-					  			<input type="radio" name="id" id="walnut" value="{{variant.id}}" {% if variant == product.selected_or_first_available_variant %} checked {% endif %}/>
-								<label for="walnut" class="walnut-label col-xs-6">
-									<div class="walnut-description">
-										<p>{{variant.option1}}, {{variant.option2}}</p>
-									</div>
-								</label>
-					  		{%endif%}
-					  	{% endfor %}
+					  			
+						  		{% for variant_id in product.variants %}
+						  			{% if forloop.index == variant_counter %}
+						  				<label for="{{forloop.index}}-mobile" class="label-wrap-mobile">		  		
+								   			<input type="radio" name="id" id="{{forloop.index}}-mobile" value="{{variant_id.id}}" {% if variant_id == product.selected_or_first_available_variant %} checked {% endif %}/>
+								   			<img class="layer2-mobile" src="{{variant_image|img_url:'master'}}">
+								   			<img class="layer1-mobile" src="{{variant_image|img_url:'master'}}">
+								   			<p>{{variant_id.title}}</p>
+								   		</label>
+										{% assign variant_counter = variant_counter | plus: 1 %}
+						  				{% break %}
+						  			{% else %}
+						  				{% continue %}								   				
+							   		{% endif %}
+						  		{% endfor %}
+							{% endif %}
+						{% endfor %}
+						</div>
 					{% endif %}
 					<div class="submit-button">
 						<input type="submit" value="ADD TO CART">
@@ -132,33 +155,40 @@
 				<span>{{product.description}}</span>
 			</div>
 			{% if product.available %}
-
 			<div class="addtocart-button-desktop nopadding col-md-12">
 				<form id="AddToCartForm" action="/cart/add" method="post" data-cart-submit>
 					{% if product.has_only_default_variant %}
 						{% assign variant = product.variants.first %}
 						<input type="hidden" name="id" value="{{variant.id}}">
 					{% else %}
-						{% assign input_counter = 0 %}
-					  	{% for variant in product.variants %}
-					  		{% if input_counter == 0 %}				  		
-						   		<input type="radio" name="id" id="ash-desktop" value="{{variant.id}}" {% if variant == product.selected_or_first_available_variant %} checked {% endif %}/>
-						   		<label for="ash-desktop" class="ash-label">
-						   			<img src="{{variant.image|img_url:'master'}}t">
-									<div class="ash-description">
-						   				<p>{{variant.title}}</p>
-						   			</div>
-						   		</label>
-					  			{% assign input_counter = input_counter | plus: 1 %}
+						{% for images in product.images %}
+							{% if forloop.index == 1 %}
+								{% assign start_index = forloop.length %}
+								{% break %}
+							{%endif%}
+						{% endfor %}
+						{% assign start_index = start_index | minus: num_variants | plus: 1 %}
+						{% assign variant_counter = 1 %}
+					  	{% for variant_image in product.images %}	
+					  		{% if forloop.index < start_index %}
+					  			{% continue %}
 					  		{% else %}
-					  			<input type="radio" name="id" id="walnut-desktop" value="{{variant.id}}" {% if variant == product.selected_or_first_available_variant %} checked {% endif %}/>
-								<label for="walnut-desktop" class="walnut-label">
-									<div class="walnut-description">
-										<p>{{variant.option1}}, {{variant.option2}}</p>
-									</div>
-								</label>
-					  		{%endif%}
-					  	{% endfor %}
+						  		{% for variant_id in product.variants %}
+						  			{% if forloop.index == variant_counter %}
+						  				<label for="{{forloop.index}}" class="label-wrap">		  		
+								   			<input type="radio" name="id" id="{{forloop.index}}" value="{{variant_id.id}}" {% if variant_id == product.selected_or_first_available_variant %} checked {% endif %}/>
+								   			<img class="layer2" src="{{variant_image|img_url:'master'}}">
+								   			<img class="layer1" src="{{variant_image|img_url:'master'}}">
+								   			<p>{{variant_id.title}}</p>
+								   		</label>
+										{% assign variant_counter = variant_counter | plus: 1 %}
+						  				{% break %}
+						  			{% else %}
+						  				{% continue %}								   				
+							   		{% endif %}
+						  		{% endfor %}
+							{% endif %}
+						{% endfor %}
 					{% endif %}
 					<input id="add-to-cart-product" type="submit" value="ADD TO CART">
 				</form>
@@ -180,7 +210,8 @@
 	<div class="product-showcase row">
 		<div class="showcase-image col-xs-12 col-md-10 col-md-push-1">
 			<div class="image-wrapper">
-				<img src="{{product.images.last | img_url: 'master'}}">
+				{% assign start_index = start_index | minus: num_variants %}
+				<img src="{{product.images[start_index] | img_url: 'master'}}">
 			</div>
 		</div>
 	</div>
