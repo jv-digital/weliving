@@ -6,7 +6,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		{{'bootstrap.min.css' | asset_url | stylesheet_tag }}
 		{{'login-template.css' | asset_url | stylesheet_tag}}
-		{{'header.css' | asset_url | stylesheet_tag}}
+		{{'header-dev.css' | asset_url | stylesheet_tag}}
 		{{'register-template.css' | asset_url | stylesheet_tag}}
 		{% if template == 'cart' %}
 			{{'cart-template.css' |asset_url|stylesheet_tag}}
@@ -19,7 +19,7 @@
 				{% if template == 'cart' %}
 					background-color:#F4F4F4;
 				{% else %}
-					background-color:#E4E0DD;
+					background-color:#E4E1DD;
 				{%endif %}
 				}
 			}

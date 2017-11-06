@@ -44,7 +44,7 @@ assets/cart-drawer-template.css:
 assets/cart-homepage.svg:
   development: 2017-10-20T19:14:30-04:00   d1dbb96831001eab0e4c96e7a1f11d50
 assets/cart-template.css:
-  development: 2017-10-20T19:14:30-04:00   30ef42d522ff01002d1b8d3e45bcced6
+  development: 2017-10-30T11:39:08-04:00   a25b60e66f91b9eeb72bdcdae360f9b7
 assets/cart.min.js:
   development: 2017-10-20T19:14:30-04:00   47fa875e207be7a6dd21ea25851d4a9a
 assets/cart.svg:
@@ -77,12 +77,16 @@ assets/gift-card.js:
   development: 2017-10-20T19:14:31-04:00   a1d43f6622fa48a0222c69f8760b4aeb
 assets/gift-card.scss.liquid:
   development: 2017-10-20T19:14:32-04:00   988e9d38ea6182645170090e4e3c55e6
+assets/header-editable.css:
+  development: 2017-10-30T11:44:40-04:00   144adf72e71c4e23f03c3a8f73ce8891
+assets/header-homepage-dev.css:
+  development: 2017-10-30T10:10:16-04:00   8893ab803be519859e152aa47abfe985
 assets/header-homepage.css:
   development: 2017-10-20T19:14:32-04:00   8893ab803be519859e152aa47abfe985
 assets/header-script.js:
   development: 2017-10-20T19:14:32-04:00   1da7423777910457ec6b1a5d849caf8b
 assets/header.css:
-  development: 2017-10-20T19:14:32-04:00   2e9362dde18c2566f321406eedc0fa6c
+  development: 2017-10-29T16:35:58-04:00   a88fac4f8b59b356c319f5bac97c5ebd
 assets/home-icon-ph.png:
   development: 2017-10-20T19:14:32-04:00   fabbfff95844abb26dddbce8f2585a53
 assets/ico-select.svg.liquid:
@@ -164,9 +168,9 @@ config/settings_schema.json:
 layout/account-layout.liquid:
   development: 2017-10-20T19:14:37-04:00   d16ebd9e7d51e909ae405b9370198931
 layout/no-header-footer.liquid:
-  development: 2017-10-20T19:14:37-04:00   04f5e14d0bb12a44fdf8667e587dea73
+  development: 2017-10-30T11:34:21-04:00   c152d88b987cb9637ee55e1d2a7d4868
 layout/theme.liquid:
-  development: 2017-10-29T04:35:12-04:00   899a1ec4f7774d1c459d08406fb9ad0b
+  development: 2017-10-30T10:24:52-04:00   a8a4e4a752b9bd6ac8e0df0e6aa67a8b
 locales/de.json:
   development: 2017-10-20T19:14:37-04:00   2c6d11f22c36699a3e2790b06421f09c
 locales/en.default.json:
@@ -192,11 +196,11 @@ sections/article-template.liquid:
 sections/blog-homepage.liquid:
   development: 2017-10-20T19:14:23-04:00   7bd9d0d4a6a54cdd204f249f65409b87
 sections/blog-recent-and-categories-template.liquid:
-  development: 2017-10-20T19:14:23-04:00   bc961adb58ca7692d31a1b4429ca2dc9
+  development: 2017-10-29T14:39:28-04:00   cc8a432c8fee263d7c7a2f9a55515c23
 sections/blog-template.liquid:
   development: 2017-10-20T19:14:23-04:00   06febced3e77783a98ccc9522ef723f7
 sections/carousel.liquid:
-  development: 2017-10-20T19:14:23-04:00   531d383767a105bab1b5a27cb5bb8392
+  development: 2017-10-29T15:52:14-04:00   f8b825689045dd081295fb8c1fb2385c
 sections/cart-drawer-template.liquid:
   development: 2017-10-20T19:14:23-04:00   5b713fbfd43ebba62a6be108d2c04993
 sections/cart-drawer_template_binded.liquid:
@@ -233,8 +237,8 @@ sections/footer.liquid:
   development: 2017-10-20T19:14:24-04:00   dcbdaf8fb6c597c8d1a3dd2326185413
 sections/full-image-homepage.liquid:
   development: 2017-10-20T19:14:24-04:00   862d952c4d2fdeb51163da242c75c101
-sections/header-dev.liquid:
-  development: 2017-10-20T19:14:24-04:00   14c563dc712a5b8daac443d59a9eb954
+sections/header-editable.liquid:
+  development: 2017-10-30T11:49:25-04:00   307475008031479d918aa1f495613b15
 sections/header-homepage.liquid:
   development: 2017-10-20T19:14:24-04:00   2280967fc6fd11fe02cb18fed21bff01
 sections/header-script.liquid:
@@ -416,7 +420,7 @@ templates/blog.liquid:
 templates/blog.recent-and-categories.liquid:
   development: 2017-10-20T19:14:41-04:00   ffa6964360df603f3326f81d5dcc565d
 templates/cart.liquid:
-  development: 2017-10-20T19:14:41-04:00   7d7d619dec65755aea0025d9d4898e41
+  development: 2017-10-30T11:37:53-04:00   4609e917163f81431482b873f16dbac8
 templates/collection.liquid:
   development: 2017-10-20T19:14:41-04:00   327c105743f8a5409bfa769f5f0a20aa
 templates/customers/account.liquid:
