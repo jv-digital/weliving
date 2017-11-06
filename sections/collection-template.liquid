@@ -1,3 +1,4 @@
+{% include 'color-variables' %}
 <div class="collection-page container">
 	<div class="product row">
 		{% for product in collection.products %}
@@ -13,27 +14,21 @@
 				</a>
 				{% if product.variants.size > 1 %}
 					<div class="variant-color-wrap col-xs-3 col-md-4">
-					{% assign num_variants = product.variants.size %}
-					{% assign start_index = product.images.size %}
-					{% assign start_index = start_index | minus: num_variants | plus: 1 %}
-					{% assign variant_counter = 1 %}
-					{% for variant_image in product.images %}	
-						{% if forloop.index < start_index %}
-							{% continue %}
-						{% else %}
-							{% for variant_id in product.variants %}
-								{% if forloop.index == variant_counter %}
-									<div class="variant-color">
-						   				<a href="{{variant_id.url}}"><img src="{{variant_image|img_url:'master'}}"></a>
-						   			</div>
-									{% assign variant_counter = variant_counter | plus: 1 %}
-									{% break %}
-								{% else %}
-									{% continue %}								   				
-					   			{% endif %}
-							{% endfor %}
-						{% endif %}
-					{% endfor %}
+						{% for variant in product.variants %}
+							<div class="variant-color">
+								<a href="{{variant.url}}">
+									{% if variant.option1 == 'Ash' %}
+										<svg height="24" width="24">
+  											<circle cx="12" cy="12" r="12" fill="{{ash}}" /> 
+										</svg> 
+									{% elsif variant.option1 == 'Walnut' %}
+										<svg height="24" width="24"> 
+											<circle cx="12" cy="12" r="12" fill="{{walnut}}" /> 
+										</svg> 
+									{% endif %}
+								</a>
+							</div>
+						{% endfor %}
 					</div>
 				{% endif %}
 			</div>

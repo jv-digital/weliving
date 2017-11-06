@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}" type="image/png" />
 		{{'header-homepage.css' |asset_url |stylesheet_tag}}
-		{{'header-dev.css'|asset_url|stylesheet_tag}}
+		{{'header.css'|asset_url|stylesheet_tag}}
 		{{'footer.css'|asset_url|stylesheet_tag}}
 		{{'bootstrap.min.css' | asset_url | stylesheet_tag }}
 		{{'full-image-homepage.css'|asset_url|stylesheet_tag}}
@@ -17,7 +17,7 @@
 		{{'extra-description-homepage.css'|asset_url|stylesheet_tag}}
 		{{'collection-template.css' | asset_url |stylesheet_tag}}
 		{{'carousel.css'|asset_url|stylesheet_tag}}
-		{{'product-template-variant.css' | asset_url | stylesheet_tag}}
+		{{'product-template.css' | asset_url | stylesheet_tag}}
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		{{'bootstrap.min.js'| asset_url | script_tag}}
 		{{'jquery.bcSwipe.min.js'|asset_url|script_tag}}
@@ -42,7 +42,7 @@
 		{{content_for_header}}
 		<style>
 				body {
-  						background-color:#E4E1DD;
+  						background-color:#E4E0DD;
 				}
 				[v-cloak] {
 					display: none;
@@ -50,10 +50,17 @@
 		</style>
 	</head>
 	<body>
-		{% section 'cart-drawer-template' %}
-		{% section 'header-dev' %}
-		{{content_for_layout}}
-		{% section 'footer' %}
+		{% if template =='index' %}
+			{% section 'cart-drawer-template' %}
+			{% section 'header-homepage' %}
+			{{content_for_layout}}
+			{% section 'footer' %}
+		{% else %}
+			{% section 'cart-drawer-template' %}
+			{% section 'header' %}
+			{{content_for_layout}}
+			{% section 'footer' %}
+		{% endif %}
 		<script>
 			$('.carousel').bcSwipe({ threshold: 50 });
 		</script>

@@ -51,12 +51,9 @@
 	display: flex;
 	justify-content: space-around;
 	margin-top:15px;
-	padding:0;
 } 
-.variant-color a img{
-	border-radius:50%;
-	width:30px;
-	height:30px;
+.variant-color {
+	
 }
 @media screen and (max-width:992px) {
 	.collection-page {
