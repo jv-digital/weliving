@@ -126,17 +126,55 @@ button:focus {
 }
 .sign-in-page .forgot-password {
 	text-align:center;
-	margin-top:30px;
+
+}
+.sign-in-page .forgot-password form {
+	display:none;
 }
 .sign-in-page .forgot-password p {
 	margin-bottom:0;
 	font-family:apercumedium;
 	color:#4D4D4A;
+	letter-spacing: 1px;
+}
+.sign-in-page .forgot-password .header {
+	font-size:35px;
+	font-family:oswaldmedium;
+	text-transform: uppercase;
+	letter-spacing: 4px;
 }
 .sign-in-page .forgot-password a {
 	color: #4D4D4A;
 	letter-spacing:1px;
 	text-decoration:underline;
+}
+.sign-in-page .forgot-password label {
+	display:block;
+	font-family: apercumedium;
+	font-weight: normal;
+	letter-spacing: 1px;
+	color:#4D4E4C;
+	text-align: left;
+	padding-top:40px;
+}
+.sign-in-page .forgot-password input[type="email"] {
+	width:100%;
+	background: none;
+	border:none;
+	border-bottom:1px solid #4D4E4C;
+	margin-bottom:35px;
+}
+.sign-in-page .forgot-password input[type="submit"] {
+	display:block;
+	margin:0 auto;
+	background:none;
+	width:55%;
+	border:2px solid #4D4E4C;
+	text-transform: uppercase;
+	font-family:apercumedium;
+	padding-top:10px;
+	padding-bottom:10px;
+	color:#4D4E4C;
 }
 .sign-in-page .sign-up-link {
 	text-align:center;

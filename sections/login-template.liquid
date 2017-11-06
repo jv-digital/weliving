@@ -28,8 +28,8 @@
   </div>
   <div class="forgot-password col-md-7">
     <a href="#recover" id="RecoverPassword"> Forgot your password? </a>
-    {% form 'recover_customer_password' %} 
-      <p>Password Recovery<p>
+    {% form 'recover_customer_password', class: 'recover-password-form' %} 
+      <p class="header">Password Recovery<p>
       <p>Please enter the password you use for your account.</p>
       <label for="customer_email">Email*</label>
       <input type="email" name="email" />
@@ -47,6 +47,7 @@
       $(".sign-in-wrap").hide();
       $("#RecoverPassword").hide();
       $(".sign-up-link").hide();
+      $(".recover-password-form").show();
       });
     });
 </script>
