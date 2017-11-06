@@ -15,7 +15,7 @@ button:focus {
 	background:#F3C1C2;
 	border:0.7px solid red !important;
 }
-#shopify-section-header {
+#shopify-section-header-editable {
 	display:none;
 }
 #shopify-section-login-template {
@@ -126,7 +126,7 @@ button:focus {
 }
 .sign-in-page .forgot-password {
 	text-align:center;
-
+	padding-top:50px;
 }
 .sign-in-page .forgot-password form {
 	display:none;
@@ -199,7 +199,7 @@ button:focus {
 		display:initial;
 		align-items:initial;
 	}
-	#shopify-section-header {
+	#shopify-section-header-editable {
 		display:initial;
 	}
 	.sign-in-page {

@@ -94,7 +94,7 @@ assets/jquery.mobile.custom.min.js:
 assets/lazysizes.js:
   development: 2017-10-20T19:14:32-04:00   c96602ecb5ac14b9bf9068cb8907ce65
 assets/login-template.css:
-  development: 2017-11-05T22:26:19-05:00   bd104ae21a10b4433dc251e62abe237d
+  development: 2017-11-06T00:27:56-05:00   46edaf54d7a8326ea5219344b0f6da07
 assets/lookbook-template.css:
   development: 2017-10-29T05:15:10-04:00   e8f89f7942cced9d7900fe04e36b0225
 assets/match-media.min.js:
@@ -136,7 +136,7 @@ assets/product-template.css.liquid:
 assets/register-template.css:
   development: 2017-10-20T19:14:35-04:00   0fc835fdc2c97a7377c00825205ee60c
 assets/reset-password.css:
-  development: 2017-11-05T22:46:10-05:00   5f28eae237afe1a6adf7b9d7ce01e994
+  development: 2017-11-06T00:16:08-05:00   5f28eae237afe1a6adf7b9d7ce01e994
 assets/rivets-cart.min.js:
   development: 2017-10-20T19:14:35-04:00   3fbc557214bbbf2a10b48c4f0a0649f1
 assets/rivets.min.js:
@@ -166,9 +166,9 @@ config/settings_schema.json:
 layout/account-layout.liquid:
   development: 2017-10-20T19:14:37-04:00   d16ebd9e7d51e909ae405b9370198931
 layout/no-header-footer.liquid:
-  development: 2017-10-20T19:14:37-04:00   04f5e14d0bb12a44fdf8667e587dea73
+  development: 2017-11-06T00:23:22-05:00   becec9168762e28f1e55a1ec75d6c226
 layout/theme.liquid:
-  development: 2017-11-05T22:37:50-05:00   3ac583f458f12e7a73bbf35ac72bdc9e
+  development: 2017-11-06T00:17:04-05:00   e71603916f7333f9910e619428054c0a
 locales/de.json:
   development: 2017-10-20T19:14:37-04:00   2c6d11f22c36699a3e2790b06421f09c
 locales/en.default.json:
@@ -248,7 +248,7 @@ sections/hero.liquid:
 sections/image-bar.liquid:
   development: 2017-10-20T19:14:25-04:00   e11475f2451449949dbeee454388a7ae
 sections/login-template.liquid:
-  development: 2017-11-05T22:25:47-05:00   bec0b6640379bb466d46e3556f1bacf3
+  development: 2017-11-06T00:11:43-05:00   0661946b77311c50ca43f385ec67229a
 sections/logo-bar.liquid:
   development: 2017-10-20T19:14:25-04:00   f4bd55c004e6841318071a362728dd98
 sections/lookbook-template.liquid:
@@ -428,13 +428,13 @@ templates/customers/activate_account.liquid:
 templates/customers/addresses.liquid:
   development: 2017-10-20T19:14:41-04:00   2349b0d7edd89a2e83beb895da010a74
 templates/customers/login.liquid:
-  development: 2017-10-20T19:14:41-04:00   5ed57e7400a4cd4ca0ee19c6ba2df6c8
+  development: 2017-11-06T00:24:56-05:00   7ed62dd0a03abe0e87c7631e6c5c9b3a
 templates/customers/order.liquid:
   development: 2017-10-20T19:14:41-04:00   259d710bd4836e4267c92ada1e266eef
 templates/customers/register.liquid:
   development: 2017-10-20T19:14:41-04:00   b1c6a19edaae2b50b6edbcc064ac9fff
 templates/customers/reset_password.liquid:
-  development: 2017-11-05T22:45:32-05:00   f26c74f0a51732ffe9865e02d109997c
+  development: 2017-11-06T00:15:51-05:00   f26c74f0a51732ffe9865e02d109997c
 templates/gift_card.liquid:
   development: 2017-10-20T19:14:42-04:00   746bbea7dc4e244df4f43a48fccb4bc3
 templates/index.liquid:
