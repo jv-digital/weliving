@@ -246,7 +246,7 @@ sections/hero.liquid:
 sections/image-bar.liquid:
   development: 2017-10-20T19:14:25-04:00   e11475f2451449949dbeee454388a7ae
 sections/login-template.liquid:
-  development: 2017-10-20T19:14:25-04:00   a9c841c25ae01958ae4cc8e72884a72d
+  development: 2017-11-05T21:52:34-05:00   ab72fb7016a08061e8aaf3ce0c45c0f4
 sections/logo-bar.liquid:
   development: 2017-10-20T19:14:25-04:00   f4bd55c004e6841318071a362728dd98
 sections/lookbook-template.liquid:
