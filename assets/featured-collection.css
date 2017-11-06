@@ -30,8 +30,8 @@
 
 .content {    
   display:inline-block;
-  background-image: linear-gradient(top, #F0F0F0, #F0F0F0 80%, #E4E0DD 80%);
-  background-image: -webkit-linear-gradient(top, #F0F0F0, #F0F0F0 80%, #E4E0DD 80%);  
+  background-image: linear-gradient(top, #F0F0F0, #F0F0F0 80%, #E4E1DD 80%);
+  background-image: -webkit-linear-gradient(top, #F0F0F0, #F0F0F0 80%, #E4E1DD 80%);  
 }
 .nopadding {
   padding:0 !important;
@@ -47,19 +47,19 @@
 
 .content .text-button .text .title {
   line-height:43px;
-  font-size:40px;
+  font-size:42px;
   margin-bottom:40px;
-  font-family:oswaldregular;
+  font-family:oswaldmedium;
   letter-spacing:2px;
   text-transform: uppercase;
-  color:#466171;
+  color:#3D6379;
 }
 .content .text-button .text .description {
-  color:#4D4D4A;
+  color:#4D4E4C;
 }
 .content span {
     display:block;
-    font-size:25px;
+    font-size:26px;
     font-family:apercumedium;
     line-height:30px;
     letter-spacing:2px;
@@ -71,10 +71,11 @@
   padding:7px 55px 7px 55px;
   background: none;
   outline: none;
-  border: 2px solid black;
-  font-family: apercumedium;
+  border: 2px solid #4D4E4C;
+  font-family: apercubold;
+  font-size:16px;
   text-decoration: none;
-  color: #4D4D4A;
+  color: #4D4E4C;
 }
 
 .angle {
