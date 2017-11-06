@@ -8,9 +8,19 @@
 				"label":"Image for blog 1"
 			},
 			{
+				"type":"text",
+				"id":"blogtitle1",
+				"label":"Title for blog 1"
+			},
+			{
 				"type":"image_picker",
 				"id":"blog2",
 				"label":"Image for blog 2"
+			},
+			{
+				"type":"text",
+				"id":"blogtitle2",
+				"label":"Title for blog 2"
 			},
 			{
 				"type":"image_picker",
@@ -18,9 +28,19 @@
 				"label":"Image for blog 3"
 			},
 			{
+				"type":"text",
+				"id":"blogtitle3",
+				"label":"Title for blog 3"
+			},
+			{
 				"type":"image_picker",
 				"id":"blog4",
 				"label":"Image for blog 4"
+			},
+			{
+				"type":"text",
+				"id":"blogtitle4",
+				"label":"Title for blog 4"
 			}
 		],
 		"blocks": [
@@ -163,20 +183,20 @@
 			<p> category </p>
 		</div>
 		<a href="west-east"><div class="category-image col-xs-12 col-md-6">
-			<img src="https://cdn.shopify.com/s/files/1/2176/2625/files/west_n_east.jpg?15529995236274571147">
-			<p> west & east </p>
+			<img src="{{section.settings.blog1 | img_url:'master'}}">
+			<p>{{section.settings.blogtitle1}}</p>
 		</div></a>
 		<a href="from-tree-to-table"><div class="category-image col-xs-12 col-md-6">
 			<img src="{{section.settings.blog2 | img_url:'master'}}">
-			<p> from tree to table </p>
+			<p>{{section.settings.blogtitle2}}</p>
 		</div></a>
 		<a href="events"><div class="category-image col-xs-12 col-md-6">
 			<img src="{{section.settings.blog3 | img_url:'master'}}">
-			<p> events </p>
+			<p>{{section.settings.blogtitle3}}</p>
 		</div></a>
 		<a href="tips"><div class="category-image col-xs-12 col-md-6">
 			<img src="{{section.settings.blog4 | img_url:'master'}}">
-			<p> tips </p>
+			<p>{{section.settings.blogtitle4}}</p>
 		</div></a>
 	</div>
 </div>
