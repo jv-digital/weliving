@@ -1,0 +1,84 @@
+<div class="header {% if template == 'index' %} homepage-header-positioning {% endif %} container">
+  <div class="mobile-menu-wrapper col-xs-3">
+    <div class="mobile-menu">
+      <p class="{% if template == 'index' %} homepage-font-color {%endif %}">menu</p>
+    </div>
+  </div>
+  <div class="dropdown-links" id="dropdown">
+    <a href="/"><img class="dropdown-image" src="https://cdn.shopify.com/s/files/1/2176/2625/files/weliving_logo.png?11859824361046747801"></a>
+    <div class="close-button"><p>+</p></div>
+    <ul class="submenu">
+      {% for link in linklists.main-menu.links %}
+        <li>
+          <a href="{{link.url}}">{{link.title}}</a>
+        </li>
+      {%endfor%}
+      {% if customer %}
+        <li id="sub-menu"><a href="#">my account</a>
+          <ul class="account-options">
+            <li><a href="/account/addresses">manage address</a></li>
+            <li><a href="/account">order history</a></li>
+            <li class="log-out">{{ 'Log out' | customer_logout_link }}</li>
+          </ul>
+        </li>
+      {% else %}
+        <li><a href="/account/login">sign in</a></li>
+      {% endif %}
+    </ul>
+  </div>
+  <div class="home-icon-wrapper col-xs-6 col-md-2">
+    <div class="home-icon">
+      {% if template == 'index' %}
+        <a href="/"><img src="https://cdn.shopify.com/s/files/1/2176/2625/files/Logo_White.png?1967539470793251460">
+      {% else %}
+        <a href="/"><img src="https://cdn.shopify.com/s/files/1/2176/2625/files/Logo_Blue.png?1967539470793251460"></a>
+      {%endif%}
+    </div>
+  </div>
+  <div class="navigation-links-wrapper col-md-8">
+    <ul class="navigation">
+      {% for link in linklists.main-menu.links %}
+        <li class="{% if link.links != blank %} dropdown-nav {% endif %}">
+          <a class="{{link.active}} main-links {% if link.links != blank %} dropdown-padding {%endif%} {% if template == 'index' %} homepage-font-color {%endif %}" href="{{link.url}}">{{link.title}}</a>
+          {% if link.links != blank %}
+            <ul class="dropdown"> 
+              {% for dropdown_link in link.links %}
+                <a href="{{dropdown_link.url}}">{{dropdown_link.title}}</a>
+              {% endfor %}
+            </ul>
+          {% endif %}
+         </li>
+      {% endfor %} 
+  </div>
+  <div class="sign-in-checkout-wrapper col-xs-3 col-md-2">
+    {% if customer %}
+      <div class="account-dropdown">
+        <div class="account-hover">
+          <p class="{% if template == 'index' %} homepage-font-color {%endif %}">my account</p>
+        </div>
+        <div class="account-links">
+          <a href="/account/addresses">manage address</a>
+          <a href="/account">order history</a>
+          {{ 'Log out' | customer_logout_link }}
+        </div>
+      </div>
+    {% else %}
+      <div class="sign-in">
+        <p><a class="{% if template == 'index' %} homepage-font-color {%endif %}" href="/account/login">sign in</a></p>
+      </div>
+    {% endif %}
+    <div class="checkout-img">
+      {% if template == 'index' %}
+        <a href="/cart"><img src="{{'cart-homepage.svg'|asset_url}}"><span class="cart-count homepage-font-color" v-cloak>${cart.item_count}</span></a>
+      {% else %}
+        <a href="/cart"><img src="{{'cart.svg'|asset_url}}"><span class="cart-count" v-cloak>${cart.item_count}</span></a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
