@@ -183,7 +183,7 @@ body {
 		display:initial;
 	}
 	#shopify-section-cart-template {
-		border-top:0px solid black;
+		border-top:.75px solid black;
 	}	
 	.cart-page {
 		padding-top:50px;
