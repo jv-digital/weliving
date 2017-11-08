@@ -126,7 +126,7 @@ assets/oswald-semibold-webfont.woff:
 assets/oswald-semibold-webfont.woff2:
   development: 2017-11-08T14:43:56-05:00   c72ec34dedb90fb37df8bac99943ec17
 assets/page.css:
-  development: 2017-11-08T14:43:56-05:00   9d4eab2f8a77e962bd70566d16f1e6f9
+  development: 2017-11-08T15:13:47-05:00   3d035f28e233b24c789db8108e7bcda5
 assets/password.js:
   development: 2017-11-08T14:43:56-05:00   b0c076ff2a8af579b96b2d86d1887522
 assets/product-template-variant.css.liquid:
