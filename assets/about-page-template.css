@@ -4,6 +4,10 @@
 	width:100%;
 }
 
+.about-page h1, h2, h3, h4, h5, h6 {
+	font-family:oswaldmedium;
+}
+
 .about-page .first-hero {
 	position:relative;
 	margin-bottom:110px;
