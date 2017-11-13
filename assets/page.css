@@ -9,10 +9,24 @@
 	font-family: aperculight;
 }
 
-.template-page .page-content strong,h3,h4,h5,h6 {
+.template-page .page-content h4,h5,h6 {
 	font-family: apercumedium;
 }
-
-.template-page .page-content h1,h2 {
+.template-page .page-content p {
+	font-size:18px;
+	font-family:aperculight;
+}
+.template-page .page-content p strong {
+	font-size:18px;
+	font-family:apercumedium;
+}
+.template-page .page-content h2 {
 	font-family: oswaldmedium;
+	text-transform: uppercase;
+	font-size:42px;
+}
+.template-page .page-content h3 {
+	font-family:oswaldmedium;
+	font-size:33px;
+	text-transform: uppercase;
 }
