@@ -20,7 +20,7 @@ assets/apercu-mediumitalic-webfont.ttf:
 assets/arrow.svg:
   development: 2017-11-12T22:37:26-05:00   dd3b7d69ea8737aa60fe1be5cabe25bf
 assets/article-template.css:
-  development: 2017-11-12T23:40:40-05:00   088e7585fadf1afc01305c83d901f4e8
+  development: 2017-11-14T15:40:30-05:00   b59ebe37ee6e6b4ef713181d01429671
 assets/blog-homepage.css:
   development: 2017-11-12T22:37:27-05:00   4cc5026b778e912edde78c1bcce9c98e
 assets/blog-recent-and-categories-template.css:
@@ -94,7 +94,7 @@ assets/jquery.mobile.custom.min.js:
 assets/lazysizes.js:
   development: 2017-11-12T22:37:30-05:00   c96602ecb5ac14b9bf9068cb8907ce65
 assets/login-template.css:
-  development: 2017-11-12T22:37:30-05:00   46edaf54d7a8326ea5219344b0f6da07
+  development: 2017-11-14T15:45:26-05:00   24f07bf17348dfddfb2902f8bcf7d53f
 assets/lookbook-template.css:
   development: 2017-11-12T22:37:30-05:00   e8f89f7942cced9d7900fe04e36b0225
 assets/match-media.min.js:
@@ -126,7 +126,7 @@ assets/oswald-semibold-webfont.woff:
 assets/oswald-semibold-webfont.woff2:
   development: 2017-11-12T22:37:32-05:00   c72ec34dedb90fb37df8bac99943ec17
 assets/page.css:
-  development: 2017-11-12T23:03:56-05:00   a2a5c65f4af67ddcff9cf95ef1fd5854
+  development: 2017-11-14T15:41:28-05:00   886a012b40a6789e523d1ff226239634
 assets/password.js:
   development: 2017-11-12T22:37:32-05:00   b0c076ff2a8af579b96b2d86d1887522
 assets/product-template-variant.css.liquid:

@@ -8,13 +8,15 @@
 	padding: 0px 24px;
 	font-family: aperculight;
 }
-
-.template-page .page-content h4,h5,h6 {
-	font-family: apercumedium;
+.template-page .page-content h1 {
+	font-family:oswaldmedium;
+	text-transform: uppercase;
+	font-size:42px;
 }
 .template-page .page-content p {
 	font-size:18px;
 	font-family:aperculight;
+
 }
 .template-page .page-content p strong {
 	font-size:18px;
@@ -23,10 +25,17 @@
 .template-page .page-content h2 {
 	font-family: oswaldmedium;
 	text-transform: uppercase;
-	font-size:42px;
+	font-size:33px;
 }
 .template-page .page-content h3 {
+	font-family:apercumedium;
+	font-size:26px;
+}
+.template-page .page-content h4{
 	font-family:oswaldmedium;
-	font-size:33px;
-	text-transform: uppercase;
+	font-size:16px;
+}
+.template-page .page-content h5 {
+	font-family:aperculight;
+	font-size:14px;
 }

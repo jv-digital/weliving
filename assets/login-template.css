@@ -147,6 +147,7 @@ button:focus {
 	color: #4D4D4A;
 	letter-spacing:1px;
 	text-decoration:underline;
+	font-family:apercumedium;
 }
 .sign-in-page .forgot-password label {
 	display:block;
@@ -180,11 +181,11 @@ button:focus {
 	text-align:center;
 	font-family:apercumedium;
 }
-.sign-in-page .sign-in-wrap .sign-up-link p {
+.sign-in-page .sign-up-link p {
 	color:#4D4D4A;
 	letter-spacing:1px;
 }
-.sign-in-page .sign-in-wrap .sign-up-link a{
+.sign-in-page .sign-up-link a{
 	color: #4D4D4A;
 	text-decoration:underline;
 	font-family:apercumedium;
